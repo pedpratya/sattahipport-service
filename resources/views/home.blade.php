@@ -30,26 +30,26 @@
                     <div class="panel panel-default panel-info">
                     
                       <div class="panel-heading">
-                        <h3 class="panel-title">Sign In</h3>
+                        <h3 class="panel-title">เข้าสู่ระบบ</h3>
                       </div>                
                       <div class="panel-body">                        
                         <div class="input-group input-group-lg">
                           <span class="input-group-addon">
                             <span class="glyphicon glyphicon-user"></span>
                           </span>
-                          <input id="login-username" type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+                          <input id="login-username" type="text" class="form-control" name="username" placeholder="ชื่อผู้ใช้งาน" required autofocus>
                         </div>
                         <br> 
                         <div class="input-group input-group-lg">
                           <span class="input-group-addon">
                             <span class="glyphicon glyphicon-lock"></span>
                           </span>
-                          <input id="login-password" type="password" class="form-control" name="password" placeholder="Password" required>
+                          <input id="login-password" type="password" class="form-control" name="password" placeholder="รหัสผ่าน" required>
                         </div>
                         <br> 
                         <div class="row text-center">
-                            <button type="submit" class="btn btn-primary" >SUBMIT</button>
-                            <button type="reset" class="btn btn-default" >RESET</button>
+                            <button type="submit" class="btn btn-primary" >ล็อกอิน</button>
+                            <button type="reset" class="btn btn-default" >รีเซ็ต</button>
                             <!--button type="button" class="btn btn-default" aria-label="Left Align">SUBMIT
                               <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
                             </button-->
