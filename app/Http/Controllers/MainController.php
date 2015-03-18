@@ -13,4 +13,9 @@ class MainController extends Controller {
 		return view('layout.master');
 	}
 
+	public function getModuleList()
+	{
+		return view('module-list');
+	}
+
 }

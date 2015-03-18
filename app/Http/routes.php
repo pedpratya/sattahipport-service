@@ -13,9 +13,12 @@
 
 Route::get('/', 'WelcomeController@index');
 
-require __DIR__.'/routes/admin.php';
+Route::get('module-list', 'MainController@getModuleList');
 
 Route::post('master', array(
-        'as' => 'master-post',
-        'uses' => 'MainController@create'
-    ));
+    'as' => 'master-post',
+    'uses' => 'MainController@create'
+));
+
+require __DIR__.'/routes/admin.php';
+
