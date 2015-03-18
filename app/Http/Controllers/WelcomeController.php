@@ -31,7 +31,7 @@ class WelcomeController extends Controller {
 	public function index()
 	{	
 		$name = "pratya";
-		return view('welcome', compact('name'));
+		return view('home', compact('name'));
 	}
 
 }
