@@ -28,7 +28,7 @@
                     <div class="text-center">SATTAHIPPORT SYSTEM</div>
                     
                     <div class="panel panel-default panel-info">
-                    
+                      {!! Form::open(['route' => 'master-post', 'class' => 'form-horizontal']) !!}
                       <div class="panel-heading">
                         <h3 class="panel-title">เข้าสู่ระบบ</h3>
                       </div>                
@@ -37,14 +37,14 @@
                           <span class="input-group-addon">
                             <span class="glyphicon glyphicon-user"></span>
                           </span>
-                          <input id="login-username" type="text" class="form-control" name="username" placeholder="ชื่อผู้ใช้งาน" required autofocus>
+                          <input id="login-username" type="text" class="form-control" name="username" placeholder="ชื่อผู้ใช้งาน" >
                         </div>
                         <br> 
                         <div class="input-group input-group-lg">
                           <span class="input-group-addon">
                             <span class="glyphicon glyphicon-lock"></span>
                           </span>
-                          <input id="login-password" type="password" class="form-control" name="password" placeholder="รหัสผ่าน" required>
+                          <input id="login-password" type="password" class="form-control" name="password" placeholder="รหัสผ่าน" >
                         </div>
                         <br> 
                         <div class="row text-center">
@@ -55,7 +55,7 @@
                             </button-->
                         </div>                
                       </div>
-                      
+                     {!! Form::close() !!}  
                    </div>
                    
                </div>

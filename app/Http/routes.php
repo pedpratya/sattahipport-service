@@ -14,3 +14,8 @@
 Route::get('/', 'WelcomeController@index');
 
 require __DIR__.'/routes/admin.php';
+
+Route::post('master', array(
+        'as' => 'master-post',
+        'uses' => 'MainController@create'
+    ));
