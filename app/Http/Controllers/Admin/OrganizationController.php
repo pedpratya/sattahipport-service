@@ -2,15 +2,6 @@
 
 class OrganizationController extends Controller {
 
-	/**
-	 * Create a new controller instance.
-	 *
-	 * @return void
-	 */
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
 
 	/**
 	 * Create the Organization.
@@ -19,7 +10,7 @@ class OrganizationController extends Controller {
 	 */
 	public function create()
 	{
-		return view('admin.Organization');
+		return view('admin.organization');
 	}
 
 }

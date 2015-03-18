@@ -42,5 +42,8 @@
 				<div class="quote">{{ Inspiring::quote() }}</div>
 			</div>
 		</div>
+		{!! Form::open(['route' => 'organization-post', 'class' => 'form-horizontal']) !!}
+		                <button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
+		                {!! Form::close() !!}
 	</body>
 </html>
