@@ -1,0 +1,53 @@
+<!-- Stored in app/views/layouts/master.blade.php -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sattahip Port</title>
+		
+		<!-- Bootstrap -->
+		<link href="../../../public/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../public/css/bootstrap-theme.min.css" rel="stylesheet">
+
+		<link href="../../../public/css/style.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="../../../public/js/jquery-1.11.2.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="../../../public/js/bootstrap.min.js"></script>
+	    <script src="../../../public/js/angular.min.js"></script>
+	    <script src="../../../public/js/angular-route.min.js"></script>
+	    <script src="../../../public/js/angular-resource.min.js"></script>
+	    <script src="../../../public/js/app.js"></script>
+	    <script src="../../../public/js/controllers.js"></script>
+	    <script src="../../../public/js/services.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+		<div class="container"><!-- container -->
+		 @include('inc.topbar')
+		    <div class="container">
+		      <div class="row">
+		        @include('inc.sidebar')
+		        <!-- Bread crumb -->
+		          <div class="col-lg-9 col-md-9 col-sm-9" id="breadcrumb">
+			        @yield('breadcrumbs')
+			      </div>
+		        <!-- End Bread crumb -->
+			      <div class="col-lg-9 col-md-9 col-sm-9 content" id="content">
+			        @yield('content')
+			      </div>
+		      </div><!-- End row -->
+		    </div><!-- /.container -->
+		</div>
+
+    </body>
+	   
+</html>
