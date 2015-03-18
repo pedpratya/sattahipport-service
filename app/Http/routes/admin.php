@@ -6,7 +6,18 @@
  * and open the template in the editor.
  */
 
-    Route::group(array('prefix' => 'admin'), function() {
+Route::group(array('prefix' => 'admin'), function() {
 
-    });
+    Route::get('organization', array(
+        'as' => 'organization',
+        function() {
+            return View::make('admin.organization');
+    }));
+
+    Route::post('organization', array(
+        'as' => 'organization-post',
+        'uses' => 'OrganizationController@create'
+    ));
+
+});
 
