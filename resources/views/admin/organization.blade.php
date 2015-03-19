@@ -5,7 +5,7 @@
         <div class="panel page-header">
             <div class="col-lg-12 col-md-12">
                 <div class="col-lg-10 col-md-10">
-                    <a href = "create-or-edit">
+                    <a href = "organization-create-or-edit">
                     <button type="button" class="btn btn-primary">เพิ่มหน่วยงาน</button>
                     </a>
                 </div>
