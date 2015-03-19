@@ -1,8 +1,9 @@
 @extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('organization'))
 @section('content')
-<div class="container-fluid">
-            <div class="col-lg-12 col-md-12 ">
+<div class="container-fluid col-lg-10 col-md-10">
+        <div class="panel page-header">
+            <div class="col-lg-12 col-md-12">
                 <div class="col-lg-10 col-md-10">
                     <a href = "create-or-edit">
                     <button type="button" class="btn btn-primary">เพิ่มหน่วยงาน</button>
@@ -84,6 +85,21 @@
             </div>
         </div>
         </div>
+        </div>
+    
+            <!-- pagin -->
+        <ul class="pagination pull-left">
+          <li><a href="#">&laquo;</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+            
         </div>
 </div>
 
