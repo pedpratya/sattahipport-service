@@ -35,18 +35,21 @@
 		 @include('inc.topbar')
 		    <div class="container">
 		      <div class="row">
-		        @include('inc.sidebar')
-		       <!-- Bread crumb -->
-		        <div class="col-lg-9 col-md-9 col-sm-9" id="breadcrumb">
-		          @yield('breadcrumbs')
-			    </div><!-- End Bread crumb -->
+		       <!-- sidebar -->
+		        <div class="col-lg-2 col-md-2 col-sm-2" id="sidebar">
+		       	 @include('inc.sidebar')
+		        </div>
 			   <!-- container -->
 			    <div class="col-lg-9 col-md-9 col-sm-9 content" id="content">
+			      <!-- Bread crumb -->
+			      <div id="breadcrumb">
+		            @yield('breadcrumbs')
+			      </div><!-- End Bread crumb -->
+
 			      @yield('content')
 			    </div><!-- End container -->
 		      </div><!-- End row -->
 		    </div><!-- /.container -->
 		</div>
     </body>
-
 </html>
