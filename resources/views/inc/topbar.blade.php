@@ -18,3 +18,13 @@
 		</div>
 	</div>
 </div>
+<div class="row container-breadcrumb">
+	<div class="col-xs-4 col-sm-4 col-md-2 text-center">Admin System</div>
+	<div class="col-xs-8 col-md-10">
+		<ol class="breadcrumb-tab">
+		<li><a href="/index.html">Admin System</a></li>
+		<li class="active">Home</li>
+		<li class="active">Simple Sidebar</li>
+		</ol>
+	</div>
+</div>
