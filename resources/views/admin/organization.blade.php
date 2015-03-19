@@ -1,8 +1,9 @@
 @extends('layout.master')
 @section('content')
-            <div class="col-lg-12 col-md-12 page-header">
+<div class="container-fluid">
+            <div class="col-lg-12 col-md-12 ">
                 <div class="col-lg-10 col-md-10">
-                    <a href = "edit.html">
+                    <a href = "create-or-edit">
                     <button type="button" class="btn btn-primary">เพิ่มหน่วยงาน</button>
                     </a>
                 </div>
@@ -36,14 +37,7 @@
                     <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>
                     
                 </div>
-            </div>
-<!--            <div class="col-lg-12 col-md-12">
-                <div class="form-group">
-                    <div><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">เพิ่มหน่วยงาน</button>
-                </div>
-            </div>-->
-           
-           
+            </div>   
         </form>
   
 
@@ -88,6 +82,8 @@
                 </table>  
             </div>
         </div>
-        
         </div>
+        </div>
+</div>
+
 @stop
