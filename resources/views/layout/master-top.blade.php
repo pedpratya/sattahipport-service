@@ -33,9 +33,9 @@
     <body> <!-- แบ่ง 2 ส่วน -->
 		<div class="container"><!-- container -->
 		 @include('inc.topbar')
-		    <div class="container">
-			  @yield('content')
-			</div><!-- End container -->
+		    
+		 @yield('content')
+			
 		</div><!-- /.container -->
     </body>
 
