@@ -4,7 +4,7 @@
 <div class="container-fluid col-lg-10 col-md-10">
     <div class="panel">
      <!-- add -->
-      <div class="col-lg-12 page-header">
+      <div class="col-lg-12 page-body">
         <div class="col-lg-9">
           <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-plus" data-toggle="modal" data-target="#mdAdd" ng-model="quertyString"> เพิ่มระบบงาน</button>
         </div>
