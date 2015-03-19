@@ -8,15 +8,15 @@
         <img src="{{ asset('images/icon-mainmenu/icon-admin.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบข้อมูลสารสนเทศ</div>
+        <div class="box-menu-text-m">ระบบข้อมูลสารสน<p>เทศ</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-information.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบบริหารการท่าและระบบอนุมัติ</div>
+        <div class="box-menu-text-m">ระบบบริหารการท่า<p>และระบบอนุมัติ</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-manager.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบบริหารจัดการลูกค้้า CRM</div>
+        <div class="box-menu-text-m">ระบบบริหารจัดการ<p>ลูกค้า CRM</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-crm.png') }}">
     </div>
     <div class="box-menu">
@@ -28,19 +28,19 @@
         <img src="{{ asset('images/icon-mainmenu/icon-areaManame.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบจัดเก็บผลประโยชน์</div>
+        <div class="box-menu-text-m">ระบบจัดเก็บผลประ<p>โยชน์</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-benefits.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบบริหารหน้าท่าเรือควบคุมจราจรทางน้ำ</div>
+        <div class="box-menu-text-m">ระบบบริหารหน้าท่า<p>เรือควบคุมจราจรทางน้ำ</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-portManage.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบตรวจนับและตรวจสอบสินค้า</div>
+        <div class="box-menu-text-m">ระบบตรวจนับและ<p>ตรวจสอบสินค้า</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-counting.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบพักสินค้าและลานพักสินค้า</div>
+        <div class="box-menu-text-m">ระบบพักสินค้าและ<p>ลานพักสินค้า<p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-warehouse.png') }}">
     </div>
     <div class="box-menu">
@@ -48,11 +48,11 @@
         <img src="{{ asset('images/icon-mainmenu/icon-tranfer.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบบริการลูกเรือและผู้โดยสาร</div>
+        <div class="box-menu-text-m">ระบบบริการลูกเรือ<p>และผู้โดยสาร</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-service.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบบุคลากรและแรงงาน</div>
+        <div class="box-menu-text-m">ระบบบุคลากรและ<p>แรงงาน<p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-personnel.png') }}">
     </div>
     <div class="box-menu">
