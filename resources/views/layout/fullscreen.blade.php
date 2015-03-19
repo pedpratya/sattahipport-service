@@ -30,23 +30,14 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
     </head>
-    <body> <!-- แบ่ง 3 ส่วน -->
-		<div class="container"><!-- container -->
-		 @include('inc.topbar')
-		    <div class="container">
-		      <div class="row">
-		        @include('inc.sidebar')
-		       <!-- Bread crumb -->
-		        <div class="col-lg-9 col-md-9 col-sm-9" id="breadcrumb">
-		          @yield('breadcrumbs')
-			    </div><!-- End Bread crumb -->
-			   <!-- container -->
-			    <div class="col-lg-9 col-md-9 col-sm-9 content" id="content">
-			      @yield('content')
-			    </div><!-- End container -->
-		      </div><!-- End row -->
-		    </div><!-- /.container -->
-		</div>
+    <body> <!-- แบ่ง 2 ส่วน -->
+		<div class="container">
+	      <div class="row">
+	        <div class="col-lg-12 col-md-12 col-sm-12">
+	          @yield('content')
+	        </div>
+	      </div><!-- End row -->
+	    </div><!-- /.container -->
     </body>
 
 </html>

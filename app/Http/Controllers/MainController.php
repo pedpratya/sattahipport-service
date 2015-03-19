@@ -13,9 +13,24 @@ class MainController extends Controller {
 		return view('layout.master');
 	}
 
+	public function getMasterTop()
+	{
+		return view('layout.master-top');
+	}
+
+		public function getFullscreen()
+	{
+		return view('layout.fullscreen');
+	}
+
 	public function getModuleList()
 	{
 		return view('module-list');
+	}
+
+	public function getMasterModule()
+	{
+		return view('master-module');
 	}
 
 }

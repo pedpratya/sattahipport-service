@@ -1,4 +1,5 @@
-@extends('layout.master')
+@extends('layout.master-top')
+
 
 @section('content')
 <div class="row container">
