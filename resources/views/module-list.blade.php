@@ -2,10 +2,14 @@
 
 
 @section('content')
+    
     <div class="box-menu">
-        <div class="box-menu-text-m">ระบบ Admin</div>
-        <img src="{{ asset('images/icon-mainmenu/icon-admin.png') }}">
+        <a href="{{ URL::to('/admin/home') }}">
+            <div class="box-menu-text-m">ระบบ Admin</div>
+            <img src="{{ asset('images/icon-mainmenu/icon-admin.png') }}">
+        </a>  
     </div>
+     
     <div class="box-menu">
         <div class="box-menu-text-m">ระบบข้อมูลสารสน<p>เทศ</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-information.png') }}">
