@@ -61,15 +61,9 @@
             </div>
         </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/angular.min.js') }}"></script>
-        <script src="{{ asset('js/angular-route.min.js') }}"></script>
-        <script src="{{ asset('js/angular-resource.min.js') }}"></script>
-        <script src="{{ asset('js/app.js') }}"></script>
-        <script src="{{ asset('js/controllers.js') }}"></script>
-        <script src="{{ asset('js/services.js') }}"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
   </body>
 </html>
