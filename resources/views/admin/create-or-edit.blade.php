@@ -1,4 +1,5 @@
 @extends('layout.master')
+@section('breadcrumbs', Breadcrumbs::render('create-or-edit'))
 @section('content')
 <div class="container-fluid">
             <div class="col-lg-12 col-md-12">
