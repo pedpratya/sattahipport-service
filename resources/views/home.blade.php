@@ -7,10 +7,9 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +27,7 @@
                     <div class="text-center">SATTAHIPPORT SYSTEM</div>
                     
                     <div class="panel panel-default panel-info">
-                      {!! Form::open(['route' => 'master-post', 'class' => 'form-horizontal']) !!}
+                      {!! Form::open(['route' => 'module-lis-post', 'class' => 'form-horizontal']) !!}
                       <div class="panel-heading">
                         <h3 class="panel-title">เข้าสู่ระบบ</h3>
                       </div>                
@@ -62,15 +61,15 @@
             </div>
         </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-route.min.js"></script>
-    <script src="js/angular-resource.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/angular.min.js') }}"></script>
+        <script src="{{ asset('js/angular-route.min.js') }}"></script>
+        <script src="{{ asset('js/angular-resource.min.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/controllers.js') }}"></script>
+        <script src="{{ asset('js/services.js') }}"></script>
   </body>
 </html>

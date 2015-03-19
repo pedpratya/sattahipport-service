@@ -10,7 +10,7 @@ class MainController extends Controller {
 	 */
 	public function create()
 	{
-		return view('layout.master');
+		return view('module-list');
 	}
 
 	public function getMasterTop()
