@@ -12,16 +12,6 @@
 		<link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
 
 		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	    <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
-	    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-	    <script src="{{ asset('js/angular.min.js') }}"></script>
-	    <script src="{{ asset('js/angular-route.min.js') }}"></script>
-	    <script src="{{ asset('js/angular-resource.min.js') }}"></script>
-	    <script src="{{ asset('js/app.js') }}"></script>
-	    <script src="{{ asset('js/controllers.js') }}"></script>
-	    <script src="{{ asset('js/services.js') }}"></script>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,5 +44,10 @@
 		      @yield('content')
 		  </div>
 		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     </body>
 </html>

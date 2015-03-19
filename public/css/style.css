@@ -1,4 +1,4 @@
-html, body, .container, .center-container {
+html, body, .container, .center-container , .sidebar{
     height: 100%;
     margin: 0px;
 }
