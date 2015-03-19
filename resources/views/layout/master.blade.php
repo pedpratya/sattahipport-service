@@ -32,6 +32,7 @@
     </head>
     <body> <!-- แบ่ง 3 ส่วน -->
 		<div class="container"><!-- container -->
+		<!-- ส่วนที่ 1 -->
 		 @include('inc.topbar')
 		 <!-- Bread crumb -->
 	      <div id="breadcrumb">
@@ -41,20 +42,17 @@
 					@yield('breadcrumbs')	
 				</div>
 			</div>
-	      </div>
-	      <!-- End Bread crumb -->
-		    <div class="container">
-		      <div class="row">
-		       <!-- sidebar -->
-		        <div class="col-lg-2 col-md-2 col-sm-2" id="sidebar">
-		       	 @include('inc.sidebar')
-		        </div>
-			   <!-- container -->
-			    <div class="col-lg-9 col-md-9 col-sm-9 content" id="content">
-			      @yield('content')
-			    </div><!-- End container -->
-		      </div><!-- End row -->
-		    </div><!-- /.container -->
+	      </div><!-- End Bread crumb -->
+
+		<!-- ส่วนที่ 2 -->
+	      <!-- sidebar -->
+		  <div class="row container"><!-- container Content-->
+		    @include('inc.sidebar')
+
+		  <!-- ส่วนที่ 3 -->
+		    <!-- container -->
+		      @yield('content')
+		  </div>
 		</div>
     </body>
 </html>
