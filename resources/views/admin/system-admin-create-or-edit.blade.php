@@ -10,19 +10,19 @@
             <div class="form-group col-lg-6">
               <div class="form-group">
                 <div class="col-xs-2 col-sm-2"><p>Code :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="XXXXX"></div>
+                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="XXXXX" value="T001-101"></div>
               </div>
             </div>
             <div class="form-group col-lg-6">
               <div class="checkbox">
                 <div class="col-xs-2 col-sm-2"><p>Active</p></div>
-                <div class="col-xs-10 col-sm-10"><input type="checkbox" value=""></div>
+                <div class="col-xs-10 col-sm-10"><input type="checkbox" checked="checked" value=""></div>
               </div>
             </div>
             <div class="form-group col-lg-6">
               <div class="form-group">
                 <div class="col-xs-2 col-sm-2"><p>ชื่อ :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="ชื่อ"></div>
+                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="ชื่อ" value="Customer Web Service"></div>
               </div>
             </div>
             <div class="form-group col-lg-6">
@@ -40,12 +40,12 @@
             <div class="form-group col-lg-10">
               <div class="form-group">
                 <div class="col-xs-2 col-sm-2"><p>Page name (URL) :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="URL"></div>
+                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="URL" value=""></div>
               </div>
             </div>
             <div class="form-group col-lg-2">
               <div class="form-group">
-                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#">Add Menu</button>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mdEditMenu">Add Menu</button>
               </div>
             </div>
         </form>
@@ -53,8 +53,10 @@
 
 
   <!--list data -->
+  <div class="container-fluid">
     <div class="panel panel-primary">
-     <div class="panel-heading">เพิ่ม/แก้ไข ระบบงาน</div>
+    <div class="panel-heading">เพิ่ม/แก้ไข ระบบงาน</div>
+    <div class="panel-body">
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <!-- Customer Registration -->
         <div class="panel panel-default">
@@ -253,7 +255,8 @@
         </div>
       </div>
     </div>
-
+    </div>
+  </div>
     <!-- pagin -->
       <ul class="pagination pull-left">
         <li><a href="#">&laquo;</a></li>
