@@ -55,5 +55,10 @@ Route::group(array('prefix' => 'admin'), function() {
             return View::make('admin.usermanagement-userlog');
     }));
     
+    Route::get('home', array(
+        'as' => 'home',
+        function() {
+            return View::make('admin.home');
+    }));
 });
 

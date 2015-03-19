@@ -2,7 +2,6 @@
 
 
 @section('content')
-
     <div class="box-menu">
         <div class="box-menu-text-m">ระบบ Admin</div>
         <img src="{{ asset('images/icon-mainmenu/icon-admin.png') }}">
@@ -59,7 +58,5 @@
         <div class="box-menu-text-m">ระบบรักษาความปลอดภัยตามมาตราฐาน</div>
         <img src="{{ asset('images/icon-mainmenu/icon-security.png') }}">
     </div>
-
-
-    
+ 
 @stop
