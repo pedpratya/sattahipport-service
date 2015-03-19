@@ -13,6 +13,13 @@ Route::group(array('prefix' => 'admin'), function() {
         function() {
             return View::make('admin.organization');
     }));
+    
+    Route::get('create-or-edit', array(
+        'as' => 'create-or-edit',
+        function() {
+            return View::make('admin.create-or-edit');
+    }));
+    
 
     Route::post('organization', array(
         'as' => 'organization-post',
