@@ -33,6 +33,16 @@
     <body> <!-- แบ่ง 3 ส่วน -->
 		<div class="container"><!-- container -->
 		 @include('inc.topbar')
+		 <!-- Bread crumb -->
+	      <div id="breadcrumb">
+	      	<div class="row container-breadcrumb">
+				<div class="col-xs-4 col-sm-4 col-md-2 text-center">Admin System</div>
+				<div class="col-xs-8 col-md-10">
+					@yield('breadcrumbs')	
+				</div>
+			</div>
+	      </div>
+	      <!-- End Bread crumb -->
 		    <div class="container">
 		      <div class="row">
 		       <!-- sidebar -->
@@ -41,11 +51,6 @@
 		        </div>
 			   <!-- container -->
 			    <div class="col-lg-9 col-md-9 col-sm-9 content" id="content">
-			      <!-- Bread crumb -->
-			      <div id="breadcrumb">
-		            @yield('breadcrumbs')
-			      </div><!-- End Bread crumb -->
-
 			      @yield('content')
 			    </div><!-- End container -->
 		      </div><!-- End row -->
