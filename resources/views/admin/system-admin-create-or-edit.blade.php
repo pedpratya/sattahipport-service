@@ -2,7 +2,14 @@
 @section('breadcrumbs', Breadcrumbs::render('system-admin-create-or-edit'))
 @section('content')
 <div class="container-fluid col-lg-10 col-md-10">
-    <div class="panel panel-default">
+        <div class="panel page-header">
+            <div class="col-lg-12 col-md-12">
+                <div class="col-lg-10 col-md-10">
+            </div>
+        <div class="col-lg-2 col-md-2">
+        </div>
+      </div>
+            
 
     <!-- form input data add -->
     <div class="panel-body">
