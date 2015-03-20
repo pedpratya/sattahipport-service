@@ -2,8 +2,9 @@
 <div class="left-menu-box col-lg-2 col-md-2 col-sm-2">
 	<div class="nav-collapse sidebar-nav">
 		<ul class="nav nav-sidebar nav-stacked">
-			<li class="nav-mainmenu hidden-tablet">องค์กร</li>
-			<li class="active">
+			<li class="nav-mainmenu hidden-tablet" data-toggle="collapse" data-target="#organization" class="collapsed active">องค์กร</li>
+                       <ul class="sub-menu collapse" id="organization">
+			<li class="">
 			  <a href="{{ URL::to('admin/organization')}}">
 				  <span class="glyphicon glyphicon-tasks"></span> เมนูย่อย 1
 			 </a>
@@ -13,7 +14,10 @@
 				  <span class="glyphicon glyphicon-tasks"></span> เมนูย่อย 2
 			  </a>
 			</li>
-			<li class="nav-mainmenu hidden-tablet">ระบบงาน</li>
+                        </ul>
+                        
+			<li class="nav-mainmenu hidden-tablet" data-toggle="collapse" data-target="#system-admin" class="collapsed active">ระบบงาน</li>
+                            <ul class="sub-menu collapse" id="system-admin">
                         <li class="active">
 			  <a href="{{ URL::to('admin/system-admin')}}">
 				  <span class="glyphicon glyphicon-tasks"></span> เมนูย่อย 1
@@ -24,7 +28,10 @@
 				  <span class="glyphicon glyphicon-tasks"></span> เมนูย่อย 2
 			  </a>
 			</li>
-			<li class="nav-mainmenu hidden-tablet">User Management</li>
+                            </ul>
+                        
+			<li class="nav-mainmenu hidden-tablet" data-toggle="collapse" data-target="#usermanagement" class="collapsed active">User Management</li>
+                            <ul class="sub-menu collapse" id="usermanagement">
                         <li class="active">
 			  <a href="{{ URL::to('admin/usermanagement')}}">
 				  <span class="glyphicon glyphicon-tasks"></span> เมนูย่อย 1
@@ -40,12 +47,15 @@
 				  <span class="glyphicon glyphicon-tasks"></span> เมนูย่อย 3
 			  </a>
 			</li>
-			<li class="nav-mainmenu hidden-tablet">รายงาน</li>
+                            </ul>
+			<li class="nav-mainmenu hidden-tablet" data-toggle="collapse" data-target="#report" class="collapsed active">รายงาน</li>
+                            <ul class="sub-menu collapse" id="report">
                         <li class="active">
 			  <a href="#">
 				  <span class="glyphicon glyphicon-tasks"></span> เมนูย่อย 1
 			 </a>
 			</li>
+                            </ul>
 		</ul>
 	</div><!--/.LEFT MENU -->
 </div>
