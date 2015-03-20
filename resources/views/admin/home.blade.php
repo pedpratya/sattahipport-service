@@ -11,7 +11,7 @@
                 <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
             </div>
          </div>
-        <div class="col-lg-12 col-md-12">
+        <div class="col-lg-12 col-md-12 bgAdmin">
             <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบผู้ดูแลระบบ Admin</h4>
             <div class="form-group">
                 <div class="col-lg-12 col-md-12 row">
