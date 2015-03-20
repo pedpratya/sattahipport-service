@@ -77,7 +77,11 @@
                     <td>T001-101</td>
                     <td>การท่า</td>
                     <td><input type="checkbox" value=""></td>
-                    <td><button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button></td>
+                    <td>
+                        <a href = "system-admin-create-or-edit">
+                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -85,7 +89,11 @@
                     <td>T001-102</td>
                     <td>การท่า</td>
                     <td><input type="checkbox" value=""></td>
-                    <td><button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button></td>
+                    <td>
+                        <a href = "system-admin-create-or-edit">
+                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -93,7 +101,11 @@
                     <td>T001-100</td>
                     <td>การท่า</td>
                     <td><input type="checkbox" value=""></td>
-                    <td><button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button></td>
+                    <td>
+                        <a href = "system-admin-create-or-edit">
+                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -101,7 +113,11 @@
                     <td>T102-100</td>
                     <td>จัดเก็บผลประโยชน์</td>
                     <td><input type="checkbox" value=""></td>
-                    <td><button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button></td>
+                    <td>
+                        <a href = "system-admin-create-or-edit">
+                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -109,7 +125,11 @@
                     <td>T103-100</td>
                     <td>การท่า</td>
                     <td><input type="checkbox" value=""></td>
-                    <td><button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button></td>
+                    <td>
+                        <a href = "system-admin-create-or-edit">
+                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -117,7 +137,11 @@
                     <td>T104-100</td>
                     <td>Admin</td>
                     <td><input type="checkbox" value=""></td>
-                    <td><button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button></td>
+                    <td>
+                        <a href = "system-admin-create-or-edit">
+                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                        </a>
+                    </td>
                 </tr>
           </table>
         </div>

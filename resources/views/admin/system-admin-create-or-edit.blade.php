@@ -257,6 +257,8 @@
     </div>
     </div>
   </div>
+  </div>
+
     <!-- pagin -->
       <ul class="pagination pull-left">
         <li><a href="#">&laquo;</a></li>
@@ -269,7 +271,7 @@
         <li><a href="#">7</a></li>
         <li><a href="#">&raquo;</a></li>
       </ul>
-
+</div> <!-- container-fluid -->
 
 
   <!-- popup Edit Menu -->
@@ -308,6 +310,7 @@
         </div>
       </div>
     </div>
+
 
 
   <!-- popup Edit Page -->
