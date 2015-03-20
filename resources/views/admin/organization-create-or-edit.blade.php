@@ -2,6 +2,7 @@
 @section('breadcrumbs', Breadcrumbs::render('organization-create-or-edit'))
 @section('content')
 <div class="container-fluid col-lg-10 col-md-10">
+    <div class="panel page-header">
             <div class="col-lg-12 col-md-12">
                 <div class="col-lg-10 col-md-10">
                     <button type="button" class="btn btn-primary">ปรับปรุงข้อมูล</button>
@@ -20,8 +21,8 @@
             <div class="col-lg-10 col-md-10">                
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>Code</label></div>
-                        <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="text" ></div>
+                        <div class="col-lg-4 col-md-4"><label>Code</label></div>
+                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>
                     </div>
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
@@ -31,8 +32,8 @@
                 
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>ชื่อ</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-4 col-md-4"><label>ชื่อ</label></div>
+                        <div class="col-lg-7 col-md-7">
                             <input type="text" class="form-control">
                         </div>
                     </div>
@@ -40,8 +41,8 @@
                 </div> 
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>ชื่อย่อ</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-4 col-md-4"><label>ชื่อย่อ</label></div>
+                        <div class="col-lg-7 col-md-7">
                             <input type="text" class="form-control">
                         </div>
                     </div>
@@ -50,8 +51,8 @@
                 
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>Description</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-4 col-md-4"><label>Description</label></div>
+                        <div class="col-lg-7 col-md-7">
                             <input type="text" class="form-control">
                         </div>
                     </div>
@@ -62,8 +63,8 @@
                 
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>Address</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-4 col-md-4"><label>Address</label></div>
+                        <div class="col-lg-7 col-md-7">
                             <input type="text" class="form-control"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAddress">ADD</button>
                         </div>
                     </div>
@@ -73,8 +74,8 @@
                 
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>โทรศัพท์</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-4 col-md-4"><label>โทรศัพท์</label></div>
+                        <div class="col-lg-7 col-md-7">
                             <input type="text" class="form-control">
                         </div>
                     </div>
@@ -82,7 +83,7 @@
                     
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>e-mail</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-8 col-md-8">
                             <input type="text" class="form-control">    
                         </div>                                  
                     </div>
@@ -92,8 +93,8 @@
                 
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>หน่วยงานต้นสังกัด</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-4 col-md-4"><label>หน่วยงานต้นสังกัด</label></div>
+                        <div class="col-lg-7 col-md-7">
                              <select class="form-control">
                                 <option>---Select---</option>
                                 <option>หน่วยงาน1</option>
@@ -267,6 +268,7 @@
         </div>
         </div>
         </div>  
+    </div>
 </div>
 @stop
 

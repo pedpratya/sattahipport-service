@@ -9,26 +9,26 @@
         <form role="form">
             <div class="form-group col-lg-6">
               <div class="form-group">
-                <div class="col-xs-2 col-sm-2"><p>Code :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="XXXXX" value="T001-101"></div>
+                  <div class="col-lg-4 col-md-4"><label>Code</label></div>
+                <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" placeholder="XXXXX" value="T001-101"></div>
               </div>
             </div>
             <div class="form-group col-lg-6">
               <div class="checkbox">
-                <div class="col-xs-2 col-sm-2"><p>Active</p></div>
-                <div class="col-xs-10 col-sm-10"><input type="checkbox" checked="checked" value=""></div>
+                <div class="col-lg-4 col-md-4"><label>Active</label></div>
+                <div class="col-lg-7 col-md-7"><input type="checkbox" checked="checked" value=""></div>
               </div>
             </div>
             <div class="form-group col-lg-6">
               <div class="form-group">
-                <div class="col-xs-2 col-sm-2"><p>ชื่อ :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="ชื่อ" value="Customer Web Service"></div>
+                <div class="col-lg-4 col-md-4"><label>ชื่อ</label></div>
+                <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" placeholder="ชื่อ" value="Customer Web Service"></div>
               </div>
             </div>
             <div class="form-group col-lg-6">
               <div class="form-group">
-                <div class="col-xs-2 col-sm-2"><p>หน่วยงาน :</p></div>
-                <div class="col-xs-10 col-sm-10">
+                <div class="col-lg-2 col-md-2"><label>หน่วยงาน</label></div>
+                <div class="col-lg-8 col-md-8">
                   <select class="form-control" id="sel1">
                     <option>การท่า</option>
                     <option>Admin</option>
@@ -37,13 +37,13 @@
                 </div>
               </div>
             </div>
-            <div class="form-group col-lg-10">
+            <div class="form-group col-lg-10 col-md-10">
               <div class="form-group">
-                <div class="col-xs-2 col-sm-2"><p>Page name (URL) :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="URL" value=""></div>
+                <div class="col-lg-2 col-md-2"><label>Page name (URL</label></div>
+                <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="text" placeholder="URL" value=""></div>
               </div>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 col-md-2">
               <div class="form-group">
                 <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mdEditMenu">Add Menu</button>
               </div>
@@ -86,7 +86,7 @@
                       <td>ที่ตั้งอาณาเขตบริเวณ</td>
                       <td>301</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                       <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox" checked="checked"> : Active
                       </td>
                     </tr>
@@ -95,7 +95,7 @@
                       <td>ร่องน้ำและนำร่อง</td>
                       <td>302</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox" checked="checked"> : Active
                       </td>
                     </tr>
@@ -104,7 +104,7 @@
                       <td>การสื่อสาร</td>
                       <td>303</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox" checked="checked"> : Active
                       </td>
                     </tr>
@@ -141,7 +141,7 @@
                       <td>ที่ตั้งอาณาเขตบริเวณ</td>
                       <td>301</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox"> : Active
                       </td>
                     </tr>
@@ -150,7 +150,7 @@
                       <td>ร่องน้ำและนำร่อง</td>
                       <td>302</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                       <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox"> : Active
                       </td>
                     </tr>
@@ -159,7 +159,7 @@
                       <td>การสื่อสาร</td>
                       <td>303</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox"> : Active
                       </td>
                     </tr>
@@ -196,7 +196,7 @@
                       <td>ที่ตั้งอาณาเขตบริเวณ</td>
                       <td>301</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox" checked="checked"> : Active
                       </td>
                     </tr>
@@ -205,7 +205,7 @@
                       <td>ร่องน้ำและนำร่อง</td>
                       <td>302</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox"> : Active
                       </td>
                     </tr>
@@ -214,7 +214,7 @@
                       <td>การสื่อสาร</td>
                       <td>303</td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#mdEditMenu"> </button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#mdEditMenu"> </button>
                         <input type="checkbox"> : Active
                       </td>
                     </tr>

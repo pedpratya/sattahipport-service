@@ -2,59 +2,73 @@
 @section('breadcrumbs', Breadcrumbs::render('system-admin'))
 @section('content')
 <div class="container-fluid col-lg-10 col-md-10">
-    <div class="panel">
-     <!-- add -->
-      <div class="col-lg-12 page-body">
-        <div class="col-lg-9">
-          <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-plus" data-toggle="modal" data-target="#mdAdd" ng-model="quertyString"> เพิ่มระบบงาน</button>
+        <div class="panel page-header">
+            <div class="col-lg-12 col-md-12">
+                <div class="col-lg-10 col-md-10">
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd"> เพิ่มระบบงาน</button>
         </div>
-        <div class="col-lg-3">
-            <p>พิมพ์ข้อมูลทั้งหมด <button class="glyphicon glyphicon-print"></button></p> 
+        <div class="col-lg-2 col-md-2">
+            <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
         </div>
       </div>
 
       <!-- form group data add -->
-      <div class="panel-body">
-        <form role="form">
-            <div class="form-group col-lg-6">
-              <div class="form-group">
-                <div class="col-xs-2 col-sm-2"><p>Code :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="XXXXX"></div>
-              </div>
+        <div class="panel-body">
+        <form class="form-horizontal">
+            
+            
+            <div class="col-lg-10 col-md-10">                
+        <div class="form-group">
+            <div class="col-lg-6 col-md-6">
+              
+                    <div class="col-lg-4 col-md-4"><label>Code</label></div>
+                    <div class="col-lg-7 col-md-7">
+                        <input class="form-control input-sm" type="text" >
+                    </div>
+               
             </div>
-            <div class="form-group col-lg-6">
-              <div class="checkbox">
-                <div class="col-xs-2 col-sm-2"><p>Active</p></div>
-                <div class="col-xs-10 col-sm-10"><input type="checkbox" value=""></div>
-              </div>
-            </div>
-            <div class="form-group col-lg-6">
-              <div class="form-group">
-                <div class="col-xs-2 col-sm-2"><p>ชื่อ :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="ชื่อ"></div>
-              </div>
-            </div>
-            <div class="form-group col-lg-6">
-              <div class="form-group">
-                <div class="col-xs-2 col-sm-2"><p>หน่วยงาน :</p></div>
-                <div class="col-xs-10 col-sm-10">
-                  <select class="form-control" id="sel1">
-                    <option>การท่า</option>
-                    <option>Admin</option>
-                    <option>จัดเก็บผลประโยชน์</option>
-                  </select>
+                    <div class="col-lg-6 col-md-6"> 
+                        <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
+                        <div class="col-lg-3 col-md-3"><input type="checkbox"></div>                                   
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="form-group col-lg-12">
-              <div class="form-group">
-                <div class="col-xs-2 col-sm-2"><p>Page name (URL) :</p></div>
-                <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" placeholder="URL"></div>
-              </div>
-            </div>
+            
+           
+                    <div class="col-lg-6 col-md-6">    
+                        <div class="col-lg-4 col-md-4"><label>ชื่อ</label></div>
+                        <div class="col-lg-7 col-md-7">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    
+                <div class="form-group col-lg-6">
+                    
+                        <div class="col-lg-2 col-md-2"><label>หน่วยงาน</label></div>
+                      <div class="col-lg-8 col-md-8">
+                        <select class="form-control" id="sel1">
+                          <option>การท่า</option>
+                          <option>Admin</option>
+                          <option>จัดเก็บผลประโยชน์</option>
+                        </select>
+                      </div>
+                
+                </div>
+                    
+                <div class="col-lg-12 col-md-12">
+                
+                        <div class="col-lg-2 col-md-2"><label>Page name (URL)</label></div>
+                        <div class="col-lg-9 col-md-9">
+                            <input type="text" class="form-control">
+                        </div>
+                 
+
+                </div>
+  
+                
+
         </form>
       </div>
-
+        </div>
 
      <!-- table data -->
       <div class="panel panel-primary">
@@ -79,7 +93,7 @@
                     <td><input type="checkbox" value=""></td>
                     <td>
                         <a href = "system-admin-create-or-edit">
-                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                          <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#"> </button>
                         </a>
                     </td>
                 </tr>
@@ -91,7 +105,7 @@
                     <td><input type="checkbox" value=""></td>
                     <td>
                         <a href = "system-admin-create-or-edit">
-                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                          <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#"> </button>
                         </a>
                     </td>
                 </tr>
@@ -103,7 +117,7 @@
                     <td><input type="checkbox" value=""></td>
                     <td>
                         <a href = "system-admin-create-or-edit">
-                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                          <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#"> </button>
                         </a>
                     </td>
                 </tr>
@@ -115,7 +129,7 @@
                     <td><input type="checkbox" value=""></td>
                     <td>
                         <a href = "system-admin-create-or-edit">
-                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                          <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#"> </button>
                         </a>
                     </td>
                 </tr>
@@ -127,7 +141,7 @@
                     <td><input type="checkbox" value=""></td>
                     <td>
                         <a href = "system-admin-create-or-edit">
-                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                          <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#"> </button>
                         </a>
                     </td>
                 </tr>
@@ -139,7 +153,7 @@
                     <td><input type="checkbox" value=""></td>
                     <td>
                         <a href = "system-admin-create-or-edit">
-                          <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-edit" data-toggle="modal" data-target="#"> </button>
+                          <button type="button" class="btn btn-default glyphicon glyphicon-pencil" data-toggle="modal" data-target="#"> </button>
                         </a>
                     </td>
                 </tr>

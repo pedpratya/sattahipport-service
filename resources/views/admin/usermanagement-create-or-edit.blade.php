@@ -17,18 +17,18 @@
             <div class="col-lg-10 col-md-10">                
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>Code</label></div>
-                        <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="text" ></div>
+                        <div class="col-lg-4 col-md-4"><label>Code</label></div>
+                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>
                     </div>
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
-                        <div class="col-lg-9 col-md-9"><input type="checkbox"></div>                                   
+                        <div class="col-lg-7 col-md-7"><input type="checkbox"></div>                                   
                     </div>
                 </div>                  
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>ชั้น/ยศ</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-4 col-md-4"><label>ชั้น/ยศ</label></div>
+                        <div class="col-lg-7 col-md-7">
                             <select class="form-control">
                                 <option>---Select---</option>
                                 <option>ยศ1</option>
@@ -39,13 +39,13 @@
                     </div>
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>ชื่อ-สกุล</label></div>
-                        <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="text" ></div>                                  
+                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>                                  
                     </div>
                 </div> 
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>หน่วยงาน</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-4 col-md-4"><label>หน่วยงาน</label></div>
+                        <div class="col-lg-7 col-md-7">
                              <select class="form-control">
                                 <option>---Select---</option>
                                 <option>หน่วยงาน1</option>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>ตำแหน่ง</label></div>
-                        <div class="col-lg-9 col-md-9">
+                        <div class="col-lg-7 col-md-7">
                             <select class="form-control">
                                 <option>---Select---</option>
                                 <option>ตำแหน่ง1</option>
@@ -68,22 +68,22 @@
                 </div>
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>User Name</label></div>
-                        <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="text" ></div> 
+                        <div class="col-lg-4 col-md-4"><label>User Name</label></div>
+                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div> 
                     </div>                
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>Password</label></div>
-                        <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="password" ></div>                                  
+                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="password" ></div>                                  
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-3 col-md-3"><label>P.Start</label></div>
-                        <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="date" ></div> 
+                        <div class="col-lg-4 col-md-4"><label>P.Start</label></div>
+                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="date" ></div> 
                     </div>                
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>P.Expire</label></div>
-                        <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="date" ></div>                                  
+                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="date" ></div>                                  
                     </div>
                 </div> 
             </div>

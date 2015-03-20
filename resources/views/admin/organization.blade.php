@@ -13,33 +13,32 @@
                     <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
                 </div>
             </div>
+            
         <div class="panel-body">
         <form class="form-horizontal">
-            <div class="col-lg-6 col-md-6">
-                <div class="form-group">
-                    <div class="col-lg-1 col-md-1"><label>Code</label></div>
-                    <div class="col-lg-5 col-md-5"><input class="form-control input-sm" type="text" ></div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="form-group">
-                    <div class="col-lg-1 col-md-1"><label>Active</label></div>
-                    <div class="col-lg-3 col-md-3"><input class="checkbox" type="checkbox" ></div>
-                </div>
-            </div>
-            
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-10 col-md-10">                
                 <div class="form-group">
                     
-                </div>
-            </div>
             <div class="col-lg-6 col-md-6">
-                <div class="form-group">
-                    <div class="col-lg-1 col-md-1"><label>ชื่อ</label></div>
+          
+                    <div class="col-lg-4 col-md-4"><label>Code</label></div>
                     <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>
-                    
+            
+            </div>
+                    <div class="col-lg-6 col-md-6"> 
+                        <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
+                        <div class="col-lg-3 col-md-3"><input type="checkbox"></div>                                   
+                    </div>
                 </div>
-            </div>   
+            
+                <div class="form-group">
+                    <div class="col-lg-6 col-md-6">    
+                        <div class="col-lg-4 col-md-4"><label>ชื่อ</label></div>
+                        <div class="col-lg-7 col-md-7">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
         </form>
   
 
