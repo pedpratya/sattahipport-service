@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('breadcrumbs', Breadcrumbs::render('organization'))
+@section('breadcrumbs', Breadcrumbs::render('admin-home'))
 @section('content')
 
     <div class="container-fluid col-lg-10 col-md-10">

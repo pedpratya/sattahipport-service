@@ -1,7 +1,7 @@
-@extends('layout.master')
+﻿@extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('organization-create-or-edit'))
 @section('content')
-<div class="container-fluid col-lg-10 col-md-10">
+
     <div class="panel page-header">
             <div class="col-lg-12 col-md-12">
                 <div class="col-lg-10 col-md-10">
@@ -269,7 +269,7 @@
         </div>
         </div>  
     </div>
-</div>
+
 @stop
 
 

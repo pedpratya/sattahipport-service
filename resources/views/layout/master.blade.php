@@ -27,21 +27,22 @@
 		 <!-- Bread crumb -->
 	      <div id="breadcrumb">
 	      	<div class="row container-breadcrumb">
-				<div class="col-xs-4 col-sm-4 col-md-2 text-center">Admin System</div>
-				<div class="col-xs-8 col-md-10">
-					@yield('breadcrumbs')	
-				</div>
-			</div>
+                        @yield('breadcrumbs')
+		</div>
 	      </div><!-- End Bread crumb -->
 
-		<!-- ส่วนที่ 2 -->
-	      <!-- sidebar -->
-		  <div class="row container"><!-- container Content-->
-		    @include('inc.sidebar')
-
-		  <!-- ส่วนที่ 3 -->
-		    <!-- container -->
-		      @yield('content')
+		
+		  <div class="container-content"><!-- container Content-->
+                              
+                      <div class="left-menu-box col-lg-2 col-md-2 col-sm-2">
+                          <!-- ส่วนที่ 2 Left Manu-->
+                            @include('inc.left_manu')
+                      </div>
+                    
+                        <div class="container-fluid col-lg-10 col-md-10">
+                        <!-- ส่วนที่ 3 Content-->
+                            @yield('content')
+                        </div>
 		  </div>
 		</div>
 

@@ -1,9 +1,21 @@
 <?php
 
-// Home > Organization
-Breadcrumbs::register('organization', function($breadcrumbs)
+
+Breadcrumbs::register('admin', function($breadcrumbs)
 {
     $breadcrumbs->parent('home');
+    $breadcrumbs->push('Admin', '../admin/home');
+});
+
+Breadcrumbs::register('admin-home', function($breadcrumbs)
+{
+    $breadcrumbs->parent('admin');
+    $breadcrumbs->push('Manual', '../admin/home');
+});
+
+Breadcrumbs::register('organization', function($breadcrumbs)
+{
+    $breadcrumbs->parent('admin');
     $breadcrumbs->push('Organization', route('organization'));
 });
 
