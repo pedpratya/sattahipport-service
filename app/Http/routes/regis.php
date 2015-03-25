@@ -15,4 +15,3 @@ Route::group(array('prefix' => 'regis'), function() {
     }));
     
 });
-
