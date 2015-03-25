@@ -1,9 +1,9 @@
-﻿@extends('layout.master')
+@extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('organization-create-or-edit'))
 @section('content')
 
-    <div class="panel page-header">
-            <div class="col-lg-12 col-md-12">
+<div class="container-fluid col-lg-10 col-md-10">
+            <div class="col-lg-12 col-md-12 page-header">
                 <div class="col-lg-10 col-md-10">
                     <button type="button" class="btn btn-primary">ปรับปรุงข้อมูล</button>
                 </div>
@@ -11,6 +11,7 @@
                     <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
                 </div>
             </div>
+    
         <div class="panel-body">
         <form class="form-horizontal">
 <!--            <div class="col-lg-12 col-md-12">
@@ -22,7 +23,7 @@
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">    
                         <div class="col-lg-4 col-md-4"><label>Code</label></div>
-                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>
+                        <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
                     </div>
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
@@ -31,18 +32,18 @@
                 </div>
                 
                 <div class="form-group">
-                    <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-4 col-md-4"><label>ชื่อ</label></div>
-                        <div class="col-lg-7 col-md-7">
+                    <div class="col-lg-12 col-md-12">    
+                        <div class="col-lg-2 col-md-2"><label>ชื่อ</label></div>
+                        <div class="col-lg-9 col-md-9">
                             <input type="text" class="form-control">
                         </div>
                     </div>
 
                 </div> 
                 <div class="form-group">
-                    <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-4 col-md-4"><label>ชื่อย่อ</label></div>
-                        <div class="col-lg-7 col-md-7">
+                    <div class="col-lg-12 col-md-12">    
+                        <div class="col-lg-2 col-md-2"><label>ชื่อย่อ</label></div>
+                        <div class="col-lg-9 col-md-9">
                             <input type="text" class="form-control">
                         </div>
                     </div>
@@ -50,9 +51,9 @@
                 </div>
                 
                 <div class="form-group">
-                    <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-4 col-md-4"><label>Description</label></div>
-                        <div class="col-lg-7 col-md-7">
+                    <div class="col-lg-12 col-md-12">    
+                        <div class="col-lg-2 col-md-2"><label>Description</label></div>
+                        <div class="col-lg-9 col-md-9">
                             <input type="text" class="form-control">
                         </div>
                     </div>
@@ -62,13 +63,18 @@
 
                 
                 <div class="form-group">
-                    <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-4 col-md-4"><label>Address</label></div>
-                        <div class="col-lg-7 col-md-7">
-                            <input type="text" class="form-control"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAddress">ADD</button>
+                    <div class="col-lg-12 col-md-12">    
+                        <div class="col-lg-2 col-md-2"><label>Address</label></div>
+                        <div class="col-lg-9 col-md-9">
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="...">
+                                <div class="input-group-btn">
+                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdAddress"><span class="glyphicon glyphicon-search"></span></button>
+<!--                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAddress">ADD</button>-->
                         </div>
+                            </div>
                     </div>
-
+                </div>
                 </div>
                 
                 
@@ -83,7 +89,7 @@
                     
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>e-mail</label></div>
-                        <div class="col-lg-8 col-md-8">
+                        <div class="col-lg-7 col-md-7">
                             <input type="text" class="form-control">    
                         </div>                                  
                     </div>
@@ -92,9 +98,9 @@
                 
                 
                 <div class="form-group">
-                    <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-4 col-md-4"><label>หน่วยงานต้นสังกัด</label></div>
-                        <div class="col-lg-7 col-md-7">
+                    <div class="col-lg-12 col-md-12">    
+                        <div class="col-lg-2 col-md-2"><label>หน่วยงานต้นสังกัด</label></div>
+                        <div class="col-lg-9 col-md-9">
                              <select class="form-control">
                                 <option>---Select---</option>
                                 <option>หน่วยงาน1</option>
@@ -232,8 +238,15 @@
             <div class="panel-body">
         <div class="container-fluid">
             <div class="col-lg-12 col-md-12">
-                <div class="panel-heading">ตำแหน่ง/บริหาร</div>
-                <div class="panel"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd">ADD</button></div>
+                <div class="panel-heading panel-primary">ตำแหน่ง/บริหาร</div>
+            <div class="col-lg-12 col-md-12">
+                <div class="col-lg-10 col-md-10">
+                    
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd">Add</button>
+                </div>
+                
                 <table class="table">
                     <tr>
                         <th>No</th>
