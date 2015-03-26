@@ -1,8 +1,6 @@
 @extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('admin-home'))
 @section('content')
-
-    <div class="container-fluid col-lg-10 col-md-10">
         <div class="col-lg-12 col-md-12 page-header">
             <div class="col-lg-10 col-md-10">
                 <label>คู่มือการใช้งานระบบ Admin</label>
@@ -51,7 +49,7 @@
                 </div>
             </div> 
         </div>
-    </div>
+
 
 
 @stop
