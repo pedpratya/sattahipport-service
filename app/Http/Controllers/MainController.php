@@ -33,4 +33,9 @@ class MainController extends Controller {
 		return view('master-module');
 	}
 
+	public function signIn()
+	{
+		# code...
+	}
+
 }
