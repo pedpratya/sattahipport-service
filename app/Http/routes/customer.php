@@ -43,6 +43,13 @@ Route::group(array('prefix' => 'customer'), function() {
         function() {
             return View::make('customer.ware-house');
     }));
+    
+    Route::get('customer-port-service', array(
+        'as' => 'customer-port-service',
+        function() {
+            return View::make('customer.customer-port-service');
+    }));
+
 
 
 });

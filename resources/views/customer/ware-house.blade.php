@@ -36,7 +36,7 @@
     </div>
                 
     <table class="table">
-      <tr  style="background-color:  #ebebeb">
+      <tr  class="active">
         <th >No</th>
         <th>Name</th>
         <th>Start</th>
