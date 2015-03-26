@@ -26,9 +26,9 @@ Route::post('module-list', array(
     'uses' => 'MainController@create'
 ));
 
-Route::post('sign-in',array(
-        'as'  => 'sign-in',
-        'uses' => 'MainController@signIn'
+post('sign-in',array(
+    'as'  => 'sign-in',
+    'uses' => 'MainController@signIn'
 ));
 
 require __DIR__.'/routes/admin.php';
