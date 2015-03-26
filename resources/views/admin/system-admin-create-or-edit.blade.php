@@ -1,7 +1,7 @@
 @extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('system-admin-create-or-edit'))
 @section('content')
-<h1>Hello</h1>
+<h1>Hello2</h1>
 <div class="container-fluid col-lg-10 col-md-10">
         <div class="panel page-header">
             <div class="col-lg-12 col-md-12">
