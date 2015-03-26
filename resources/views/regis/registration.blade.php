@@ -23,28 +23,26 @@
                 <div class="col-lg-2 col-md-2"><label>ชื่อบริษัท</label></div>
                 <div class="col-lg-10 col-md-10"><input class="form-control input-sm" type="text" ></div>
             </div>
-            <div class="form-group">                
-                <div class="col-lg-2 col-md-2"><label>สถานที่ตั้ง</label></div>
-                <div class="col-lg-10 col-md-10">
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                          <button class="btn btn-default glyphicon glyphicon-search" type="button" data-toggle="modal" data-target="#mdLocation"></button>
+            <div class="form-group">     
+                <div class="bfh-datepicker">
+                    <label class="col-lg-2 col-md-2">สถานที่ตั้ง</label>
+                    <div class="col-lg-10 col-md-10 input-group date" id=''>          
+                        <input type="text" class="form-control" placeholder="">
+                        <span class="input-group-addon" data-toggle="modal" data-target="#mdLocation">
+                            <span class="glyphicon glyphicon-search"></span>       
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="form-group">                
-                <div class="col-lg-2 col-md-2"><label>สถานที่ส่งเอกสาร</label></div>
-                <div class="col-lg-10 col-md-10">
-                    <div class="col-lg-12 col-md-12">
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                          <button class="btn btn-default glyphicon glyphicon-search" type="button" data-toggle="modal" data-target="#mdDocument"></button>
+            <div class="form-group">
+                 <div class="bfh-datepicker">
+                    <label class="col-lg-2 col-md-2">สถานที่ส่งเอกสาร</label>
+                    <div class="col-lg-10 col-md-10 input-group date" id=''>          
+                        <input type="text" class="form-control" placeholder="">
+                        <span class="input-group-addon" data-toggle="modal" data-target="#mdDocument">
+                            <span class="glyphicon glyphicon-search"></span>       
                         </span>
                     </div>
-                    </div>    
                 </div>
             </div>
             <div class="form-group">
@@ -53,14 +51,14 @@
                     <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="col-lg-4 col-md-4"><label>เอกสารสำคัญ</label></div>
-                    <div class="col-lg-8 col-md-8">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default glyphicon glyphicon-search" type="button" data-toggle="modal" data-target="#mdAddress"></button>
-                            </span>
-                        </div>
+                    <div class="bfh-datepicker">
+                      <label class="col-lg-4 col-md-4">เอกสารสำคัญ</label>
+                      <div class="col-lg-8 col-md-8 input-group date" id=''>          
+                          <input type="text" class="form-control" placeholder="">
+                          <span class="input-group-addon" data-toggle="modal" data-target="#mdAddress">
+                              <span class="glyphicon glyphicon-search"></span>       
+                          </span>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -93,14 +91,14 @@
         <div class="col-lg-12 col-md-12">
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-4 col-md-4"><label>เจ้าหน้าที่ #1</label></div>
-                    <div class="col-lg-7 col-md-7">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default glyphicon glyphicon-search" type="button" data-toggle="modal" data-target="#mdOfficer"></button>
-                            </span>
-                         </div>
+                    <div class="bfh-datepicker">
+                      <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #1</label>
+                      <div class="col-lg-7 col-md-7 input-group date" id=''>          
+                          <input type="text" class="form-control" placeholder="">
+                          <span class="input-group-addon" data-toggle="modal" data-target="#mdOfficer">
+                              <span class="glyphicon glyphicon-search"></span>       
+                          </span>
+                      </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -115,14 +113,14 @@
             </div>
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-4 col-md-4"><label>เจ้าหน้าที่ #2</label></div>
-                    <div class="col-lg-7 col-md-7">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default glyphicon glyphicon-search" type="button" data-toggle="modal" data-target="#mdOfficer"></button>
-                            </span>
-                        </div>
+                    <div class="bfh-datepicker">
+                      <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #2</label>
+                      <div class="col-lg-7 col-md-7 input-group date" id=''>          
+                          <input type="text" class="form-control" placeholder="">
+                          <span class="input-group-addon" data-toggle="modal" data-target="#mdOfficer">
+                              <span class="glyphicon glyphicon-search"></span>       
+                          </span>
+                      </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -137,14 +135,14 @@
             </div>
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-4 col-md-4"><label>เจ้าหน้าที่ #3</label></div>
-                    <div class="col-lg-7 col-md-7">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default glyphicon glyphicon-search" type="button" data-toggle="modal" data-target="#mdOfficer"></button>
-                            </span>
-                        </div>
+                    <div class="bfh-datepicker">
+                      <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #3</label>
+                      <div class="col-lg-7 col-md-7 input-group date" id=''>          
+                          <input type="text" class="form-control" placeholder="">
+                          <span class="input-group-addon" data-toggle="modal" data-target="#mdOfficer">
+                              <span class="glyphicon glyphicon-search"></span>       
+                          </span>
+                      </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -159,14 +157,14 @@
             </div>
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-4 col-md-4"><label>เจ้าหน้าที่ #4</label></div>
-                    <div class="col-lg-7 col-md-7">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default glyphicon glyphicon-search" type="button" data-toggle="modal" data-target="#mdOfficer"></button>
-                            </span>
-                        </div>
+                    <div class="bfh-datepicker">
+                      <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #4</label>
+                      <div class="col-lg-7 col-md-7 input-group date" id=''>          
+                          <input type="text" class="form-control" placeholder="">
+                          <span class="input-group-addon" data-toggle="modal" data-target="#mdOfficer">
+                              <span class="glyphicon glyphicon-search"></span>       
+                          </span>
+                      </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
