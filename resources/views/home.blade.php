@@ -52,11 +52,21 @@
                             <!--button type="button" class="btn btn-default" aria-label="Left Align">SUBMIT
                               <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
                             </button-->
-                        </div>                
+                        </div>
+
                       </div>
                      {!! Form::close() !!}  
                    </div>
-                   
+                   					@if ($error)
+						<div class="alert alert-danger">
+							<strong>!</strong> ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง!<br><br>
+							<ul>
+								@foreach ($errors->all() as $error)
+									<li>{{ $error }}</li>
+								@endforeach
+							</ul>
+						</div>
+					@endif
                </div>
             </div>
         </div>

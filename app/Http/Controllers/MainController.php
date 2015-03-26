@@ -44,9 +44,25 @@ class MainController extends Controller {
     */
 	public function signIn(Request $request)
 	{
-		$modules = self::moduleList();
-
+            
+            $username = $request->input('username');
+            $password = $request->input('password');
+            if(is_null($username || $password)) {
+                return true;
+            }
+            
+            $arr = array('user1','user2');
+            if(in_array($username, $arr)){
+                
+                $modules = self::moduleList();
 		return view('module-list', compact('modules'));
+                
+              }
+              else{
+                $error = true ;
+                return view('home', compact('error'));
+              }
+
 	}
 
 	public function moduleList()
