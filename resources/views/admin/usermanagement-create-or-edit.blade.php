@@ -1,7 +1,7 @@
 @extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('usermanagement-create-or-edit'))
 @section('content')
-<div class="container-fluid col-lg-10 col-md-10" >        
+     
             <div class="col-lg-12 col-md-12 page-header">
                 <div class="col-lg-10 col-md-10">
                     <button type="button" class="btn btn-primary">Update</button>
@@ -79,13 +79,27 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-lg-6 col-md-6">    
-                        <div class="col-lg-4 col-md-4"><label>P.Start</label></div>
-                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="date" ></div> 
+                    <div class="col-lg-6 col-md-6">   
+                        <div class="bfh-datepicker">
+                            <div class="col-lg-4 col-md-4"><label>P.Start</label></div>
+                            <div class="col-lg-7 col-md-7 input-group date" id=''>          
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>       
+                                </span>
+                            </div>
+                        </div>
                     </div>                
                     <div class="col-lg-6 col-md-6"> 
-                        <div class="col-lg-3 col-md-3"><label>P.Expire</label></div>
-                        <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="date" ></div>                                  
+                        <div class="bfh-datepicker">
+                            <div class="col-lg-3 col-md-3"><label>P.Expire</label></div>
+                            <div class="col-lg-7 col-md-7 input-group date" id=''>          
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>       
+                                </span>
+                            </div>
+                        </div>                                 
                     </div>
                 </div> 
             </div>
@@ -200,5 +214,5 @@
         </div> 
             
         </div>
-</div>
+
 @stop
