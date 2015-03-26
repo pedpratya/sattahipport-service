@@ -44,39 +44,9 @@ class MainController extends Controller {
     */
 	public function signIn(Request $request)
 	{
-		dd(self::moduleList());
+		$modules = self::moduleList();
 
-
-               // $username = $request->input('username');
-               
-               // $arr = array('user1','user2');
-               // foreach ($arr as $a){
-                   
-               //      if ($username == $a) {
-               //          echo 'Pass';
-               //      } else {
-               //          echo 'No';
-               // }
-               
-//               $arrays = array(
-//                            'username' => 'user1',
-//                            'username' => 'user2'
-//                         );
-               
-//               $findUsername = array_get($arrays, 'username');
-               
-               
-//               dd($findUsername);
-//               if ($username == $arr) {
-//                   echo 'Pass';
-//               } else {
-//                   echo 'No';
-//               }
-//               
- 
-//		$array = array('username' => 'user1' );
-//                $username = 
-//                
+		return view('module-list', compact('modules'));
 	}
 
 	public function moduleList()

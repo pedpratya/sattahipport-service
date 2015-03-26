@@ -2,14 +2,21 @@
 
 
 @section('content')
+    @foreach($modules as $key => $value)
+        <div class="box-menu">
+        <a href="{{ URL::to('/admin/home') }}">
+            <div class="box-menu-text-m">{!! $value['module']['name'] !!}</div>
+            <img src="{{ asset('images/icon-mainmenu/icon-admin.png') }}">
+        </a>  
+        </div>
+    @endforeach
     
-    <div class="box-menu">
+    <!-- <div class="box-menu">
         <a href="{{ URL::to('/admin/home') }}">
             <div class="box-menu-text-m">ระบบ Admin</div>
             <img src="{{ asset('images/icon-mainmenu/icon-admin.png') }}">
         </a>  
-    </div>
-     
+    </div>    
     <div class="box-menu">
         <div class="box-menu-text-m">ระบบข้อมูลสารสน<p>เทศ</p></div>
         <img src="{{ asset('images/icon-mainmenu/icon-information.png') }}">
@@ -61,6 +68,6 @@
     <div class="box-menu">
         <div class="box-menu-text-m">ระบบรักษาความปลอดภัยตามมาตราฐาน</div>
         <img src="{{ asset('images/icon-mainmenu/icon-security.png') }}">
-    </div>
+    </div> -->
  
 @stop
