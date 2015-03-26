@@ -36,25 +36,27 @@ class MainController extends Controller {
 		return view('master-module');
 	}
         
-        /**
-        * Check user login.
-        *
-        * @param  Request  $request
-        * @return Response
-        */
+    /**
+    * Check user login.
+    *
+    * @param  Request  $request
+    * @return Response
+    */
 	public function signIn(Request $request)
 	{
+		dd(self::moduleList());
 
-               $username = $request->input('username');
+
+               // $username = $request->input('username');
                
-               $arr = array('user1','user2');
-               foreach ($arr as $a){
+               // $arr = array('user1','user2');
+               // foreach ($arr as $a){
                    
-                    if ($username == $a) {
-                        echo 'Pass';
-                    } else {
-                        echo 'No';
-               }
+               //      if ($username == $a) {
+               //          echo 'Pass';
+               //      } else {
+               //          echo 'No';
+               // }
                
 //               $arrays = array(
 //                            'username' => 'user1',
@@ -75,6 +77,15 @@ class MainController extends Controller {
 //		$array = array('username' => 'user1' );
 //                $username = 
 //                
+	}
+
+	public function moduleList()
+	{
+		$menu = [
+				    ['module' => ['name' => 'admin', 'images' => 'x', 'url' => 'xx']],
+				    ['module' => ['name' => 'crm'  , 'images' => 'y', 'url' => 'yy']]
+				];
+		return $menu;
 	}
 
 }
