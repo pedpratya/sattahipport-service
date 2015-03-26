@@ -2,7 +2,7 @@
 
 
 @section('content')
-    
+<div class="container container-center text-center">    
     <div class="box-menu">
         <div class="box-menu-text-m">ข่าวสาร</div>
         <img src="{{ asset('images/icon-customermenu/news-icon.png') }}">
@@ -44,5 +44,6 @@
         <div class="box-menu-text-m">Port Schedule</div>
         <img src="{{ asset('images/icon-customermenu/portSCH-icon.png') }}">
     </div>
+</div>    
 @stop
 @stop
