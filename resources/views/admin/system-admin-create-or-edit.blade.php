@@ -14,27 +14,27 @@
     <!-- form input data add -->
     <div class="panel-body">
         <form role="form">
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-6 col-md-6">
               <div class="form-group">
                   <div class="col-lg-4 col-md-4"><label>Code</label></div>
                 <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" placeholder="XXXXX" value="T001-101"></div>
               </div>
             </div>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-6 col-md-6">
               <div class="checkbox">
                 <div class="col-lg-4 col-md-4"><label>Active</label></div>
                 <div class="col-lg-7 col-md-7"><input type="checkbox" checked="checked" value=""></div>
               </div>
             </div>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-6 col-md-6">
               <div class="form-group">
                 <div class="col-lg-4 col-md-4"><label>ชื่อ</label></div>
                 <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" placeholder="ชื่อ" value="Customer Web Service"></div>
               </div>
             </div>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-6 col-md-6">
               <div class="form-group">
-                <div class="col-lg-2 col-md-2"><label>หน่วยงาน</label></div>
+                <div class="col-lg-3 col-md-3"><label>หน่วยงาน</label></div>
                 <div class="col-lg-8 col-md-8">
                   <select class="form-control" id="sel1">
                     <option>การท่า</option>
@@ -44,15 +44,14 @@
                 </div>
               </div>
             </div>
-            <div class="form-group col-lg-10 col-md-10">
+            <div class="form-group col-lg-6 col-md-6">
               <div class="form-group">
-                <div class="col-lg-2 col-md-2"><label>Page name (URL</label></div>
-                <div class="col-lg-9 col-md-9"><input class="form-control input-sm" type="text" placeholder="URL" value=""></div>
+                <div class="col-lg-4 col-md-4"><label>Page name (URL</label></div>
+                <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" placeholder="URL" value=""></div>
               </div>
             </div>
             <div class="form-group col-lg-2 col-md-2">
-              <div class="form-group">
-                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mdEditMenu">Add Menu</button>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mdEditMenu" style="margin: 0 20px; 0 0">Add Menu</button>
               </div>
             </div>
         </form>

@@ -5,7 +5,9 @@
             <div class="col-lg-12 col-md-12 page-header">
                 <div class="col-lg-10 col-md-10">
                     <button type="button" class="btn btn-primary">Update</button>
+                    <a href = "usermanagement-userlog">
                     <button type="button" class="btn btn-default glyphicon glyphicon-calendar"> UserLog</button>
+                    </a>
                 </div>
                 <div class="col-lg-2 col-md-2">
                     <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
@@ -90,7 +92,7 @@
 
             <div class="col-lg-2 col-md-2">
                 <div class="form-group">
-                    <button type="button" class="btn btn-primary">Change Image</button>
+                    <button type="button" class="btn btn-primary" style="width: 140px; margin-bottom: 10px;">Change Image</button>
                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9IjcwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTQweDE0MDwvdGV4dD48L2c+PC9zdmc+" alt="..." class="img-rounded">
                 </div>
             </div>    

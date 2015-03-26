@@ -2,8 +2,7 @@
 @section('breadcrumbs', Breadcrumbs::render('organization'))
 @section('content')
 <div class="container-fluid col-lg-10 col-md-10">
-        <div class="panel page-header">
-            <div class="col-lg-12 col-md-12">
+            <div class="col-lg-12 col-md-12 page-header">
                 <div class="col-lg-10 col-md-10">
                     <a href = "organization-create-or-edit">
                     <button type="button" class="btn btn-primary">เพิ่มหน่วยงาน</button>
@@ -27,7 +26,7 @@
             </div>
                     <div class="col-lg-6 col-md-6"> 
                         <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
-                        <div class="col-lg-3 col-md-3"><input type="checkbox"></div>                                   
+                        <div class="col-lg-3 col-md-3"><input type="checkbox" ></div>                                   
                     </div>
                 </div>
             

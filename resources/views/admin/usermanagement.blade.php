@@ -1,10 +1,12 @@
 @extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('usermanagement'))
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid col-lg-10 col-md-10" >        
             <div class="col-lg-12 col-md-12 page-header">
                 <div class="col-lg-10 col-md-10">
+                     <a href = "usermanagement-create-or-edit">
                     <button type="button" class="btn btn-primary">Add User</button>
+                     </a>
                 </div>
                 <div class="col-lg-2 col-md-2">
                     <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>

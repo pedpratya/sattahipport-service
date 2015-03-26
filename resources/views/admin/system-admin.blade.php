@@ -5,8 +5,10 @@
         <div class="panel page-header">
             <div class="col-lg-12 col-md-12">
                 <div class="col-lg-10 col-md-10">
+                    <a href = "system-admin-create-or-edit">
            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd"> เพิ่มระบบงาน</button>
-        </div>
+                    </a>
+                </div>
         <div class="col-lg-2 col-md-2">
             <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
         </div>
