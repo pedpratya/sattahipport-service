@@ -28,4 +28,5 @@ Route::post('module-list', array(
 
 require __DIR__.'/routes/admin.php';
 require __DIR__.'/routes/regis.php';
+require __DIR__.'/routes/customer.php';
 
