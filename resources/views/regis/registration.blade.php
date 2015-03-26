@@ -1,15 +1,6 @@
 @extends('layout.master-top')
-
-
 @section('content')
-<style>
 
-</style>  
-<!--<div class="container container-center container-outter">
-    <div class="container container-inner">
-        
-    </div>
-</div>-->
 <div class="container container-center container-outter">
 <div class="container container-inner">
     <form class="form-horizontal" > 
@@ -21,43 +12,43 @@
             </div>
             <div class="form-group">                
                 <div class="col-lg-2 col-md-2"><label>ชื่อบริษัท</label></div>
-                <div class="col-lg-10 col-md-10"><input class="form-control input-sm" type="text" ></div>
+                <div class="col-lg-10 col-md-10"><input class="form-control" type="text" ></div>
             </div>
             <div class="form-group">     
                 <div class="bfh-datepicker">
                     <label class="col-lg-2 col-md-2">สถานที่ตั้ง</label>
-                    <div class="col-lg-10 col-md-10 input-group date" id=''>          
-                        <input type="text" class="form-control" placeholder="">
-                        <span class="input-group-addon" data-toggle="modal" data-target="#mdLocation">
-                            <span class="glyphicon glyphicon-search"></span>       
-                        </span>
+                    <div class="col-lg-10 col-md-10 input-group">  
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdLocation"><span class="glyphicon glyphicon-search"></span></button> 
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                  <div class="bfh-datepicker">
                     <label class="col-lg-2 col-md-2">สถานที่ส่งเอกสาร</label>
-                    <div class="col-lg-10 col-md-10 input-group date" id=''>          
-                        <input type="text" class="form-control" placeholder="">
-                        <span class="input-group-addon" data-toggle="modal" data-target="#mdDocument">
-                            <span class="glyphicon glyphicon-search"></span>       
-                        </span>
+                    <div class="col-lg-10 col-md-10 input-group date" id=''>
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdDocument"><span class="glyphicon glyphicon-search"></span></button> 
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-lg-6 col-md-6">
                     <div class="col-lg-4 col-md-4"><label>เลขผู้เสียภาษี</label></div>
-                    <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="bfh-datepicker">
                       <label class="col-lg-4 col-md-4">เอกสารสำคัญ</label>
-                      <div class="col-lg-8 col-md-8 input-group date" id=''>          
-                          <input type="text" class="form-control" placeholder="">
-                          <span class="input-group-addon" data-toggle="modal" data-target="#mdAddress">
-                              <span class="glyphicon glyphicon-search"></span>       
-                          </span>
+                      <div class="col-lg-8 col-md-8  input-group"> 
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdAddress"><span class="glyphicon glyphicon-search"></span></button> 
+                        </div>
                       </div>
                     </div>
                 </div>
@@ -65,11 +56,11 @@
             <div class="form-group">
                 <div class="col-lg-6 col-md-6">
                     <div class="col-lg-4 col-md-4"><label>Comp Phone</label></div>
-                    <div class="col-lg-7 col-md-7"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="col-lg-4 col-md-4"><label>Email</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div>
         </div>    
@@ -93,88 +84,88 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="bfh-datepicker">
                       <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #1</label>
-                      <div class="col-lg-7 col-md-7 input-group date" id=''>          
-                          <input type="text" class="form-control" placeholder="">
-                          <span class="input-group-addon" data-toggle="modal" data-target="#mdOfficer">
-                              <span class="glyphicon glyphicon-search"></span>       
-                          </span>
+                      <div class="col-lg-7 col-md-7 input-group" >          
+                          <input type="text" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-search"></span></button> 
+                            </div>
                       </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label>Email</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
                     <div class="bfh-datepicker">
                       <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #2</label>
-                      <div class="col-lg-7 col-md-7 input-group date" id=''>          
-                          <input type="text" class="form-control" placeholder="">
-                          <span class="input-group-addon" data-toggle="modal" data-target="#mdOfficer">
-                              <span class="glyphicon glyphicon-search"></span>       
-                          </span>
+                      <div class="col-lg-7 col-md-7 input-group" >          
+                          <input type="text" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-search"></span></button> 
+                            </div>
                       </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label>Email</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
                     <div class="bfh-datepicker">
                       <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #3</label>
-                      <div class="col-lg-7 col-md-7 input-group date" id=''>          
-                          <input type="text" class="form-control" placeholder="">
-                          <span class="input-group-addon" data-toggle="modal" data-target="#mdOfficer">
-                              <span class="glyphicon glyphicon-search"></span>       
-                          </span>
+                      <div class="col-lg-7 col-md-7 input-group" >          
+                          <input type="text" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-search"></span></button> 
+                            </div>
                       </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label>Email</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
                     <div class="bfh-datepicker">
                       <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #4</label>
-                      <div class="col-lg-7 col-md-7 input-group date" id=''>          
-                          <input type="text" class="form-control" placeholder="">
-                          <span class="input-group-addon" data-toggle="modal" data-target="#mdOfficer">
-                              <span class="glyphicon glyphicon-search"></span>       
-                          </span>
+                      <div class="col-lg-7 col-md-7 input-group" >          
+                          <input type="text" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-search"></span></button> 
+                            </div>
                       </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label>Email</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div>
         </div>
@@ -194,81 +185,81 @@
               <form class="form-horizontal">
                 <div class="form-group">
                   <div class="col-xs-1 col-sm-2" style="text-align: right; margin-right: -0.5cm;"><label style="margin-right: 1cm;">ชื่อ :</label></div>
-                  <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" ></div>
+                  <div class="col-xs-10 col-sm-10"><input class="form-control m" type="text" ></div>
                 </div>
                 <div class="form-group col-lg-12">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>เลขที่ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>หมู่ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                 </div>
 
                 <div class="form-group">
                       <div class="col-xs-1 col-sm-2" style="text-align: right; margin-right: -0.5cm;"><label style="margin-right: 1cm;">หมู่บ้าน :</label></div>
-                      <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-10 col-sm-10"><input class="form-control " type="text" ></div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ถนน :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>แขวง/ตำบล :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>เขต/อำเภอ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>จังหวัด :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ประเทศ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ZIP :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Phone 1 :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Phone 2 :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Fax :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Email :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Lattude :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Longltude :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
                   </div>
                 </div>
               </form>
@@ -294,39 +285,39 @@
                   <div class="form-group">
                     <div class="col-lg-6 col-md-6"> 
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ชื่อ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                     </div>
                     
                
                     <div class="col-lg-6 col-md-6"> 
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>นามสกุล :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                     </div>
                   </div>
                     
                   <div class="form-group">
                     <div class="col-lg-6 col-md-6"> 
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Login Name :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                     </div>
                     
                
                     <div class="col-lg-6 col-md-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Password :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                     </div>
                   </div>
                     
                   <div class="form-group">
                     <div class="col-lg-6 col-md-6"> 
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Phone No :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                     </div>
                       
                  
                     <div class="col-lg-6 col-md-6"> 
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Email :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                     </div>
                   </div>
                 
@@ -378,81 +369,81 @@
                 </div>
                 <div class="form-group">
                       <div class="col-xs-1 col-sm-2" style="text-align: right; margin-right: -0.5cm;"><label style="margin-right: 1cm;">ชื่อ :</label></div>
-                      <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-10 col-sm-10"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>เลขที่ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>หมู่ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                 </div>
 
                 <div class="form-group">
                       <div class="col-xs-1 col-sm-2" style="text-align: right; margin-right: -0.5cm;"><label style="margin-right: 1cm;">หมู่บ้าน :</label></div>
-                      <div class="col-xs-10 col-sm-10"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-10 col-sm-10"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ถนน :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>แขวง/ตำบล :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>เขต/อำเภอ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>จังหวัด :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ประเทศ :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ZIP :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Phone 1 :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Phone 2 :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Fax :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Email :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Lattude :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                   <div class="col-lg-6">
                       <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Longltude :</label></div>
-                      <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+                      <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
                   </div>
                 </div>
 
@@ -492,7 +483,7 @@
                   <div class="form-group">
                     <div class="col-lg-12 col-md-12">
                         <div class="col-lg-2 col-md-2"><label>ชื่อและเอกสาร :</label></div>
-                        <div class="col-lg-8 col-md-8"><input class="form-control input-sm" type="text" ></div>
+                        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                     </div>
                   </div>
                   
@@ -506,15 +497,7 @@
                     
                     </div>
                   </div>
-                 
-<!--                        <div class="col-lg-2 col-md-2"><label>ไฟล์ :</label></div>
-                            <div class="chosefile">
-                            <input type="file" name="file" class="filestyle"  required/>
-                            </div>-->
-              
-             
-               
-                
+
                 <table class="table">
                     <tr>
                         <th>No</th>
