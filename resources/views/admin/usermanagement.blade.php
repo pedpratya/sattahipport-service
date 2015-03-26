@@ -1,7 +1,7 @@
 @extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('usermanagement'))
 @section('content')
-<div class="container-fluid col-lg-10 col-md-10">
+<div class="container-fluid">
             <div class="col-lg-12 col-md-12 page-header">
                 <div class="col-lg-10 col-md-10">
                     <button type="button" class="btn btn-primary">Add User</button>
