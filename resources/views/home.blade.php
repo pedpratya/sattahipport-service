@@ -27,7 +27,7 @@
                     <div class="text-center">SATTAHIPPORT SYSTEM</div>
                     
                     <div class="panel panel-default panel-info">
-                      {!! Form::open(['route' => 'module-lis-post', 'class' => 'form-horizontal']) !!}
+                      {!! Form::open(['route' => 'sign-in', 'class' => 'form-horizontal']) !!}
                       <div class="panel-heading">
                         <h3 class="panel-title">เข้าสู่ระบบ</h3>
                       </div>                
