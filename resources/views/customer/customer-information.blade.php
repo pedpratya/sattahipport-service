@@ -2,8 +2,7 @@
 @section('content')
 
 <!-- form -->
-<div class="container container-center container-outter">
-  <div class="container container-inner">
+
     <form class="form-horizontal" > 
       <div class="col-lg-12 col-md-12"> </div>
       <div class="col-lg-8 col-md-8">
@@ -176,8 +175,7 @@
         </div>
         </div>
     </form>
-  </div>    
-</div><!-- End form -->
+<!-- End form -->
 
 <!-- mdLocation -->
 <div class="modal fade" id="mdLocation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
