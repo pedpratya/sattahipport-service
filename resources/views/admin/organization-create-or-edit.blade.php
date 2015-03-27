@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- header -->
-    <div class="col-lg-12 col-md-12 page-header">
+    <div class="col-lg-12 col-md-12">
       <div class="col-lg-10 col-md-10">
         <button type="button" class="btn btn-primary">ปรับปรุงข้อมูล</button>
       </div>
@@ -14,6 +14,7 @@
 
 <!-- body -->
     <div class="panel-body">
+    <div class="hr-topic"></div>
       <form class="form-horizontal">
           <div class="col-lg-10 col-md-10">                
             <div class="form-group">
@@ -54,11 +55,9 @@
               <div class="col-lg-12 col-md-12">    
                 <div class="col-lg-2 col-md-2"><label>Address</label></div>
                 <div class="col-lg-9 col-md-9">
-                  <div class="input-group">
-                    <input type="text" class="form-control" aria-label="...">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdAddress"><span class="glyphicon glyphicon-search"></span></button>
-                    </div>
+                  <div class="right-inner-addon ">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search" />
                   </div>
                 </div>
               </div>
@@ -116,23 +115,23 @@
       <div class="modal-body">
         <form class="form-horizontal">
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3"><p>เลขที่</p></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>เลขที่ :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
             </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3"><p>อาคาร</p></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>อาคาร :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
             </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3"><p>หมู่/ซอย</p></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>หมู่/ซอย :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
             </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3"><p>ถนน</p></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ถนน :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
             </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3"><p>จังหวัด</p></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>จังหวัด :</label></div>
               <div class="col-xs-8 col-sm-8">
                 <select class="form-control">
                   <option value="1">กรุงเทพ</option>
@@ -143,7 +142,7 @@
               </div>
             </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3"><p>อำเภอ</p></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>อำเภอ :</label></div>
               <div class="col-xs-8 col-sm-8">
                 <select class="form-control">
                   <option value="1">แม่สาย</option>
@@ -154,7 +153,7 @@
               </div>
               </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3"><p>ตำบล</p></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ตำบล :</label></div>
               <div class="col-xs-8 col-sm-8">
                 <select class="form-control">
                   <option value="1">เวียงพางคำ</option>
@@ -165,8 +164,8 @@
               </div>
             </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3"><p>รหัสไปรษณีย์</p></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>รหัสไปรษณีย์ :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
             </div>
         </form>           
       </div>
@@ -193,20 +192,20 @@
       <div class="modal-body">
         <form class="form-horizontal">
           <div class="form-group">
-            <div class="col-xs-3 col-sm-3"><p>Code</p></div>
-            <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Code :</label></div>
+            <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
           </div>
           <div class="form-group">
-            <div class="col-xs-3 col-sm-3"><p>ตำแหน่ง</p></div>
-            <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>ตำแหน่ง :</label></div>
+            <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
           </div>
           <div class="form-group">
-            <div class="col-xs-3 col-sm-3"><p>คำย่อ</p></div>
-            <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>คำย่อ :</label></div>
+            <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
           </div>
           <div class="form-group">
-            <div class="col-xs-3 col-sm-3"><p>Password expire</p></div>
-            <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Password expire :</label></div>
+            <div class="col-xs-8 col-sm-8"><input class="form-control" type="text" ></div>
           </div>
         </form>           
       </div>
@@ -230,7 +229,7 @@
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd" style="width: 100px; margin: 10px; 0 0 10px; ">Add</button>
         </div>
         <table class="table">
-          <tr style="background-color: #ebebeb">
+          <tr class="active">
             <th>No</th>
             <th>ตำแหน่ง</th>
             <th>คำย่อ</th>
