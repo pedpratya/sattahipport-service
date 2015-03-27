@@ -214,6 +214,12 @@ legend.scheduler-border {
     background-color: #ddd;   
 }
 .container-inner{
-   padding: 0px 50px 0px 50px;
+   padding: 10px 25px 0px 25px;
    background-color:#ffffff;     
+}
+.hr-topic {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
 }
