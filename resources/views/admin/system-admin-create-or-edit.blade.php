@@ -3,7 +3,6 @@
 @section('content')
 
 <!-- form body head-->  
-<div class="page-header">
   <div class="panel-body">
     <form class="form-horizontal">               
       <div class="form-group">
@@ -40,12 +39,11 @@
           <div class="col-lg-9 col-md-9"><input class="form-control" type="text" placeholder="URL" value="" style="margin-left: 0.8cm;"></div>
         </div>
         <div class="col-lg-2 col-md-2">
-          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mdAddMenu" style="margin: 0 20px; 0 0">Add Menu</button>
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mdAddMenu" style="margin: 0 85px; 0 0">Add Menu</button>
         </div>
       </div>
     </form>
-  </div>
-</div><!-- End form head -->
+  </div><!-- End form head -->
 
 
 <!-- Customer Registration -->
@@ -179,15 +177,15 @@
       <div class="modal-body">
         <form class="form-horizontal">
           <div class="form-group">
-              <div class="col-xs-4 col-sm-4"><p>Code :</p></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Code :</label></div>
               <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
             </div>
             <div class="form-group">
-              <div class="col-xs-4 col-sm-4"><p>Page name (URL) :</p></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Page name (URL) :</label></div>
               <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
             </div>
             <div class="form-group">
-              <div class="col-xs-4 col-sm-4"><p>Menu Name :</p></div>
+              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Menu Name :</label></div>
               <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
             </div>
         </form>           
@@ -217,11 +215,11 @@
       <div class="modal-body">
         <form class="form-horizontal">
           <div class="form-group">
-            <div class="col-xs-4 col-sm-4"><p>Code :</p></div>
+            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Code :</label></div>
             <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
           </div>
           <div class="form-group">
-            <div class="col-xs-4 col-sm-4"><p>Menu :</p></div>
+            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Menu :</label></div>
             <div class="col-xs-8 col-sm-8">
               <select class="form-control">
                 <option>Menu 1</option>
@@ -231,11 +229,11 @@
             </div>
           </div>
           <div class="form-group">
-            <div class="col-xs-4 col-sm-4"><p>Page name (URL) :</p></div>
+            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Page name (URL) :</label></div>
             <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
           </div>
           <div class="form-group">
-            <div class="col-xs-4 col-sm-4"><p>Page Name :</p></div>
+            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Page Name :</label></div>
             <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
           </div>
         </form>           

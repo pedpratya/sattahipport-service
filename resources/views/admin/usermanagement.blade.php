@@ -3,7 +3,7 @@
 @section('content')  
 
 <!-- header -->
-<div class="col-lg-12 col-md-12 page-header">
+<div class="col-lg-12 col-md-12">
     <div class="col-lg-10 col-md-10">
          <a href = "usermanagement-create-or-edit">
         <button type="button" class="btn btn-primary">Add User</button>
@@ -16,6 +16,7 @@
             
 <!-- form head-->
 <div class="container-fluid">
+<div class="hr-topic"></div>
     <form class="form-horizontal">    
       <div class="col-lg-10 col-md-10">                
         <div class="form-group">
@@ -80,7 +81,7 @@
     
 <!-- table -->
   <table class="table">
-    <tr style="background-color: #ebebeb">
+    <tr class="active">
         <th>No</th>
         <th>name</th>
         <th>แผนก</th>

@@ -3,7 +3,7 @@
 @section('content')
      
 <!-- header -->
-<div class="col-lg-12 col-md-12 page-header">
+<div class="col-lg-12 col-md-12">
   <div class="col-lg-10 col-md-10">
     <button type="button" class="btn btn-primary">Update</button>
     <a href = "usermanagement-userlog">
@@ -17,6 +17,7 @@
    
 <!-- form head-->         
 <div class="container-fluid">
+<div class="hr-topic"></div>
     <form class="form-horizontal">
     <div class="col-lg-10 col-md-10">                
       <div class="form-group">
@@ -132,7 +133,7 @@
           <tr>
             <td colspan="2"><input type="checkbox"> Select All 2:0</td>                              
           </tr>  
-          <tr style="background-color: #ebebeb">
+          <tr class="active">
             <th class="text-center">Page Name (URL)</th>
             <th class="text-center">Manage</th>
           </tr>
@@ -163,7 +164,7 @@
           <tr>
             <td colspan="2"><input type="checkbox"> Select All 2:0</td>                              
           </tr>  
-          <tr style="background-color: #ebebeb">
+          <tr class="active">
             <th class="text-center">Page Name (URL)</th>
             <th class="text-center">Manage</th>
           </tr>
