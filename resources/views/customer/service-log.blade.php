@@ -1,9 +1,28 @@
 @extends('layout.master')
 @section('breadcrumbs', Breadcrumbs::render('organization'))
 @section('content')
-
 <!-- header -->
-<div class="col-lg-12 col-md-12 page-header">
+<div class="col-lg-12 col-md-12">
+  <div class="col-lg-3 col-md-3">
+    <h4><b>Service Log</b></h4>
+  </div>
+  <div class="col-lg-4 col-md-4 bfh-datepicker pull-right">
+    <label class="col-lg-3 col-md-3" style="text-align: right; margin-right: 0.5cm;">Start Date :</label>
+    <div class="col-lg-8 col-md-8 input-group date">          
+      <input type="text" class="form-control" placeholder="">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 bfh-datepicker pull-right" >
+    <label class="col-lg-3 col-md-3" style="text-align: right; margin-right: 0.5cm;">End Date :</label>
+    <div class="col-lg-8 col-md-8 input-group date">          
+      <input type="text" class="form-control" placeholder="">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+    </div>
+  </div>
+</div><!-- End header -->
+<!-- header -->
+<!-- <div class="col-lg-12 col-md-12">
   <div class="col-lg-4 col-md-4">
     <label style="font-size: 20px;">Service Log</label>
   </div>
@@ -28,10 +47,12 @@
         </div>
       </div>
     </div>
-  </div>
-</div><!-- End header -->
+  </div> -->
+<!-- </div>End header -->
 
 <!-- table -->
+<div class="container">
+<div class="hr-topic"></div>
   <table class="table">
     <tr class="active">
         <th>Wait</th>
@@ -87,5 +108,5 @@
       <li><a href="#">7</a></li>
       <li><a href="#">&raquo;</a></li>
     </ul>
-
+</div>
 @stop

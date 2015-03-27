@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- header -->
-<div class="col-lg-12 col-md-12 page-header">
+<div class="col-lg-12 col-md-12">
   <div class="col-lg-10 col-md-10">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#">Add</button>
   </div>
@@ -14,6 +14,7 @@
 
 <!-- body -->
 <div class="panel-body">
+<div class="hr-topic"></div>
   <form class="form-horizontal">
     <div class="col-lg-12 col-md-12">                
       <div class="form-group">
@@ -23,7 +24,7 @@
         </div>
         <div class="col-lg-6 col-md-6">
           <label class="col-lg-4 col-md-4">ประเภทรถ</label>
-          <div class="col-lg-7 col-md-7">
+          <div class="col-lg-8 col-md-8">
             <select class="form-control" id="sel1">
               <option>--ประเภทรถ--</option>
             </select>
@@ -41,7 +42,7 @@
         </div>
         <div class="col-lg-6 col-md-6">
           <div class="col-lg-4 col-md-4"><label>สี</label></div>
-          <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
+          <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
         </div>
       </div>
       <div class="form-group">
@@ -54,14 +55,14 @@
         </div>
           <div class="col-lg-6 col-md-6">
             <div class="col-lg-4 col-md-4"><label>เบอร์ติดต่อ</label></div>
-            <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
+            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
           </div>
       </div>
       <div class="form-group">  
         <div class="col-lg-2 col-md-2"><label>ข้อมูลเจ้าของรถ</label></div>
-        <div class="col-lg-10 col-md-10 input-group date" id=''>          
-          <input type="text" class="form-control" placeholder="">
-          <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+        <div class=" col-lg-10 col-md-10 right-inner-addon ">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          <input type="search" class="form-control" placeholder="Search" />
         </div>
       </div>
     <!-- table -->

@@ -3,24 +3,22 @@
 @section('content')
 
 <!-- header -->
-<div class="col-lg-12 col-md-12 page-header">
+<div class="col-lg-12 col-md-12">
   <div class="col-lg-3 col-md-3">
     <button type="button" class="btn btn-primary">ขอใช้บริการ</button>
   </div>
   <div class="col-lg-3 col-md-3">
     <div class="form-group"> 
       <div class="col-lg-3 col-md-3"><label>ค้นหา</label></div>
-      <div class="col-lg-8 col-md-8" ><input type="text" class="form-control"   style="margin-left: 5px"></div>
+      <div class="col-lg-8 col-md-8" ><input type="text" class="form-control"></div>
     </div>
   </div>
   <div class="col-lg-3 col-md-3">
-    <div class="form-group"> 
-      <div class="col-lg-3 col-md-3"><label>Type</label></div>
-      <div class="input-group col-lg-8 col-md-8">
-        <select type="text" class="form-control">
-          <option value>Select...</option>
-        </select>
-      </div>
+    <label class="col-lg-3 col-md-3">Type</label>
+    <div class="col-lg-8 col-md-8">
+      <select class="form-control" id="sel1">
+        <option>--Select--</option>
+      </select>
     </div>
   </div>
   <div class="col-lg-3 col-md-3">
@@ -35,6 +33,7 @@
     </div>
   </div>
 </div><!-- End header -->
+
 
 <!-- body -->
 <div class="container">
