@@ -7,7 +7,6 @@
         <div class="box-menu-text-m">ข่าวสาร</div>
         <img src="{{ asset('images/icon-customermenu/news-icon.png') }}">
     </div>
-     
     <div class="box-menu">
         <div class="box-menu-text-m">EVENT</div>
         <img src="{{ asset('images/icon-customermenu/event-icon.png') }}">
