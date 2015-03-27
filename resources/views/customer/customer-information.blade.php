@@ -2,179 +2,164 @@
 @section('content')
 
 <!-- form -->
-
-    <form class="form-horizontal" > 
-      <div class="col-lg-12 col-md-12"> </div>
-      <div class="col-lg-8 col-md-8">
-        <div class="form-group">  
-          <div class="col-lg-2 col-md-2"><label>Code</label></div>
-          <div class="col-lg-10 col-md-10"> <p class="form-control-static">-- -- --</p></div>
+<form class="form-horizontal" > 
+  <div class="col-lg-12 col-md-12"> </div>
+  <div class="col-lg-8 col-md-8">
+    <div class="form-group">  
+      <div class="col-lg-2 col-md-2"><label>Code</label></div>
+      <div class="col-lg-10 col-md-10"> <p class="form-control-static">-- -- --</p></div>
+    </div>
+    <div class="form-group">                
+      <div class="col-lg-2 col-md-2"><label>ชื่อบริษัท</label></div>
+      <div class="col-lg-10 col-md-10"><input class="form-control" type="text" ></div>
+    </div>
+    <div class="form-group">     
+      <div class="bfh-datepicker">
+        <label class="col-lg-2 col-md-2">สถานที่ตั้ง</label>
+        <div class="col-lg-10 col-md-10 right-inner-addon ">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdLocation"/>
         </div>
-        <div class="form-group">                
-          <div class="col-lg-2 col-md-2"><label>ชื่อบริษัท</label></div>
-          <div class="col-lg-10 col-md-10"><input class="form-control" type="text" ></div>
+      </div>
+    </div>
+    <div class="form-group">
+       <div class="bfh-datepicker">
+        <label class="col-lg-2 col-md-2">สถานที่ส่งเอกสาร</label>
+        <div class="col-lg-10 col-md-10 right-inner-addon ">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
         </div>
-        <div class="form-group">     
-          <div class="bfh-datepicker">
-            <label class="col-lg-2 col-md-2">สถานที่ตั้ง</label>
-            <div class="col-lg-10 col-md-10 input-group">  
-              <input type="text" class="form-control">
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdLocation"><span class="glyphicon glyphicon-search"></span></button> 
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-6 col-md-6">
+        <div class="col-lg-4 col-md-4"><label>เลขผู้เสียภาษี</label></div>
+        <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="bfh-datepicker">
+          <label class="col-lg-4 col-md-4">เอกสารสำคัญ</label>
+          <div class="col-lg-8 col-md-8 right-inner-addon ">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdAddress"/>
           </div>
         </div>
-        <div class="form-group">
-           <div class="bfh-datepicker">
-            <label class="col-lg-2 col-md-2">สถานที่ส่งเอกสาร</label>
-            <div class="col-lg-10 col-md-10 input-group date" id=''>
-              <input type="text" class="form-control">
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdDocument"><span class="glyphicon glyphicon-search"></span></button> 
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-6 col-md-6">
+        <div class="col-lg-4 col-md-4"><label>Comp Phone</label></div>
+        <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="col-lg-4 col-md-4"><label>Email</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+    </div>
+  </div>    
+  <div class="col-lg-4 col-md-4">
+    <div class="col-lg-1 col-md-1"></div>
+    <div class="col-lg-11 col-md-11">
+      <fieldset class="scheduler-border">
+        <legend class="scheduler-border">ตราประทับ</legend>
+          <div class="col-lg-12 col-md-12 text-center">
+              <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9IjcwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTQweDE0MDwvdGV4dD48L2c+PC9zdmc+" alt="..." class="img-rounded" width="170">      
+          </div>
+          <div class="text-center"><button class="btn btn-primary col-lg-12 col-md-12" type="button">Update</button></div>
+      </fieldset>
+    </div>   
+  </div>
+  <div class="col-lg-12 col-md-12">
+    <div class="form-group">
+      <div class="col-lg-4 col-md-4">
+        <div class="bfh-datepicker">
+          <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #1</label>
+          <div class="col-lg-7 col-md-7 right-inner-addon ">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdOfficer"/>
           </div>
         </div>
-        <div class="form-group">
-          <div class="col-lg-6 col-md-6">
-            <div class="col-lg-4 col-md-4"><label>เลขผู้เสียภาษี</label></div>
-            <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="bfh-datepicker">
-              <label class="col-lg-4 col-md-4">เอกสารสำคัญ</label>
-              <div class="col-lg-8 col-md-8  input-group"> 
-                <input type="text" class="form-control">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdAddress"><span class="glyphicon glyphicon-search"></span></button> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-lg-6 col-md-6">
-            <div class="col-lg-4 col-md-4"><label>Comp Phone</label></div>
-            <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="col-lg-4 col-md-4"><label>Email</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-          </div>
-        </div>
-      </div>    
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
       <div class="col-lg-4 col-md-4">
         <div class="col-lg-1 col-md-1"></div>
-        <div class="col-lg-11 col-md-11">
-          <fieldset class="scheduler-border">
-            <legend class="scheduler-border">ตราประทับ</legend>
-              <div class="col-lg-12 col-md-12 text-center">
-                  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9IjcwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTQweDE0MDwvdGV4dD48L2c+PC9zdmc+" alt="..." class="img-rounded" width="170">      
-              </div>
-              <div class="text-center"><button class="btn btn-primary col-lg-12 col-md-12" type="button">Update</button></div>
-          </fieldset>
-        </div>   
+        <div class="col-lg-3 col-md-3"><label>Email</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
       </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="form-group">
-          <div class="col-lg-4 col-md-4">
-            <div class="bfh-datepicker">
-              <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #1</label>
-              <div class="col-lg-7 col-md-7 input-group" >          
-                <input type="text" class="form-control">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-search"></span></button> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-3 col-md-3"><label>Email</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-4 col-md-4">
+        <div class="bfh-datepicker">
+          <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #2</label>
+          <div class="col-lg-7 col-md-7 right-inner-addon ">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdOfficer"/>
           </div>
         </div>
-        <div class="form-group">
-          <div class="col-lg-4 col-md-4">
-            <div class="bfh-datepicker">
-              <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #2</label>
-              <div class="col-lg-7 col-md-7 input-group" >          
-                <input type="text" class="form-control">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-search"></span></button> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-3 col-md-3"><label>Email</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3"><label>Email</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-4 col-md-4">
+        <div class="bfh-datepicker">
+          <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #3</label>
+          <div class="col-lg-7 col-md-7 right-inner-addon ">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdOfficer"/>
           </div>
         </div>
-        <div class="form-group">
-          <div class="col-lg-4 col-md-4">
-            <div class="bfh-datepicker">
-              <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #3</label>
-              <div class="col-lg-7 col-md-7 input-group" >          
-                <input type="text" class="form-control">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-search"></span></button> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-3 col-md-3"><label>Email</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3"><label>Email</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-4 col-md-4">
+        <div class="bfh-datepicker">
+          <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #4</label>
+          <div class="col-lg-7 col-md-7 right-inner-addon ">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdOfficer"/>
           </div>
         </div>
-        <div class="form-group">
-          <div class="col-lg-4 col-md-4">
-            <div class="bfh-datepicker">
-              <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #4</label>
-              <div class="col-lg-7 col-md-7 input-group" >          
-                <input type="text" class="form-control">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-search"></span></button> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-3 col-md-3"><label>Email</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-lg-4 col-md-4"></div>
-          <div class="col-lg-4 col-md-4"></div>
-          <div class="col-lg-4 col-md-4">
-            <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-11 col-md-11"><button class="btn btn-primary btn-lg col-lg-12 col-md-12" type="button">Service Log</button></div>
-          </div>
-        </div>
-        </div>
-    </form>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4"><label>Phone No</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3"><label>Email</label></div>
+        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-4 col-md-4"></div>
+      <div class="col-lg-4 col-md-4"></div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-11 col-md-11"><button class="btn btn-primary btn-lg col-lg-12 col-md-12" type="button">Service Log</button></div>
+      </div>
+    </div>
+    </div>
+</form>
 <!-- End form -->
 
 <!-- mdLocation -->
