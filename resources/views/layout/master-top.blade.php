@@ -24,7 +24,10 @@
 		<div class="container"><!-- container -->
 		 @include('inc.topbar')
 		    
-		 @yield('content')
+                 <div class="container container-inner">
+                      @yield('content')
+                 </div>
+		
 			
 		</div><!-- /.container -->
 
