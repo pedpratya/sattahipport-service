@@ -24,26 +24,24 @@
 		<div class="container"><!-- container -->
 		<!-- ส่วนที่ 1 -->
 		 @include('inc.topbar')
-		 <!-- Bread crumb -->
+		<!-- Bread crumb -->
 	      <div id="breadcrumb">
 	      	<div class="row container-breadcrumb">
-                        @yield('breadcrumbs')
-		</div>
+                @yield('breadcrumbs')
+			</div>
 	      </div><!-- End Bread crumb -->
 
-		
-		  <div class="container-content"><!-- container Content-->
-                              
-                      <div class="left-menu-box col-lg-2 col-md-2 col-sm-2">
-                          <!-- ส่วนที่ 2 Left Manu-->
-                            @include('inc.left_manu')
-                      </div>
-                    
-                        <div class="container-fluid col-lg-10 col-md-10">
-                        <!-- ส่วนที่ 3 Content-->
-                            @yield('content')
-                        </div>
-		  </div>
+		<!-- container Content-->
+		  <div class="container-content">             
+              	<div class="left-menu-box col-lg-2 col-md-2 col-sm-2">
+                  <!-- ส่วนที่ 2 Left Manu-->
+                    @include('inc.left_manu')
+              	</div>
+            	<div class="container-fluid container-content col-lg-10 col-md-10">
+            	  <!-- ส่วนที่ 3 Content-->
+                	@yield('content')
+                </div>
+		  </div><!-- End container Content-->
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
