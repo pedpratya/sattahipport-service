@@ -4,7 +4,7 @@
 
 <div class="container-fluid">
   <table class="table"> 
-    <tr>
+    <tr class="active">
       <th class="text-center">วันเวลาที่เข้าใช้</th>
     </tr>
     <tr>
