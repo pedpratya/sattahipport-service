@@ -31,6 +31,7 @@ class WelcomeController extends Controller {
 	public function index()
 	{	
             $error = false;
+            
             return view('home', compact('error'));
 	}
 
