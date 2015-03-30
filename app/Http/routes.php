@@ -21,6 +21,8 @@ Route::get('module-list', 'MainController@getModuleList');
 
 Route::get('master-module', 'MainController@getMasterModule');
 
+Route::get('topbar-module', 'MainController@getTopbaeModule');
+
 Route::post('module-list', array(
     'as' => 'module-lis-post',
     'uses' => 'MainController@create'

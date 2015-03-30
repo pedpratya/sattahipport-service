@@ -35,7 +35,11 @@ class MainController extends Controller {
 	{
 		return view('master-module');
 	}
-        
+       
+    public function getTopbaeModule()
+    {
+        return view('layout.topbar-module');
+    } 
     /**
     * Check user login.
     *
