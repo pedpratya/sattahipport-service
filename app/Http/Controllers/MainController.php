@@ -69,7 +69,7 @@ class MainController extends Controller {
 	}
 
 	public function moduleList()
-	{
+        {
 		$menu = [
                             ['module' => ['name' => 'ระบบ Admin',                            'images' => 'images/icon-mainmenu/icon-admin.png',          'url' => '../public/admin/home']],
                             ['module' => ['name' => 'ระบบข้อมูลสารสน<p>เทศ</p>',               'images' => 'images/icon-mainmenu/icon-information.png',    'url' => '../public/admin/home']],

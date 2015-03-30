@@ -1,4 +1,4 @@
-@extends('layout.topbar-module')
+@extends('layout.master-top')
 
 
 @section('content')
@@ -6,7 +6,7 @@
         <div class="box-menu">
         <a href="{{ URL::to('/admin/home') }}">
             <div class="box-menu-text-m">{!! $value['module']['name'] !!}</div>
-            <img src="{{ asset('images/icon-mainmenu/icon-admin.png') }}">
+            <img src="{{ asset($value['module']['images']) }}">
         </a>  
         </div>
     @endforeach
