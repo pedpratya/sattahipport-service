@@ -13,5 +13,22 @@ Route::group(array('prefix' => 'service'), function() {
         function() {
             return View::make('service.service-request-note');
     }));
+ 
+    Route::get('service-request-data', array(
+        'as' => 'service-request-data',
+        function() {
+            return View::make('service.service-request-data');
+    }));
     
+    Route::get('no_unit/no5_1', array(
+        'as' => 'no_unit/no5_1',
+        function() {
+            return View::make('service.no5_1');
+    }));
+    
+    Route::get('no_unit/no5_2', array(
+        'as' => 'no_unit/no5_2',
+        function() {
+            return View::make('service.no5_2');
+    }));
 });
