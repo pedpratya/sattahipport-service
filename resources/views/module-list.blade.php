@@ -1,4 +1,4 @@
-@extends('layout.master-top')
+@extends('layout.topbar-module')
 
 
 @section('content')
@@ -10,7 +10,7 @@
         </a>  
         </div>
     @endforeach
-    
+     
     <!-- <div class="box-menu">
         <a href="{{ URL::to('/admin/home') }}">
             <div class="box-menu-text-m">ระบบ Admin</div>
