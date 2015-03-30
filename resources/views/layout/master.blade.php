@@ -62,7 +62,7 @@
                 <!-- /.row -->
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" id="content">
                         @yield('content')
                     </div>
                 </div>
@@ -77,10 +77,21 @@
     </div>
     <!-- /#wrapper -->
 
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+            var height_document = $( document ).height(),
+                height_content  = $('#content').height();
+            
+            if (height_document > height_content) {
+                $('#content').height(height_document - 140);
+            }
+        });
+    </script>
 </body>
 
 </html>
