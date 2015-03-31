@@ -3,11 +3,11 @@
 @section('content')
 
 <!-- header -->
-<div class="col-lg-12 col-md-12">
-  <div class="col-lg-10 col-md-10">
+<div class="col-md-12 col-md-12-offset-1">
+  <div class="col-md-10 col-md-10-offset-1">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#">Add</button>
   </div>
-  <div class="col-lg-2 col-md-2">
+  <div class="col-md-2 col-md-2-offset-1">
     <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
   </div>
 </div><!-- End header -->
@@ -16,50 +16,50 @@
 <div class="panel-body">
 <div class="hr-topic"></div>
   <form class="form-horizontal">
-    <div class="col-lg-12 col-md-12">                
-      <div class="form-group">
-        <div class="col-lg-6 col-md-6">
-          <div class="col-lg-4 col-md-4"><label>ทะเบียน</label></div>
-          <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
+    <div class="col-md-12 col-md-12-offset-1">                
+      <div class="row form-group">
+        <div class="col-md-6 col-md-6-offset-1">
+          <div class="col-md-4 col-md-4-offset-1"><label>ทะเบียน</label></div>
+          <div class="col-md-7 col-md-7-offset-1"><input class="form-control" type="text" ></div>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <label class="col-lg-4 col-md-4">ประเภทรถ</label>
-          <div class="col-lg-8 col-md-8">
+        <div class="col-md-6 col-md-6-offset-1">
+          <label class="col-md-4 col-md-4-offset-1">ประเภทรถ</label>
+          <div class="col-md-8 col-md-8-offset-1">
             <select class="form-control" id="sel1">
               <option>--ประเภทรถ--</option>
             </select>
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <div class="col-lg-6 col-md-6">
-            <label class="col-lg-4 col-md-4">ยี่ห้อ</label>
-            <div class="col-lg-7 col-md-7">
+      <div class="row form-group">
+        <div class="col-md-6 col-md-6-offset-1">
+            <label class="col-md-4 col-md-4-offset-1">ยี่ห้อ</label>
+            <div class="col-md-7 col-md-7-offset-1">
                 <select class="form-control" id="sel1">
                   <option>--ยี่ห้อ--</option>
                 </select>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="col-lg-4 col-md-4"><label>สี</label></div>
-          <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+        <div class="col-md-6 col-md-6-offset-1">
+          <div class="col-md-4 col-md-4-offset-1"><label>สี</label></div>
+          <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
         </div>
       </div>
-      <div class="form-group">
-        <div class="col-lg-6 col-md-6 bfh-datepicker">
-          <label class="col-lg-4 col-md-4">วันที่ลงทะเบียน</label>
-          <div class="col-lg-7 col-md-7 input-group date" id=''>          
+      <div class="row form-group">
+        <div class="col-md-6 col-md-6-offset-1 bfh-datepicker">
+          <label class="col-md-4 col-md-4-offset-1">วันที่ลงทะเบียน</label>
+          <div class="col-md-7 col-md-7-offset-1 input-group date" id=''>          
               <input type="text" class="form-control" placeholder="">
               <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
           </div>
         </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="col-lg-4 col-md-4"><label>เบอร์ติดต่อ</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+          <div class="col-md-6 col-md-6-offset-1">
+            <div class="col-md-4 col-md-4-offset-1"><label>เบอร์ติดต่อ</label></div>
+            <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
           </div>
       </div>
-      <div class="form-group">  
-        <div class="col-lg-2 col-md-2"><label>ข้อมูลเจ้าของรถ</label></div>
+      <div class="row form-group">  
+        <div class="col-md-2 col-md-2-offset-1"><label>ข้อมูลเจ้าของรถ</label></div>
         <div class=" col-lg-10 col-md-10 right-inner-addon ">
           <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
           <input type="search" class="form-control" placeholder="Search" />
@@ -67,6 +67,7 @@
       </div>
     <!-- table -->
       <label>ตารางรถที่ลงทะเบียน</label>
+      <div class="hr-topic"></div>
       <table class="table">
         <tr  class="active">
           <th >No</th>
