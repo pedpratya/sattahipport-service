@@ -18,15 +18,15 @@
 <div class="hr-topic"></div>
   <form class="form-horizontal">
     <div class="col-md-12 col-md-12-offset-1">                
-      <div class="form-group">  
+      <div class="row form-group">  
         <div class="col-md-2 col-md-2-offset-1"><label>Code</label></div>
         <div class="col-md-10 col-md-10-offset-1"> <p class="form-control-static">-- -- --</p></div>
       </div>
-      <div class="form-group">  
+      <div class="row form-group">  
         <div class="col-md-2 col-md-2-offset-1"><label>แปลงหมายเลข</label></div>
         <div class="col-md-10 col-md-10-offset-1"><input class="form-control" type="text" ></div>
       </div>
-      <div class="form-group">
+      <div class="row form-group">
         <div class="col-md-6 col-md-6-offset-1">
           <div class="col-md-4 col-md-4-offset-1"><label>ระยะเวลาเช่า</label></div>
           <div class="col-md-7 col-md-7-offset-1"><input class="form-control" type="text" ></div>
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-        <div class="form-group">
+        <div class="row form-group">
           <div class="col-md-6 col-md-6-offset-1">
             <div class="col-md-4 col-md-4-offset-1"><label>อัตราค่าเช่า</label></div>
             <div class="col-md-7 col-md-7-offset-1"><input class="form-control" type="text" ></div>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="col-md-6 col-md-6-offset-1">
-          <div class="form-group">
+          <div class="row form-group">
             <div class="col-md-12 col-md-12-offset-1">
               <label class="col-md-4 col-md-4-offset-1">ข้อมูลสัญญาเช่า</label>
               <div class="col-md-7 col-md-7-offset-1 right-inner-addon">          
@@ -62,13 +62,13 @@
               </div>
             </div>
           </div>
-          <div class="form-group">
+          <div class="row form-group">
             <div class="col-md-12 col-md-12-offset-1">
                 <div class="col-md-4 col-md-4-offset-1"><label>ขนาดพื้นที่</label></div>
                 <div class="col-md-7 col-md-7-offset-1"><input class="form-control" type="text" ></div>
             </div>
           </div>
-          <div class="form-group">
+          <div class="row form-group">
             <div class="col-md-12 col-md-12-offset-1 bfh-datepicker">
               <label class="col-md-4 col-md-4-offset-1">วงรอบ/พิกัด</label>
               <div class="col-md-7 col-md-7-offset-1 right-inner-addon">          
