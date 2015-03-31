@@ -7,7 +7,13 @@
  */
 
 Route::group(array('prefix' => 'no-unit'), function() {
-
+    
+    Route::get('no3', array(
+        'as' => 'no3',
+        function() {
+            return View::make('no-unit.no3');
+    }));
+    
     Route::get('no7', array(
         'as' => 'no7',
         function() {
