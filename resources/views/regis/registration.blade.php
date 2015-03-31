@@ -1,8 +1,7 @@
-@extends('layout.master-top')
+@extends('layout.master-module')
 @section('content')
 
-<div class="container container-center container-outter">
-<div class="container container-inner">
+
     <form class="form-horizontal" > 
         <div class="col-lg-12 col-md-12"> </div>
         <div class="col-lg-8 col-md-8">
@@ -171,8 +170,7 @@
         </div>
     </form>
     
-</div>    
-</div>
+
 
 <div class="modal fade" id="mdLocation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog  modal-lg">
