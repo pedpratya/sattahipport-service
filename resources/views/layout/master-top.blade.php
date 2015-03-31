@@ -11,7 +11,8 @@
 		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 		<link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
 
-		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+	    <!-- Custom CSS -->
+	    <link href="{!! asset('css/sb-admin.css') !!}" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
