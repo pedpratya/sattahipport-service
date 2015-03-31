@@ -46,17 +46,13 @@
         <div id="page-wrapper">
 
             <div class="container-fluid">
-                <div style="margin-top:100px;">
+                <div style="margin-top:80px;">
  
                 </div>
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <ol class="breadcrumb">
-                            <li class="active">
-    
-                            </li>
-                        </ol>
+
                     </div>
                 </div>
                 <!-- /.row -->
