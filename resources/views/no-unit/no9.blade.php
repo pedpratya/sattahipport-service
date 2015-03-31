@@ -2,9 +2,46 @@
 @section('content')
 <!-- header -->
     <div class="col-lg-12 col-md-12">
-        <h3 class="text-center"><b>แบบบันทึกการปฏิบัติงานเรือ ฐท.สส.24</b></h3>
-        <h3 class="text-center"><b>JOB RECORD</b></h3>
+        <h3 class="text-center"><b>แบบฟอร์มขอปฏิบัติงานขนถ่ายสินค้า</b></h3>
+
         <form class="form-horizontal" >
+            
+        <div class="form-group">
+            <div class="col-lg-8 col-md-8"></div>
+            <div class="col-lg-4 col-md-4">
+                <div class="bfh-datepicker">
+                  <label class="col-lg-3 col-md-3">บริษัท</label>
+                  <div class="col-lg-6 col-md-6 input-group" >          
+                      <input type="text" class="form-control">
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+            
+        <div class="form-group">
+            <div class="col-lg-8 col-md-8"></div>
+            <div class="col-lg-4 col-md-4">
+                <div class="bfh-datepicker">
+                  <label class="col-lg-3 col-md-3">ที่อยู่</label>
+                  <div class="col-lg-6 col-md-6 input-group" >          
+                      <input type="text" class="form-control">
+                  </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="form-group">
+            <div class="col-lg-8 col-md-8"></div>
+            <div class="col-lg-4 col-md-4">
+                <div class="bfh-datepicker">
+                  <label class="col-lg-3 col-md-3">โทร</label>
+                  <div class="col-lg-6 col-md-6 input-group" >          
+                      <input type="text" class="form-control">
+                  </div>
+                </div>
+            </div>
+        </div>      
             
         <div class="form-group">
             <div class="col-lg-8 col-md-8"></div>
@@ -19,152 +56,215 @@
                   </div>
                 </div>
             </div>
-        </div>
-        
+        </div>       
+            
+            
         <div class="row form-group">
             <div class="col-lg-6 col-md-6">
-                <label class="col-lg-3 col-md-3">ชื่อเรือ</label>
+                <label class="col-lg-2 col-md-2">เรื่อง</label>
+                <label class="col-lg-10 col-md-10">ขออนุญาตทำการบรรทุกขนถ่ายสินค้า</label>
+            </div>
+        </div>
+            
+        <div class="row form-group">
+            <div class="col-lg-6 col-md-6">
+                <label class="col-lg-2 col-md-2">เรียน</label>
+                <label class="col-lg-10 col-md-10">ผู้อำนวยการ การท่าเรือสัตหีบ ฐานทัพเรือสัตหีบ</label>
+            </div>
+        </div>  
+            
+        <div class="row form-group">
+            <div class="col-lg- col-md-2"></div>
+       
+            <div class="col-lg-5 col-md-5">
+                <label class="col-lg-3 col-md-3">ด้วยบริษัท</label>
                     <div class="col-lg-8 col-md-8 input-group" >          
                         <input type="text" class="form-control">
                     </div>        
             </div>
-            <div class="col-lg-6 col-md-6">
-                    <div class="col-lg-1 col-md-1"><input type="checkbox" ></div>                       
-                    <div class="col-lg-2 col-md-2"><label>ขาเข้า</label></div>
-                    
-                    <div class="col-lg-1 col-md-1"><input type="checkbox" ></div>                       
-                    <div class="col-lg-2 col-md-2"><label>ขาออก</label></div>                                   
-            </div>
-        </div>
-            
-            <div class="row form-group">
-                <div class="col-lg-6 col-md-6">
-                      <label class="col-lg-2 col-md-2">Name of Vessel</label>
-                      <div class="col-lg-9 col-md-9">          
-                      </div>        
- 
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-2 col-md-2"><label>Arrival</label></div>                       
-                    <div class="col-lg-1 col-md-1"></div>                                                 
-              
-           
-                    <div class="col-lg-2 col-md-2"><label>Departure</label></div>                       
-                    <div class="col-lg-4 col-md-4"></div>    
-            </div>
-            </div>
-            
-            <div class="row form-group">
-                <div class="col-lg-6 col-md-6">
-                    <label class="col-lg-9 col-md-9">พื้นที่ปฏิบัติงาน</label>
-                    <div class="col-lg-1 col-md-1"><input type="checkbox" ></div>                       
-                    <div class="col-lg-2 col-md-2"><label>จุกเสม็ด</label></div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="col-lg-1 col-md-1"><input type="checkbox" ></div>                       
-                    <div class="col-lg-2 col-md-2"><label>แหลมเทียน</label></div>
-                    <div class="col-lg-1 col-md-1"><input type="checkbox" ></div>                       
-                    <div class="col-lg-3 col-md-3"><label>ทุ่งโปรง</label></div>
-                </div>          
-            </div>
-       
-            
-            <div class="row form-group">
-                <div class="col-lg-6 col-md-6">
-                    <label class="col-lg-9 col-md-9">Working Area</label>
-                    <div class="col-lg-1 col-md-1"></div>                       
-                    <div class="col-lg-2 col-md-2"><label>Chuk Samet</label></div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="col-lg-1 col-md-1"></div>                       
-                    <div class="col-lg-2 col-md-2"><label>Laem tien</label></div>
-                    <div class="col-lg-1 col-md-1"></div>                       
-                    <div class="col-lg-3 col-md-3"><label>Thung Prong</label></div>
-                </div>          
-            </div>
-            
-            
-            <div class="row form-group">
-                <div class="col-lg-6 col-md-6">
-                    <label class="col-lg-3 col-md-3">เวลาออกจากท่า</label>
-                        <div class="col-lg-5 col-md-5 input-group" >          
-                             <input type="text" class="form-control">
-                         <div class="input-group-btn">
-                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer">
-                                 <span class="glyphicon glyphicon-calendar"></span>
-                             </button> 
-                         </div>
-                       </div>            
-                </div>
-            </div>
-            
-            <div class="row form-group">
-                <div class="col-lg-12 col-md-12">
-                      <label class="col-lg-5 col-md-5">Tug Departure Time</label>        
-                </div>
-            </div>
-            
-            <div class="row form-group">
-                <div class="col-lg-6 col-md-6">
-                    <label class="col-lg-3 col-md-3">เวลาเข้าเทียบท่า</label>
-                        <div class="col-lg-5 col-md-5 input-group" >          
-                             <input type="text" class="form-control">
-                         <div class="input-group-btn">
-                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer">
-                                 <span class="glyphicon glyphicon-calendar"></span>
-                             </button> 
-                         </div>
-                       </div>            
-                </div>
-            </div>
-            
-            <div class="row form-group">
-                <div class="col-lg-12 col-md-12">
-                      <label class="col-lg-5 col-md-5">Tug Arrival Time</label>        
-                </div>
-            </div>
-            
-            <div class="row form-group">
-                <div class="col-lg-6 col-md-6">
-                    <label class="col-lg-3 col-md-3">รวมเวลาการทำงาน</label>
-                        <div class="col-lg-5 col-md-5 input-group" >          
-                             <input type="text" class="form-control">
-                         <div class="input-group-btn">
-                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer">
-                                 <span class="glyphicon glyphicon-calendar"></span>
-                             </button> 
-                         </div>
-                       </div>            
-                </div>
-            </div>
-            
-            <div class="row form-group">
-                <div class="col-lg-12 col-md-12">
-                      <label class="col-lg-5 col-md-5">Total Hours</label>        
-                </div>
-            </div>
-            
-            
-            <div class="form-group">
-            <div class="col-lg-8 col-md-8"></div>
             <div class="col-lg-4 col-md-4">
+                <label class="col-lg-2 col-md-2">เรือ</label>
+                    <div class="col-lg-10 col-md-10 input-group" >          
+                        <input type="text" class="form-control">
+                    </div>        
+            </div>
+        </div>
+            
+        <div class="row form-group">
+            <div class="col-lg- col-md-2"></div>
 
-                  <label class="col-lg-3 col-md-3">ลงชื่อ</label>
-                  <div class="col-lg-6 col-md-6 input-group" >          
+            <div class="col-lg-5 col-md-5">
+                <div class="bfh-datepicker">
+                  <label class="col-lg-3 col-md-3">เที่ยววันที่</label>
+                  <div class="col-lg-8 col-md-8 input-group" >          
                       <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-calendar"></span></button> 
+                        </div>
+                  </div>
                 </div>
+       
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <label class="col-lg-2 col-md-2">เทียบท่า</label>
+                    <div class="col-lg-10 col-md-10 input-group" >          
+                        <input type="text" class="form-control">
+                    </div>        
             </div>
         </div>
             
-         <div class="form-group">
-            <div class="col-lg-9 col-md-9"></div>
-            <div class="col-lg-2 col-md-2">
-                <label class="text-left">Tug 24 Operator</label>
+            <div class="row form-group">
+            <div class="col-lg- col-md-2"></div>
+            <div class="col-lg-5 col-md-5">     
+                <div class="bfh-datepicker">
+                  <label class="col-lg-3 col-md-3">ในวันที่</label>
+                  <div class="col-lg-8 col-md-8 input-group" >          
+                      <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-calendar"></span></button> 
+                        </div>
+                  </div>
+                </div>    
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <label class="col-lg-2 col-md-2">เทียบท่า</label>
+                    <div class="col-lg-10 col-md-10 input-group" >          
+                        <input type="text" class="form-control">
+                    </div>        
+            </div>
+            </div>
+            
+            <div class="row form-group">
+            <div class="col-lg- col-md-2"></div>
+            <div class="col-lg-5 col-md-5">     
+                <div class="bfh-datepicker">
+                  <label class="col-lg-3 col-md-3">ในวันที่</label>
+                  <div class="col-lg-8 col-md-8 input-group" >          
+                      <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"><span class="glyphicon glyphicon-calendar"></span></button> 
+                        </div>
+                  </div>
+                </div>    
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <label class="col-lg-2 col-md-2">เทียบท่า</label>
+                    <div class="col-lg-10 col-md-10 input-group" >          
+                        <input type="text" class="form-control">
+                    </div>        
+            </div>
             </div>
         </div>
             
-        </form>
+        <div class="row form-group">
+            <div class="col-lg-3 col-md-3"></div>
+            <div class="col-lg-9 col-md-9 radio">
+                <label class="radio-inline"><input type="radio" name="optradio">ส่งมอบสินค้าให้ผู้รับโดยตรง</label>
+                <label class="radio-inline"><input type="radio" name="optradio">ฝากเก็บสินค้าในลานพัก/คลังพักของ กทส.ฐท.สส. ตามจำนวนสินค้าดังนี้</label>
+            </div>
+        </div>
+<table class="table" border='2'>
+    <tr>
+        <td colspan="3" class="text-center">สินค้าทั่วไป</td>
+        <td colspan="4" class="text-center">ตู้สินค้าขนถ่าย</td>
+        <td colspan="4" class="text-center">ตู้สินค้าบรรทุก</td>
+        <td class="text-center">หมายเหตุ</td>
+    </tr>
+    <tr>
+        <td>หีบห่อ</td>
+        <td>น้ำหนัก</td>
+        <td>ปริมาตร</td>
         
+        <td>๒๐'</td>
+        <td>๔๐'</td>
+        <td>เกิน ๔๐'</td>
+        <td>อื่นๆ</td>
+        
+        <td>๒๐'</td>
+        <td>๔๐'</td>
+        <td>เกิน ๔๐'</td>
+        <td>อื่นๆ</td>
+        
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+            <td colspan="3" class="text-center">ตู้เปล่า</td>
+            
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+    </tr>
+</table>
+<h4 class="text-center">ในการบรรทุกและขนถ่ายสินค้าข้างต้น เป็นการดำเนินการโดย</h4>
+        <div class="row form-group">
+            <div class="col-lg-3 col-md-3"></div>
+            <div class="col-lg-9 col-md-9 radio">
+                <label class="col-lg-4 col-md-4"><input type="radio" name="opatradio">ใช้ จนท.แรงงาน ของ กทส.ฐท.สส.</label>
+                  <label class="col-lg-2 col-md-2">จำนวน</label>
+                  <div class="col-lg-3 col-md-3 input-group" >          
+                      <input type="text" class="form-control">
+                  </div>
+            </div>      
+        </div>
+
+        <div class="row form-group">
+            <div class="col-lg-3 col-md-3"></div>
+            <div class="col-lg-9 col-md-9 radio">
+                <label class="col-lg-4 col-md-4"><input type="radio" name="opatradio">ใช้ จนท.แรงงาน ของ เรือ</label>
+                  <label class="col-lg-2 col-md-2">จำนวน</label>
+                  <div class="col-lg-3 col-md-3 input-group" >          
+                      <input type="text" class="form-control">
+                  </div>
+            </div>      
+        </div>
+
+        <div class="row form-group">
+            <div class="col-lg-3 col-md-3"></div>
+            <div class="col-lg-9 col-md-9 radio">
+                <label class="col-lg-4 col-md-4"><input type="radio" name="opatradio">ใช้ ปั้นจั่น ของ กทส.ฐท.สส.</label>
+                  <label class="col-lg-2 col-md-2">จำนวน</label>
+                  <div class="col-lg-3 col-md-3 input-group" >          
+                      <input type="text" class="form-control">
+                  </div>
+            </div>      
+        </div>
+
+        <div class="row form-group">
+            <div class="col-lg-3 col-md-3"></div>
+            <div class="col-lg-9 col-md-9 radio">
+                <label class="col-lg-4 col-md-4"><input type="radio" name="opatradio">ใช้ ปั้นจั่น ของ เรือ</label>
+                  <label class="col-lg-2 col-md-2">จำนวน</label>
+                  <div class="col-lg-3 col-md-3 input-group" >          
+                      <input type="text" class="form-control">
+                  </div>
+            </div>      
+        </div>
+        </form>
     </div><!-- End header -->
-@stop
+@stop   
