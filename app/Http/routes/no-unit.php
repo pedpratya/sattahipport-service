@@ -20,4 +20,9 @@ Route::group(array('prefix' => 'no-unit'), function() {
             return View::make('no-unit.no7');
     }));
     
+    Route::get('no26', array(
+        'as' => 'no26',
+        function() {
+            return View::make('no-unit.no26');
+    }));
 });
