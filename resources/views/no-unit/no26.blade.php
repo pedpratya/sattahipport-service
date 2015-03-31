@@ -74,7 +74,7 @@
         <div class="row form-group">
             <label class="col-md-2"></label>
             <div class="col-md-1">
-                <input type="radio" name="" id="" value="" > &nbsp; <label>สินค้า</label>
+                <input type="radio" name="" id="" value="" > &nbsp; <label>ยกสินค้า</label>
             </div>
             <div class="col-md-8">
               <input class="form-control" type="text" >
