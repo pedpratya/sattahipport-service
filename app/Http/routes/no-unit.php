@@ -33,6 +33,18 @@ Route::group(array('prefix' => 'no-unit'), function() {
             return View::make('no-unit.no7');
     }));
     
+    Route::get('no9', array(
+        'as' => 'no9',
+        function() {
+            return View::make('no-unit.no9');
+    }));
+    
+    Route::get('no24', array(
+        'as' => 'no24',
+        function() {
+            return View::make('no-unit.no24');
+    }));
+    
     Route::get('no26', array(
         'as' => 'no26',
         function() {
