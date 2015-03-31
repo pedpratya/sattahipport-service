@@ -18,58 +18,52 @@
 <div class="container-fluid">
 <div class="hr-topic"></div>
     <form class="form-horizontal">    
-      <div class="col-lg-10 col-md-10">                
-        <div class="form-group">
-          <div class="col-lg-6 col-md-6">    
-            <div class="col-lg-4 col-md-4"><label>Code</label></div>
-            <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="col-lg-6 col-md-6"> 
-            <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
-            <div class="col-lg-7 col-md-7"><input type="checkbox"></div>                                   
-          </div>
-        </div>                  
-        <div class="form-group">
-          <div class="col-lg-6 col-md-6">    
-            <div class="col-lg-4 col-md-4"><label>ชั้น/ยศ</label></div>
-            <div class="col-lg-7 col-md-7">
-              <select class="form-control">
-                <option>---Select---</option>
-                <option>ยศ1</option>
-                <option>ยศ2</option>
-                <option>ยศ3</option>
-              </select>
+      <div class="col-lg-10 col-md-10">
+            <div class="row form-group">
+                <label class="col-md-1">Code :&nbsp;</label>
+                <div class="col-md-4">
+                    <input class="form-control" type="text" >
+                </div>
+                <label class="col-md-1 col-md-offset-1">Active:&nbsp;</label>
+                <div class="col-md-4">
+                    <input type="checkbox">
+                </div>
             </div>
-          </div>
-            <div class="col-lg-6 col-md-6"> 
-              <div class="col-lg-3 col-md-3"><label>ชื่อ-สกุล</label></div>
-              <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>                                  
+            <div class="row form-group">
+                <label class="col-md-1">ชั้น/ยศ :&nbsp;</label>
+                <div class="col-md-4">
+                    <select class="form-control">
+                        <option>---Select---</option>
+                        <option>ยศ1</option>
+                        <option>ยศ2</option>
+                        <option>ยศ3</option>
+                    </select>
+                </div>
+                <label class="col-md-1 col-md-offset-1">ชื่อ-สกุล :&nbsp;</label>
+                <div class="col-md-4">
+                    <input class="form-control" type="text" >
+                </div>
             </div>
-        </div> 
-        <div class="form-group">
-          <div class="col-lg-6 col-md-6">    
-            <div class="col-lg-4 col-md-4"><label>หน่วยงาน</label></div>
-            <div class="col-lg-7 col-md-7">
-              <select class="form-control">
-                <option>---Select---</option>
-                <option>หน่วยงาน1</option>
-                <option>หน่วยงาน2</option>
-                <option>หน่วยงาน3</option>
-              </select>  
+            <div class="row form-group">
+                <label class="col-md-1">หน่วยงาน :&nbsp;</label>
+                <div class="col-md-4">
+                    <select class="form-control">
+                        <option>---Select---</option>
+                        <option>ยศ1</option>
+                        <option>ยศ2</option>
+                        <option>ยศ3</option>
+                    </select>
+                </div>
+                <label class="col-md-1 col-md-offset-1">ตำแหน่ง :&nbsp;</label>
+                <div class="col-md-4">
+                    <select class="form-control">
+                        <option>---Select---</option>
+                        <option>ยศ1</option>
+                        <option>ยศ2</option>
+                        <option>ยศ3</option>
+                    </select>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-6"> 
-             <div class="col-lg-3 col-md-3"><label>ตำแหน่ง</label></div>
-             <div class="col-lg-7 col-md-7">
-                <select class="form-control">
-                  <option>---Select---</option>
-                  <option>ตำแหน่ง1</option>
-                  <option>ตำแหน่ง2</option>
-                  <option>ตำแหน่ง3</option>
-                </select>     
-             </div>                                  
-          </div>
-        </div>
       </div>
       <div class="col-lg-2 col-md-2">
         <div class="form-group">
