@@ -96,6 +96,7 @@
                 </tr>
             </table>
         </div>
+        </div>    
         <div class="col-lg-12 col-md-12">
         <div class="row form-group">
             <label class="col-md-2">SIGNED (CHIEF OFFICER) :&nbsp;</label>
