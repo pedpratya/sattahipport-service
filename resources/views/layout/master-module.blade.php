@@ -40,7 +40,7 @@
         <div id="page-wrapper">
 
             <div class="container-fluid">
-                <div style="margin-top:30px;">
+                <div style="margin-top:100px;">
  
                 </div>
 
@@ -71,7 +71,7 @@
                 height_content  = $('#content').height();
             
             if (height_document > height_content) {
-                $('#content').height(height_document - 140);
+                $('#page-wrapper').height(height_document);
             }
         });
     </script>
