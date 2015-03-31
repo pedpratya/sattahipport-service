@@ -50,4 +50,10 @@ Route::group(array('prefix' => 'no-unit'), function() {
         function() {
             return View::make('no-unit.no4-2');
     }));
+    
+    Route::get('no30', array(
+        'as' => 'no30',
+        function() {
+            return View::make('no-unit.no30');
+    }));
 });

@@ -26,8 +26,9 @@
         </div>
         <div class="row form-group">
             <label class="col-md-2">ด้วย :&nbsp;</label>
-            <div class="col-md-9">
-                <input class="form-control" type="text" >
+            <div class="col-md-9 right-inner-addon ">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
             </div>
         </div>
         <div class="col-lg-12 col-md-12">
