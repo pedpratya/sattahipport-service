@@ -6,26 +6,27 @@
   <div class="panel-body">
     <form class="form-horizontal">               
       <div class="form-group">
-        <div class="col-lg-6 col-md-6">
-          <div class="col-lg-4 col-md-4"><label>Code</label></div>
-          <div class="col-lg-7 col-md-7">
+        <div class="col-md-6 col-md-6-offset-1">
+          <div class="col-md-4 col-md-4-offset-1"><label>Code</label></div>
+          <div class="col-md-7 col-md-7-offset-1">
             <input class="form-control" type="text" >
           </div>
         </div>
-        <div class="col-lg-6 col-md-6"> 
-          <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
-          <div class="col-lg-9 col-md-9"><input type="checkbox"></div>                                   
+        <div class="col-md-6 col-md-6-offset-1"> 
+          <div class="col-md-3"><label>Active</label></div>                       
+          <div class="col-md-9"><input type="checkbox"></div>                                   
         </div>
       </div>
-      <div class="col-lg-6 col-md-6">    
-        <div class="col-lg-4 col-md-4"><label>ชื่อ</label></div>
-        <div class="col-lg-7 col-md-7">
+      <div class="col-md-6 col-md-6-offset-1">    
+        <div class="col-md-4"><label>ชื่อ</label></div>
+        <div class="col-md-7">
           <input type="text" class="form-control">
         </div>
       </div>      
-      <div class="form-group col-lg-6">
-        <div class="col-lg-3 col-md-3"><label>หน่วยงาน</label></div>
-        <div class="col-lg-9 col-md-9">
+      <div class="form-group">
+      <div class="col-md-6 col-md-6-offset-1">
+        <div class="col-md-3"><label>หน่วยงาน</label></div>
+        <div class="col-md-9">
           <select class="form-control" id="sel1">
             <option>การท่า</option>
             <option>Admin</option>
@@ -33,12 +34,13 @@
           </select>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="col-lg-10 col-md-10">
-          <div class="col-lg-2 col-md-2"><label>Page name (URL</label></div>
-          <div class="col-lg-9 col-md-9"><input class="form-control" type="text" placeholder="URL" value="" style="margin-left: 0.8cm;"></div>
+      </div>
+      <div class="col-md-12 col-md-12-offset-1">
+        <div class="col-md-10 col-md-10-offset-1">
+          <div class="col-md-2"><label>Page name (URL</label></div>
+          <div class="col-md-9"><input class="form-control" type="text" placeholder="URL" value="" style="margin-left: 0.8cm;"></div>
         </div>
-        <div class="col-lg-2 col-md-2">
+        <div class="col-md-2 col-md-2-offset-1">
           <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mdAddMenu" style="margin: 0 85px; 0 0">Add Menu</button>
         </div>
       </div>
@@ -177,16 +179,16 @@
       <div class="modal-body">
         <form class="form-horizontal">
           <div class="form-group">
-              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Code :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Code :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control input-sm" type="text" ></div>
             </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Page name (URL) :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Page name (URL) :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control input-sm" type="text" ></div>
             </div>
             <div class="form-group">
-              <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Menu Name :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Menu Name :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control input-sm" type="text" ></div>
             </div>
         </form>           
       </div>
@@ -215,12 +217,12 @@
       <div class="modal-body">
         <form class="form-horizontal">
           <div class="form-group">
-            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Code :</label></div>
-            <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+            <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Code :</label></div>
+            <div class="col-md-8 col-md-8-offset-1"><input class="form-control input-sm" type="text" ></div>
           </div>
           <div class="form-group">
-            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Menu :</label></div>
-            <div class="col-xs-8 col-sm-8">
+            <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Menu :</label></div>
+            <div class="col-md-8 col-md-8-offset-1">
               <select class="form-control">
                 <option>Menu 1</option>
                 <option>Menu 2</option>
@@ -229,12 +231,12 @@
             </div>
           </div>
           <div class="form-group">
-            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Page name (URL) :</label></div>
-            <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+            <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Page name (URL) :</label></div>
+            <div class="col-md-8 col-md-8-offset-1"><input class="form-control input-sm" type="text" ></div>
           </div>
           <div class="form-group">
-            <div class="col-xs-3 col-sm-3" style="text-align: right; margin-right: 0.5cm;"><label>Page Name :</label></div>
-            <div class="col-xs-8 col-sm-8"><input class="form-control input-sm" type="text" ></div>
+            <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Page Name :</label></div>
+            <div class="col-md-8 col-md-8-offset-1"><input class="form-control input-sm" type="text" ></div>
           </div>
         </form>           
       </div>

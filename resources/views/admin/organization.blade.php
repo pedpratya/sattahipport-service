@@ -3,13 +3,13 @@
 @section('content')
 
 <!-- header -->
-    <div class="col-lg-12 col-md-12">
-      <div class="col-lg-10 col-md-10">
+    <div class="col-md-12 col-md-12-offset-1">
+      <div class="ccol-md-10 col-md-10-offset-1">
         <a href = "organization-create-or-edit">
           <button type="button" class="btn btn-primary">เพิ่มหน่วยงาน</button>
         </a>
       </div>
-      <div class="col-lg-2 col-md-2">
+      <div class="col-md-2 col-md-2-offset-1">
         <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
       </div>
     </div><!-- End header -->
@@ -20,19 +20,19 @@
     <div class="hr-topic"></div> 
       <form class="form-horizontal"> 
         <div class="form-group"> 
-          <div class="col-lg-6 col-md-6">
-            <div class="col-lg-3 col-md-3"><label>Code</label></div>
-            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+          <div class="col-md-6 col-md-6-offset-1">
+            <div class="col-md-3 col-md-3-offset-1"><label>Code</label></div>
+            <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
           </div>
-          <div class="col-lg-6 col-md-6"> 
-            <div class="col-lg-3 col-md-3"><label>Active</label></div>                       
-            <div class="col-lg-8 col-md-8"><input type="checkbox" ></div>                                   
+          <div class="col-md-6 col-md-6-offset-1"> 
+            <div class="col-md-3 col-md-3-offset-1"><label>Active</label></div>                       
+            <div class="col-md-8 col-md-8-offset-1"><input type="checkbox" ></div>                                   
           </div>
         </div>
         <div class="form-group">
-          <div class="col-lg-6 col-m8-6">    
-            <div class="col-lg-3 col-md-3"><label>ชื่อ</label></div>
-            <div class="col-lg-8 col-md-8">
+          <div class="col-md-6 col-md-6-offset-1">    
+            <div class="col-md-3 col-md-3-offset-1"><label>ชื่อ</label></div>
+            <div class="col-md-8 col-md-8-offset-1">
               <input type="text" class="form-control">
             </div>
           </div>
