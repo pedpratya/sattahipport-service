@@ -14,6 +14,19 @@ Route::group(array('prefix' => 'no-unit'), function() {
             return View::make('no-unit.no3');
     }));
     
+        
+    Route::get('no_unit/no5_1', array(
+        'as' => 'no_unit/no5_1',
+        function() {
+            return View::make('service.no5_1');
+    }));
+    
+    Route::get('no_unit/no5_2', array(
+        'as' => 'no_unit/no5_2',
+        function() {
+            return View::make('service.no5_2');
+    }));
+    
     Route::get('no7', array(
         'as' => 'no7',
         function() {
