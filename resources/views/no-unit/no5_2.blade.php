@@ -1,4 +1,4 @@
-@extends('layout.master-top')
+@extends('layout.master-module')
 @section('content')
 <!-- header -->
     <div class="col-lg-12 col-md-12">
