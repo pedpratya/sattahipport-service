@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" style="padding-left:20px; padding-right:20px;">
                         @yield('content')
                     </div>
                 </div>
