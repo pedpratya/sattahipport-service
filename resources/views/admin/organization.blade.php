@@ -4,15 +4,15 @@
 
 <!-- header -->
     <div class="col-md-12 col-md-12-offset-1">
-      <div class="ccol-md-10 col-md-10-offset-1">
+      <div class="col-md-10 col-md-10-offset-1">
         <a href = "organization-create-or-edit">
-          <button type="button" class="btn btn-primary">เพิ่มหน่วยงาน</button>
+        <button type="button" class="btn btn-primary">เพิ่มหน่วยงาน</button>
         </a>
       </div>
       <div class="col-md-2 col-md-2-offset-1">
         <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
       </div>
-    </div><!-- End header -->
+    </div><!--End header -->
     
   
 <!-- body -->
