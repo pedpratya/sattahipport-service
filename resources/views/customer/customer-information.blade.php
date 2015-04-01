@@ -16,18 +16,22 @@
     <div class="form-group">     
       <div class="bfh-datepicker">
         <label class="col-lg-2 col-md-2">สถานที่ตั้ง</label>
-        <div class="col-lg-10 col-md-10 right-inner-addon ">
-          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-          <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdLocation"/>
+        <div class="col-lg-10 col-md-10 input-group">
+          <input type="search" class="form-control" placeholder="Search">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdLocation"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </div>
         </div>
       </div>
     </div>
     <div class="form-group">
        <div class="bfh-datepicker">
         <label class="col-lg-2 col-md-2">สถานที่ส่งเอกสาร</label>
-        <div class="col-lg-10 col-md-10 right-inner-addon ">
-          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-          <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
+        <div class="col-lg-10 col-md-10 input-group">
+          <input type="search" class="form-control" placeholder="Search">
+          <div class="input-group-btn">
+           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdDocument"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </div>
         </div>
       </div>
     </div>
@@ -39,9 +43,11 @@
       <div class="col-lg-6 col-md-6">
         <div class="bfh-datepicker">
           <label class="col-lg-4 col-md-4">เอกสารสำคัญ</label>
-          <div class="col-lg-8 col-md-8 right-inner-addon ">
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdAddress"/>
+          <div class="col-lg-8 col-md-8 input-group">
+          <input type="search" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdAddress"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -74,9 +80,11 @@
       <div class="col-lg-4 col-md-4">
         <div class="bfh-datepicker">
           <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #1</label>
-          <div class="col-lg-7 col-md-7 right-inner-addon ">
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdOfficer"/>
+          <div class="col-lg-7 col-md-7 input-group">
+          <input type="search" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -94,9 +102,11 @@
       <div class="col-lg-4 col-md-4">
         <div class="bfh-datepicker">
           <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #2</label>
-          <div class="col-lg-7 col-md-7 right-inner-addon ">
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdOfficer"/>
+          <div class="col-lg-7 col-md-7 input-group">
+            <input type="search" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -114,9 +124,11 @@
       <div class="col-lg-4 col-md-4">
         <div class="bfh-datepicker">
           <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #3</label>
-          <div class="col-lg-7 col-md-7 right-inner-addon ">
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdOfficer"/>
+          <div class="col-lg-7 col-md-7 input-group">
+          <input type="search" class="form-control" placeholder="Search" >
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdOfficer"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -134,9 +146,11 @@
       <div class="col-lg-4 col-md-4">
         <div class="bfh-datepicker">
           <label class="col-lg-4 col-md-4">เจ้าหน้าที่ #4</label>
-          <div class="col-lg-7 col-md-7 right-inner-addon ">
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdOfficer"/>
+          <div class="col-lg-7 col-md-7 input-group">
+          <input type="search" class="form-control" placeholder="Search" >
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="button"data-toggle="modal" data-target="#mdOfficer"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </div>  
           </div>
         </div>
       </div>
