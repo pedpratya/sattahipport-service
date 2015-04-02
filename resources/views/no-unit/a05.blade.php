@@ -55,41 +55,41 @@
             </div>
             <div class="row form-group">
                 <table class="table table-bordered">
-                            <tr>
-                                <th>ลำดับ</th>
-                                <th>รายการสินค้า</th>
-                                <th>ขนาด (ก x ย x ส)</th>
-                                <th>จำนวน</th>
-                                <th>ปริมาตร</th>
-                                <th>น้ำหนัก</th>
-                                <th>หมายเหตุ</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>CONTAINER</td>
-                                <td>600 x 245 x 260</td>
-                                <td>1</td>
-                                <td>38.220</td>
-                                <td>9.0</td>
-                                <td>38.220</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>CONTAINER</td>
-                                <td>600 x 245 x 260</td>
-                                <td>1</td>
-                                <td>78.998</td>
-                                <td>20.0</td>
-                                <td>78.998</td>
-                            </tr>
-                             <tr>
-                                 <td class="text-right" colspan="3"lspan>TOTAL &nbsp;&nbsp;&nbsp;</td>                                
-                                <td>24</td>
-                                <td>275.939</td>
-                                <td>261.200</td>
-                                <td>425.939</td>
-                            </tr>
-                         </table>
+                    <tr>
+                        <th>ลำดับ</th>
+                        <th>รายการสินค้า</th>
+                        <th>ขนาด (ก x ย x ส)</th>
+                        <th>จำนวน</th>
+                        <th>ปริมาตร</th>
+                        <th>น้ำหนัก</th>
+                        <th>หมายเหตุ</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>CONTAINER</td>
+                        <td>600 x 245 x 260</td>
+                        <td>1</td>
+                        <td>38.220</td>
+                        <td>9.0</td>
+                        <td>38.220</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CONTAINER</td>
+                        <td>600 x 245 x 260</td>
+                        <td>1</td>
+                        <td>78.998</td>
+                        <td>20.0</td>
+                        <td>78.998</td>
+                    </tr>
+                     <tr>
+                         <td class="text-right" colspan="3"lspan>TOTAL &nbsp;&nbsp;&nbsp;</td>                                
+                        <td>24</td>
+                        <td>275.939</td>
+                        <td>261.200</td>
+                        <td>425.939</td>
+                    </tr>
+                 </table>
             </div>
     </form> 
 @stop
