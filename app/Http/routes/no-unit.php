@@ -15,16 +15,16 @@ Route::group(array('prefix' => 'no-unit'), function() {
     }));
     
         
-    Route::get('no5_1', array(
-        'as' => 'no5_1',
+    Route::get('no5-1', array(
+        'as' => 'no5-1',
         function() {
-            return View::make('no-unit.no5_1');
+            return View::make('no-unit.no5-1');
     }));
     
-    Route::get('no5_2', array(
-        'as' => 'no5_2',
+    Route::get('no5-2', array(
+        'as' => 'no5-2',
         function() {
-            return View::make('no-unit.no5_2');
+            return View::make('no-unit.no5-2');
     }));
     
     Route::get('no7', array(
