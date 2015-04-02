@@ -9,13 +9,13 @@
         <div class="col-lg-12 col-md-12 hr-topic"></div>
         <div class="row form-group">
             <label class="col-md-2">บริษัท :&nbsp;</label>
-            <div class="col-md-3">
+            <div class="col-md-10">
                 <input class="form-control" type="text" >
             </div>
         </div>
         <div class="row form-group">
             <label class="col-md-2">วันที่ :&nbsp;</label>
-            <div class="col-md-3">
+            <div class="col-md-10">
                 <div class="input-group">
                     <input type="text" class="form-control">
                     <div class="input-group-btn">
@@ -38,7 +38,7 @@
         </div>
         <div class="row form-group">
             <label class="col-md-2">ด้วย บริษัท :&nbsp;</label>
-            <div class="col-md-9 right-inner-addon ">
+            <div class="col-md-10 right-inner-addon ">
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                 <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
             </div>
@@ -49,35 +49,45 @@
             </div>       
         </div>    
         <div class="row form-group">
-            <label class="col-md-2"></label>
-            <div class="col-md-3">
-                <input class="form-control" type="text" >
-            </div>
-            <label class="col-md-2 col-md-offset-1">นับตั้งแต่วันที่ :&nbsp;</label>
-            <div class="col-md-3 input-group">
-                <input type="text" class="form-control">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+            <div class="col-md-6">
+                <label class="col-md-4"></label>
+                <div class="col-md-8">
+                    <input class="form-control" type="text" >
                 </div>
             </div>
-        </div> 
-        <div class="row form-group">
-            <label class="col-md-2">เวลา</label>
-            <div class="col-md-3">
-                <input class="form-control" type="text" >
+            <div class="col-md-6">    
+                <label class="col-md-4 text-center">นับตั้งแต่วันที่ :&nbsp;</label>
+                <div class="col-md-8 input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                    </div>
+                </div>
             </div>
-            <label class="col-md-2 col-md-offset-1">ถึงวันที่ :&nbsp;</label>
-            <div class="col-md-3 input-group">
-                <input type="text" class="form-control">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+         </div>    
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label class="col-md-4">เวลา</label>
+                <div class="col-md-8">
+                    <input class="form-control" type="text" >
+                </div>
+            </div>
+            <div class="col-md-6">    
+                <label class="col-md-4 text-center">ถึงวันที่ :&nbsp;</label>
+                <div class="col-md-8 input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row form-group">
-            <label class="col-md-2">เวลา</label>
-            <div class="col-md-3">
-                <input class="form-control" type="text" >
+            <div class="col-md-6">
+                <label class="col-md-4">เวลา</label>
+                <div class="col-md-8">
+                    <input class="form-control" type="text" >
+                </div>
             </div>
         </div>
         <div class="row form-group">
@@ -93,8 +103,7 @@
             </div>
         </div>  
         <div class="row form-group">
-            <label class="col-md-2"></label>
-            <div class="col-md-2">
+            <div class="col-md-2 col-md-offset-2">
                 <input type="radio" name="" id="" value="" > &nbsp; <label>รถยนต์/รถบรรทุก ขนาด</label>
             </div>
             <div class="col-md-2">
@@ -115,21 +124,21 @@
         </div> 
         <div class="row form-group">
             <label class="col-md-2 text-right">1 .&nbsp;</label>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <input class="form-control" type="text" >
             </div>
-            <label class="col-md-2 col-md-offset-1 text-right">2 .&nbsp;</label>
-            <div class="col-md-3">
+            <label class="col-md-2 text-right">2 .&nbsp;</label>
+            <div class="col-md-4">
                 <input class="form-control" type="text" >
             </div>
         </div>
         <div class="row form-group">
             <label class="col-md-2 text-right">3 .&nbsp;</label>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <input class="form-control" type="text" >
             </div>
-            <label class="col-md-2 col-md-offset-1 text-right">4 .&nbsp;</label>
-            <div class="col-md-3 ">
+            <label class="col-md-2 text-right">4 .&nbsp;</label>
+            <div class="col-md-4 ">
                 <input class="form-control" type="text" >
             </div>
         </div>
@@ -138,7 +147,7 @@
             <div class="col-md-2">
                 <input type="radio" name="" id="" value="" > &nbsp; <label>วัสดุอุปกรณ์อื่นๆ</label>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-8">
               <input class="form-control" type="text" >
             </div>
         </div>
