@@ -50,7 +50,7 @@
                         <th class="text-center" rowspan="2">เริ่มการขนถ่าย วัน/เวลา</th>
                         <th class="text-center" rowspan="2">เสร็จสิ้นการขนถ่าย วัน/เวลา</th>
                         <th class="text-center" colspan="2">จำนวนสินค้า</th>
-                        <th class="text-center" rowspan="2">ปริมาตร</th>
+                        <th class="text-center" rowspan="2">ปริมาตร VOLUME;(M3)</th>
                         <th class="text-center" rowspan="2">หมายเหตุ</th>
                     </tr>
                     <tr>
