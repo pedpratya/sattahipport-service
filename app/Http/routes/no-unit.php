@@ -68,4 +68,46 @@ Route::group(array('prefix' => 'no-unit'), function() {
         function() {
             return View::make('no-unit.no30');
     }));
+
+    Route::get('a01', array(
+        'as' => 'a01',
+        function() {
+            return View::make('no-unit.a01');
+    }));
+
+    Route::get('a02', array(
+        'as' => 'a02',
+        function() {
+            return View::make('no-unit.a02');
+    }));
+    Route::get('a03', array(
+        'as' => 'a03',
+        function() {
+            return View::make('no-unit.a03');
+    }));
+    Route::get('a04', array(
+        'as' => 'a04',
+        function() {
+            return View::make('no-unit.a04');
+    }));
+    Route::get('a05', array(
+        'as' => 'a05',
+        function() {
+            return View::make('no-unit.a05');
+    }));
+    Route::get('a06', array(
+        'as' => 'a06',
+        function() {
+            return View::make('no-unit.a06');
+    }));
+    Route::get('a07', array(
+        'as' => 'a07',
+        function() {
+            return View::make('no-unit.a07');
+    }));
+    Route::get('a08', array(
+        'as' => 'a08',
+        function() {
+            return View::make('no-unit.a08');
+    }));
 });
