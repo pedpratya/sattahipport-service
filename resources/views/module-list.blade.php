@@ -1,12 +1,11 @@
-@extends('layout.master-module')
-
+@extends('layout.master-mainmanu')
 
 @section('content')
     @foreach($modules as $key => $value)
         <div class="box-menu">
         <a href="{{ URL::to('/admin/home') }}">
-            <div class="box-menu-text-m">{!! $value['module']['name'] !!}</div>
-            <img src="{{ asset($value['module']['images']) }}">
+            <img src="{{ asset($value['module']['images']) }}">            
+            <span>{!! $value['module']['name'] !!}</span>
         </a>  
         </div>
     @endforeach
