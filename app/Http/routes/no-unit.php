@@ -15,28 +15,22 @@ Route::group(array('prefix' => 'no-unit'), function() {
     }));
     
         
-    Route::get('no_unit/no5_1', array(
-        'as' => 'no_unit/no5_1',
+    Route::get('no5-1', array(
+        'as' => 'no5-1',
         function() {
-            return View::make('service.no5_1');
+            return View::make('no-unit.no5-1');
     }));
     
-    Route::get('no_unit/no5_2', array(
-        'as' => 'no_unit/no5_2',
+    Route::get('no5-2', array(
+        'as' => 'no5-2',
         function() {
-            return View::make('service.no5_2');
+            return View::make('no-unit.no5-2');
     }));
     
     Route::get('no7', array(
         'as' => 'no7',
         function() {
             return View::make('no-unit.no7');
-    }));
-    
-    Route::get('no9', array(
-        'as' => 'no9',
-        function() {
-            return View::make('no-unit.no9');
     }));
     
     Route::get('no24', array(
@@ -62,13 +56,55 @@ Route::group(array('prefix' => 'no-unit'), function() {
         function() {
             return View::make('no-unit.no4-2');
     }));
-	
+    
     Route::get('no30', array(
         'as' => 'no30',
         function() {
             return View::make('no-unit.no30');
-    }));   
-	
+    }));
+
+    Route::get('a01', array(
+        'as' => 'a01',
+        function() {
+            return View::make('no-unit.a01');
+    }));
+
+    Route::get('a02', array(
+        'as' => 'a02',
+        function() {
+            return View::make('no-unit.a02');
+    }));
+    Route::get('a03', array(
+        'as' => 'a03',
+        function() {
+            return View::make('no-unit.a03');
+    }));
+    Route::get('a04', array(
+        'as' => 'a04',
+        function() {
+            return View::make('no-unit.a04');
+    }));
+    Route::get('a05', array(
+        'as' => 'a05',
+        function() {
+            return View::make('no-unit.a05');
+    }));
+    Route::get('a06', array(
+        'as' => 'a06',
+        function() {
+            return View::make('no-unit.a06');
+    }));
+    Route::get('a07', array(
+        'as' => 'a07',
+        function() {
+            return View::make('no-unit.a07');
+    }));
+    Route::get('a08', array(
+        'as' => 'a08',
+        function() {
+            return View::make('no-unit.a08');
+    }));
+
     Route::get('test2', array(
         'as' => 'test2',
         function() {

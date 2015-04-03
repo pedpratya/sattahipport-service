@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('organization-create-or-edit'))
 @section('content')
 
