@@ -57,11 +57,38 @@
              <span class="help-block">dd-mm-yyyy</span>
          </div>          
       </form>
-      <a data-toggle="modal" href="#styledModal" class="btn btn-primary">Styled Modal</a>                                      
+      <a data-toggle="modal" href="#styledModal" class="btn btn-primary">Styled Modal</a>   
 					</div> <!-- /.row -->
 
 				</div> <!-- /.portlet-content -->
 
+ 				<div class="portlet-content">
+
+					<div class="row">
+                        <div class="col-sm-4">
+                            <h4>Default timepicker</h4>
+                            <div class="input-group bootstrap-timepicker">
+                                <input id="tp-ex-1" type="text" class="form-control">
+                                <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <h4>Inside a modal</h4>
+                            <div class="input-group bootstrap-timepicker">
+                                <input id="tp-ex-2" type="text" class="form-control">
+                                <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            
+                        </div>
+                        
+                    </div> <!-- /.row -->
+
+				</div> <!-- /.portlet-content -->      
+                               
 			</div> <!-- /.portlet -->
 			
 

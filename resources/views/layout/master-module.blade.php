@@ -14,7 +14,8 @@
 	<link rel="stylesheet" href="{!! asset('css/font-awesome.min.css') !!}" type="text/css" />		
 	<link rel="stylesheet" href="{!! asset('css/bootstrap.min.css') !!}" type="text/css" />	
 	<link rel="stylesheet" href="{!! asset('js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.css') !!}" type="text/css" />		
-
+	<link rel="stylesheet" href="{!! asset('js/plugins/magnific/magnific-popup.css') !!}" type="text/css" />
+        
 	<link rel="stylesheet" href="{!! asset('js/plugins/icheck/skins/minimal/blue.css') !!}" type="text/css" />
 	<link rel="stylesheet" href="{!! asset('js/plugins/datepicker/datepicker.css') !!}" type="text/css" />
 	<link rel="stylesheet" href="{!! asset('js/plugins/select2/select2.css') !!}" type="text/css" />
@@ -103,7 +104,6 @@
 <!--modal popup-->
 <script src="{{ asset('js/plugins/magnific/jquery.magnific-popup.min.js') }}"></script>
 <script src="{{ asset('js/plugins/howl/howl.js') }}"></script>
-<script src="{{ asset('js/form/popups.js') }}"></script>
 
 <script src="{{ asset('js/App-tamplate.js') }}"></script>
 
