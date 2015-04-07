@@ -21,7 +21,12 @@
     
 <!-- form    -->
 <div class="portlet">
- <div class="portlet">
+  <div class="portlet-header">
+    <h3>
+      <i class="fa fa-tasks"></i>
+      เพิ่มหน่วยงาน
+    </h3>
+  </div> <!-- /.portlet-header -->
   <div class="portlet-content">
     <div class="row">
       <form class="form-horizontal">
@@ -85,7 +90,7 @@
                 </div>                                  
               </div>
             </div>
-            <div class="form-group">
+            <div class="row form-group">
               <div class="col-md-12 col-md-12-offset-1">    
                 <div class="col-md-2 col-md-2-offset-1"><label>หน่วยงานต้นสังกัด:</label></div>
                 <div class="col-md-9 col-md-9-offset-1">
@@ -99,7 +104,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-2 col-md-2-offset-1">
             <div class="form-group">
               <button type="button" class="btn btn-primary col-lg-8" style="width: 140px;">Update Logo</button>
@@ -111,10 +115,8 @@
       </form>
     </div>
   </div>
- </div><!-- /.portlet-header -->
-</div><!-- /.form   -->
-
-<div class="form-group"></div>      
+</div><!-- /.portlet-header -->
+    
 
 <!-- table -->
 <div class="portlet">
@@ -127,10 +129,10 @@
 
  <!--content -->
   <div class="portlet-content">
-    <div class="col-lg-1 col-md-1">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd" style="width: 100px; margin: 10px; 0 0 10px; ">Add</button>
-    </div>
-    <table class="table">
+    <!-- <div class="col-lg-1 col-md-1"> -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd" style="width: 100px; margin: 0 0 10px; ">Add</button>
+    <!-- </div> -->
+    <table class="table table-bordered table-hover">
       <tr class="active">
         <th>No</th>
         <th>ตำแหน่ง</th>
@@ -162,7 +164,10 @@
     </table> 
   </div> 
 </div><!--End panel table -->
+@stop
 
+
+@section('modalhtml')
 <!-- modal Address -->           
 <div id="mdAddress" class="modal fade">
   <div class="modal-dialog">
@@ -278,7 +283,11 @@
     </div>
   </div>
 </div><!-- End modal Add -->
-
 @stop
+
+@section('bottomscript')
+  <script src="{{ asset('js/form/test2.js') }}"></script>
+@stop
+
 
 

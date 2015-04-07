@@ -23,6 +23,12 @@
   
 <!-- body -->
 <div class="portlet">
+  <div class="portlet-header">
+    <h3>
+      <i class="fa fa-tasks"></i>
+      เพิ่มหน่วยงาน
+    </h3>
+  </div> <!-- /.portlet-header -->
   <div class="portlet-content">
     <div class="row">
       <form class="form-horizontal"> 
@@ -51,45 +57,41 @@
 </div> <!-- /.portlet -->
 
 <!-- table -->
-<div class="portlet">
-  <div class="portlet-content">
-    <table class="table">
-        <tr class="active">
-          <th>No</th>
-          <th>Name</th>
-          <th>คำย่อ</th>
-          <th>Code</th>
-          <th>Description</th>
-          <th>Edit</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>ท่าเรือสัตหีบ</td>
-          <td>ทพส.-ทร</td>
-          <td>T00</td>
-          <td></td>
-          <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>การท่า</td>
-          <td>-</td>
-          <td>T100</td>
-          <td></td>
-          <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Beer</td>
-          <td>-</td>
-          <td>T101</td>
-          <td></td>
-          <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-        </tr>
-    </table><!-- End table -->
-  </div>
-</div>
-    
+<table class="table table-bordered table-hover">
+  <tr class="active">
+    <th>No</th>
+    <th>Name</th>
+    <th>คำย่อ</th>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Edit</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>ท่าเรือสัตหีบ</td>
+    <td>ทพส.-ทร</td>
+    <td>T00</td>
+    <td></td>
+    <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>การท่า</td>
+    <td>-</td>
+    <td>T100</td>
+    <td></td>
+    <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Beer</td>
+    <td>-</td>
+    <td>T101</td>
+    <td></td>
+    <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
+  </tr>
+</table><!-- End table -->
+
 
 
   <!-- pagin -->
