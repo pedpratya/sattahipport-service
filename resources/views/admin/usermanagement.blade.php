@@ -2,68 +2,83 @@
 @section('breadcrumbs', Breadcrumbs::render('usermanagement'))
 @section('content')  
 
-<!-- header -->
-<div class="col-lg-12 col-md-12">
-    <div class="col-lg-10 col-md-10">
-         <a href = "usermanagement-create-or-edit">
-        <button type="button" class="btn btn-primary">Add User</button>
-         </a>
+<div class="row">
+  <div class="col-md-8 col-sm-8">
+    <a href = "usermanagement-create-or-edit">
+    <button type="button" class="btn btn-primary">Add User</button>
+    </a>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="col-md-4 col-sm-4"></div>
+    <div class="col-md-6 col-sm-6">
+      <label>พิมพ์ข้อมูลทั้งหมด</label>
     </div>
-    <div class="col-lg-2 col-md-2">
-        <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
+    <div class="col-md-1 col-sm-1">
+      <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-print"></button> 
     </div>
-</div><!-- End header -->
+  </div>
+</div><!--End header -->
+
+
+
             
-<!-- form head-->
-<div class="container-fluid">
-<div class="hr-topic"></div>
+<!-- form    -->
+<div class="portlet">
+ <div class="portlet">
+  <div class="portlet-content">
     <form class="form-horizontal">    
       <div class="col-lg-10 col-md-10">
-            <div class="row form-group">
-                <label class="col-md-1">Code :&nbsp;</label>
-                <div class="col-md-4">
-                    <input class="form-control" type="text" >
-                </div>
-                <label class="col-md-1 col-md-offset-1">Active:&nbsp;</label>
-                <div class="col-md-4">
-                    <input type="checkbox">
-                </div>
+        <div class="form-group">
+            <div class="col-md-6 col-md-6-offset-1">
+              <div class="col-md-4"><label>Code :</label></div>
+              <div class="col-md-7">
+                <input class="form-control" type="text" >
+              </div>
             </div>
-            <div class="row form-group">
-                <label class="col-md-1">ชั้น/ยศ :&nbsp;</label>
-                <div class="col-md-4">
-                    <select class="form-control">
-                        <option>---Select---</option>
-                        <option>ยศ1</option>
-                        <option>ยศ2</option>
-                        <option>ยศ3</option>
-                    </select>
-                </div>
-                <label class="col-md-1 col-md-offset-1">ชื่อ-สกุล :&nbsp;</label>
-                <div class="col-md-4">
-                    <input class="form-control" type="text" >
-                </div>
+            <div class="col-md-6 col-md-6-offset-1"> 
+              <div class="col-md-3"><label>Active :</label></div>                       
+              <div class="col-md-9"><input type="checkbox"></div>                                   
             </div>
-            <div class="row form-group">
-                <label class="col-md-1">หน่วยงาน :&nbsp;</label>
-                <div class="col-md-4">
-                    <select class="form-control">
-                        <option>---Select---</option>
-                        <option>ยศ1</option>
-                        <option>ยศ2</option>
-                        <option>ยศ3</option>
-                    </select>
-                </div>
-                <label class="col-md-1 col-md-offset-1">ตำแหน่ง :&nbsp;</label>
-                <div class="col-md-4">
-                    <select class="form-control">
-                        <option>---Select---</option>
-                        <option>ยศ1</option>
-                        <option>ยศ2</option>
-                        <option>ยศ3</option>
-                    </select>
-                </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6 col-md-6-offset-1">
+              <div class="col-md-4"><label>ชั้น/ยศ :</label></div>
+              <div class="col-md-7">
+                <select class="form-control">
+                    <option>---Select---</option>
+                    <option>ยศ1</option>
+                    <option>ยศ2</option>
+                    <option>ยศ3</option>
+                </select>
+              </div>
             </div>
+            <div class="col-md-6 col-md-6-offset-1"> 
+              <div class="col-md-3"><label>ชื่อ-สกุล :</label></div>                       
+              <div class="col-md-9">
+                <input class="form-control" type="text">
+              </div>                                   
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6 col-md-6-offset-1">
+              <div class="col-md-4"><label>หน่วยงาน :</label></div>
+              <div class="col-md-7">
+                <select class="form-control">
+                    <option>---Select---</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-6-offset-1"> 
+              <div class="col-md-3"><label>ตำแหน่ง :</label></div>                       
+              <div class="col-md-9">
+                <select class="form-control">
+                    <option>ยศ1</option>
+                    <option>ยศ2</option>
+                    <option>ยศ3</option>
+                </select>
+              </div>                                   
+            </div>
+        </div>
       </div>
       <div class="col-lg-2 col-md-2">
         <div class="form-group">
@@ -71,9 +86,13 @@
         </div>
       </div>    
     </form>
-</div><!-- End form head-->
+   </div>
+  </div>
+</div>
     
 <!-- table -->
+<div class="portlet">
+  <div class="portlet-content">
   <table class="table">
     <tr class="active">
         <th>No</th>
@@ -91,9 +110,23 @@
         <td>xxxx</td>
         <td>24-07-16</td>
         <td><input type="checkbox"></td>
-        <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></td>
+        <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
     </tr>
   </table><!-- End table -->
+  </div>
+</div>
 
+<!-- pagin -->
+  <ul class="pagination pull-left">
+    <li><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
 
 @stop
