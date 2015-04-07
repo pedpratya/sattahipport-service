@@ -1,4 +1,5 @@
-@extends('layout.master-module')
+﻿@extends('layout.master-module')
+@section('breadcrumbs', Breadcrumbs::render('nounit-a08'))
 @section('content')
     <form class="form-horizontal">
         <div class="col-lg-12 col-md-12">
@@ -7,9 +8,9 @@
          </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
         
-            <div class="row form-group">
-                <table class="table table-bordered">
-                    <tr>
+            <div class="form-group">
+                <table class="table table-bordered table-hover">
+                    <tr class="active">
                         <th class="text-center" rowspan="2">ลำดับ</th>
                         <th class="text-center" rowspan="2"></th>
                         <th class="text-center" rowspan="2">ชื่อเรือ</th>
@@ -21,7 +22,7 @@
                         <th class="text-center" colspan="6">สินค้าขาออก</th>
                         <th class="text-center" rowspan="2">หมายเหตุ</th>
                     </tr>
-                    <tr>
+                    <tr class="active">
                         <th class="text-center">รายการ</th>
                         <th class="text-center">จำนวน</th>
                         <th class="text-center">อุปกรณ์ฯ</th>

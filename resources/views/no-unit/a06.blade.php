@@ -1,4 +1,5 @@
-@extends('layout.master-module')
+﻿@extends('layout.master-module')
+@section('breadcrumbs', Breadcrumbs::render('nounit-a06'))
 @section('content')
     <form class="form-horizontal">
         <div class="col-lg-12 col-md-12">
@@ -9,7 +10,7 @@
             <div class="row form-group">
                 <div class="col-lg-12 col-md-12">
                 <table class="table table-bordered">
-                    <tr>
+                    <tr class="active">
                       <th colspan="6">SAHIP TO:</th>
                       <th colspan="2">ATWOOO MAKO</th>
                       <th colspan="2">VESSEL NAME:</th>
@@ -20,7 +21,7 @@
                       <th colspan="2">WELL</th>
                       <th colspan="2">BB-11H-ST 2</th>
                     </tr>
-                    <tr>
+                    <tr class="active">
                       <th colspan="6">SAHIP FROM:</th>
                       <th colspan="2">SATTHAHIP PORT</th>
                       <th>DATE</th>
@@ -31,8 +32,8 @@
                       <th colspan="2">&nbsp;</th>
                       <th colspan="4">VOLUME CU MTRS</th>
                       <th>&nbsp;</th>
-                    </tr>
-                    <tr>
+                    </tr class="active">
+                    <tr class="active">
                       <th rowspan="2">RESOURCE NO.</th>
                       <th rowspan="2">CONDITION CODE</th>
                       <th rowspan="2">WORKMATE REF.</th>
@@ -51,7 +52,7 @@
                       <th><p>FOOTPRINT</p>
                       <p>(SQMTRS)</p></th>
                     </tr>
-                    <tr>
+                    <tr class="active">
                       <th><p>UNIT</p>
                       <p>GROSS</p>
                       <p>WT</p></th>

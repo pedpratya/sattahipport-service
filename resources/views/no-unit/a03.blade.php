@@ -1,11 +1,24 @@
-@extends('layout.master-module')
+﻿@extends('layout.master-module')
+@section('breadcrumbs', Breadcrumbs::render('nounit-a03'))
 @section('content')
-    <form class="form-horizontal">
-        <div class="col-lg-12 col-md-12">
-                <h3 class="text-center">CARGOES BACKLOAD PLAN</h3>
-         </div>
-        <div class="col-lg-12 col-md-12 hr-topic"></div>
-            <div class="row form-group">
+
+
+			<div class="portlet">
+
+				<div class="portlet-header">
+
+					<h3>
+						<i class="fa fa-tasks"></i>
+						CARGOES BACKLOAD PLAN
+					</h3>
+
+				</div> <!-- /.portlet-header -->
+
+				<div class="portlet-content">
+
+					<div class="row">   
+        <form class="form-horizontal">                                    
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-4 col-md-4"><label>DATE UPDATE :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8 input-group">
@@ -16,9 +29,14 @@
                     </div>
                 </div> 
             </div>
-            <div class="row form-group">
+	</form> 				</div> <!-- /.row -->
+
+				</div> <!-- /.portlet-content -->
+
+			</div> <!-- /.portlet -->                                            
+            <div class="form-group">
                 <table class="table table-bordered">       
-                    <tr>
+                    <tr class="active">
                         <th class="text-center"></th>
                         <th class="text-center"></th>
                         <th class="text-center"></th>
@@ -81,5 +99,6 @@
                     
                  </table>
             </div>
-    </form> 
+
+
 @stop
