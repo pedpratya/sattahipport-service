@@ -72,7 +72,7 @@
          </div>    
         <div class="form-group">
             <div class="col-md-6">
-                <label class="col-md-4">เวลา</label>
+                <label class="col-md-4">เวลา :</label>
                 <div class="col-md-8">
                     <input class="form-control" type="text" >
                 </div>
@@ -89,7 +89,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-6">
-                <label class="col-md-4">เวลา</label>
+                <label class="col-md-4">เวลา :</label>
                 <div class="col-md-8">
                     <input class="form-control" type="text" >
                 </div>
@@ -97,26 +97,36 @@
         </div>
         <div class="form-group">
             <label class="col-md-2">ดังต่อไปนี้ :&nbsp;</label>
-            <div class="col-md-2">
+        </div>  
+        <div class="form-group">
+            <label class="col-md-2"></label>
+            <div class="col-md-3">
                 <input type="radio" name="" id="" value="" > &nbsp; <label>เจ้าหน้าที่ จำนวน</label>
             </div>
             <div class="col-md-2">
               <input class="form-control" type="text" >
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
              <label>&nbsp;&nbsp;คน (ตามเอกสารที่แนบมา)</label>
             </div>
         </div>  
         <div class="form-group">
-            <div class="col-md-2 col-md-offset-2">
+            <label class="col-md-2"></label>
+            <div class="col-md-3">
                 <input type="radio" name="" id="" value="" > &nbsp; <label>รถยนต์/รถบรรทุก ขนาด</label>
             </div>
             <div class="col-md-2">
-              <input class="form-control" type="text" >
+                <input class="form-control" type="text" >
             </div>
-            <div class="col-md-1">
-             <label>&nbsp;&nbsp;ล้อ/ตัน</label>
+            <div class="col-md-4">
+                <label>&nbsp;&nbsp;ล้อ/ตัน</label>
             </div>
+        </div> 
+
+
+
+        <div class="form-group">
+            <label class="col-md-4"></label>
             <div class="col-md-1">
                 <label>จำนวน</label>
             </div>
