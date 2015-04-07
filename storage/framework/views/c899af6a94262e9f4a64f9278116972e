@@ -14,7 +14,15 @@
 	<link rel="stylesheet" href="<?php echo asset('css/font-awesome.min.css'); ?>" type="text/css" />		
 	<link rel="stylesheet" href="<?php echo asset('css/bootstrap.min.css'); ?>" type="text/css" />	
 	<link rel="stylesheet" href="<?php echo asset('js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.css'); ?>" type="text/css" />		
-
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/magnific/magnific-popup.css'); ?>" type="text/css" />
+        
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/icheck/skins/minimal/blue.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/datepicker/datepicker.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/select2/select2.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/timepicker/bootstrap-timepicker.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/fileupload/bootstrap-fileupload.css'); ?>" type="text/css" />        
+        
 	<link rel="stylesheet" href="<?php echo asset('css/App.css'); ?>" type="text/css" />
 
 	<link rel="stylesheet" href="<?php echo asset('css/custom.css'); ?>" type="text/css" />
@@ -77,12 +85,29 @@
 		</li>
 	</ul>
 </footer>
-	
+
+<!-- #modal html -->
+<?php echo $__env->yieldContent('modalhtml'); ?>
+
 <script src="<?php echo e(asset('js/libs/jquery-1.9.1.min.js')); ?>"></script>
 <script src="<?php echo e(asset('js/libs/jquery-ui-1.9.2.custom.min.js')); ?>"></script>
 <script src="<?php echo e(asset('js/libs/bootstrap.min.js')); ?>"></script>
 
+<script src="<?php echo e(asset('js/plugins/icheck/jquery.icheck.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/datepicker/bootstrap-datepicker.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/timepicker/bootstrap-timepicker.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/select2/select2.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/autosize/jquery.autosize.min.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/textarea-counter/jquery.textarea-counter.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/fileupload/bootstrap-fileupload.js')); ?>"></script>
+<!--modal popup-->
+<script src="<?php echo e(asset('js/plugins/magnific/jquery.magnific-popup.min.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/howl/howl.js')); ?>"></script>
+
 <script src="<?php echo e(asset('js/App-tamplate.js')); ?>"></script>
+
+<?php echo $__env->yieldContent('bottomscript'); ?>
 </body>
 
 </html>

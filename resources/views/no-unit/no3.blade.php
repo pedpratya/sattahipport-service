@@ -1,12 +1,14 @@
 @extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('nounit-no3'))
-@section('content')	
-<div class="row">
-    <label for="inputSearch1" class="col-md-10 col-md-offset-1 control-label text-center">
-    แบบขอเปลี่ยนแปลง / ยกเลิกคำร้องขอใช้ท่า
-    </label>
-</div>
-<div class="hr-topic"></div>
+@section('content')
+<div class="portlet">	
+    <div class="portlet-header">
+        <h3>
+            <i class="fa fa-tasks"></i> 
+            แบบขอเปลี่ยนแปลง / ยกเลิกคำร้องขอใช้ท่า
+         </h3>    
+    </div>
+<div class="portlet-content">
 <form class="form-horizontal">
     <div class="form-group">
         <div class="col-lg-6 col-md-6">
@@ -275,6 +277,8 @@
         </div>
     </div>
 </form>
+</div>
+</div>
 
 <!--search-regis-vessel -->
 <div class="modal fade md-confirm-save" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">

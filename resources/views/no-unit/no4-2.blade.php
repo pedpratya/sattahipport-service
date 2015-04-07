@@ -2,11 +2,15 @@
 @section('breadcrumbs', Breadcrumbs::render('nounit-no4-2'))
 @section('content')
 <!-- header -->
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <h3 class="text-center">คำร้องขอใช้บริการเรือลากจูง ฐท.สส.24</h3>
-  </div><!-- End header -->
+<div class="portlet">
+    <div class="portlet-header">
+        <h3>
+            <i class="fa fa-tasks"></i>
+            คำร้องขอใช้บริการเรือลากจูง ฐท.สส.24
+        </h3>
+  </div>
+<div class="portlet-content">  
 <form class="form-horizontal">
-    <div class="col-lg-12 col-md-12 hr-topic"></div>
     <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">วันที่เรือเข้า : </label></div>
@@ -347,4 +351,7 @@
         </div>
     </div>
 </form>
+</div>
+</div>
+
 @stop

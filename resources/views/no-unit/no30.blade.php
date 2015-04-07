@@ -2,12 +2,16 @@
 @section('breadcrumbs', Breadcrumbs::render('nounit-no30'))
 @section('content')
 
-    <form class="form-horizontal">
-        <div class="col-lg-12 col-md-12">
-            <h3 class="text-center">การท่าเรือสัตหีบ ฐานทัพเรือสัตหีบ</h3>
-            <p class="text-center">แบบฟอร์มขออนุญาตนำเจ้าหน้าที่ และวัสดุอุปกรณ์อื่นๆผ่าน เขา-ออก</p>
+<div class="portlet">    
+        <div class="portlet-header">
+            <h3>
+            <i class="fa fa-tasks"></i>
+                การท่าเรือสัตหีบ ฐานทัพเรือสัตหีบ
+                แบบฟอร์มขออนุญาตนำเจ้าหน้าที่ และวัสดุอุปกรณ์อื่นๆผ่าน เขา-ออก
+            </h3>
         </div>
-        <div class="col-lg-12 col-md-12 hr-topic"></div>
+    <div class="portlet-content">
+    <form class="form-horizontal">    
         <div class="form-group">
             <label class="col-md-2">บริษัท :&nbsp;</label>
             <div class="col-md-10">
@@ -40,7 +44,7 @@
         <div class="form-group">
             <label class="col-md-2">ด้วย บริษัท :&nbsp;</label>
             <div class="col-md-10 right-inner-addon">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-search" aria-hidden="true">&nbsp;</span>
                 <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
             </div>
         </div>
@@ -152,6 +156,8 @@
               <input class="form-control" type="text" >
             </div>
         </div>
+    </div>    
 
     </form> 
+</div>    
 @stop

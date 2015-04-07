@@ -2,12 +2,17 @@
 @section('breadcrumbs', Breadcrumbs::render('nounit-no5-1'))
 @section('content')
 <!-- header -->
-    <div class="col-lg-12 col-md-12">
-        <h3 class="text-center">แบบบันทึกการปฏิบัติงานเรือ ฐท.สส.23</h3>
-        <h3 class="text-center">JOB RECORD</h3>
-        <div class="col-lg-12 col-md-12 hr-topic"></div>
+<div class="portlet">
+    <div class="portlet-header">
+          <h3>
+           <i class="fa fa-tasks"></i>
+        แบบบันทึกการปฏิบัติงานเรือ ฐท.สส.23
+        JOB RECORD
+        </h3>
     </div>    
+    <div class="portlet-content">    
         <form class="form-horizontal" >
+ 
             <div class="form-group">
                 <div class="col-lg-6 col-md-6">                 
                     <div class="col-lg-3 col-md-3"><label>(DD/MM/YY) :&nbsp;</label></div>
@@ -72,7 +77,7 @@
             </div> 
             <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-3 col-md-3"><label>เวลาเข้าเทียบท่า<br>Tug Arrival Time  :&nbsp;</label></div>
+                    <div class="col-lg-3 col-md-3"><label>เวลาเข้าเทียบท่า<br>Tug Arrival Time :</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
@@ -84,7 +89,10 @@
                     </div>
                 </div> 
             </div>
+
         </form>
+    </div>
+</div>     
         
    
 @stop

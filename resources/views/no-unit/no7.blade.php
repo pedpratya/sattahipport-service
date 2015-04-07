@@ -1,14 +1,17 @@
 @extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('nounit-no7'))
 @section('content')
-    <form class="form-horizontal">
-        <div class="col-lg-12 col-md-12">
-                <h3 class="text-center">PORT OF SATTAHIP; SATTAHIP NAVAL BASE</h3>
-                <p class="text-center">THE HABOUR SECTION     EXTENSION 413</p>
-                <p class="text-center">THE WATER SUPPLY UNIT  EXTENSION 344</p>
-         </div>
-        <div class="col-lg-12 col-md-12 hr-topic"></div>
-        
+<div class="portlet">
+    <div class="portlet-header">
+        <h3>
+        <i class="fa fa-tasks"></i>
+            PORT OF SATTAHIP: SATTAHIP NAVAL BASE
+            THE HABOUR SECTION     EXTENSION 413
+            THE WATER SUPPLY UNIT  EXTENSION 344
+        </h3>
+    </div>
+        <div class="portlet-content">
+         <form class="form-horizontal">
             <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-3 col-md-3"><label>NAME :&nbsp;</label></div>
@@ -123,13 +126,13 @@
             </div>
             <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-4 col-md-4"><label>SIGNED (CHIEF OFFICER) :&nbsp;</label></div>
+                    <div class="col-lg-4 col-md-4"><label>SIGNED (CHIEF OFFICER) :</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
                 </div> 
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-4 col-md-4"><label>SIGNED (CHIEF OFFICER) :&nbsp;</label></div>
+                    <div class="col-lg-4 col-md-4"><label>SIGNED (CHIEF OFFICER) :</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
@@ -159,12 +162,13 @@
             </div>
             <div class="row form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-4 col-md-4"><label>SIGNED (DOCK MASTER) :&nbsp;</label></div>
+                    <div class="col-lg-4 col-md-4"><label>SIGNED (DOCK MASTER) :</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
                 </div>  
             </div>
+        </div>    
 <!--        <div class="form-group">
             <label class="col-md-2">NAME :&nbsp;</label>
             <div class="col-md-3">
@@ -295,5 +299,6 @@
             </div>
         </div>    
         </div>-->
-    </form> 
+    </form>
+</div>     
 @stop
