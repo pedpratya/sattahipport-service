@@ -95,3 +95,6 @@
     pointer-events: none;
 }
 /*--End input inner-addon--*/
+.howler {
+	margin: 0 .75em 1em 0;
+}

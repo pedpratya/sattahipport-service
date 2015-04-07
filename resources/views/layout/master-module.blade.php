@@ -15,6 +15,13 @@
 	<link rel="stylesheet" href="{!! asset('css/bootstrap.min.css') !!}" type="text/css" />	
 	<link rel="stylesheet" href="{!! asset('js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.css') !!}" type="text/css" />		
 
+	<link rel="stylesheet" href="{!! asset('js/plugins/icheck/skins/minimal/blue.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/datepicker/datepicker.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/select2/select2.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/timepicker/bootstrap-timepicker.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/fileupload/bootstrap-fileupload.css') !!}" type="text/css" />        
+        
 	<link rel="stylesheet" href="{!! asset('css/App.css') !!}" type="text/css" />
 
 	<link rel="stylesheet" href="{!! asset('css/custom.css') !!}" type="text/css" />
@@ -77,12 +84,30 @@
 		</li>
 	</ul>
 </footer>
-	
+
+<!-- #modal html -->
+@yield('modalhtml')
+
 <script src="{{ asset('js/libs/jquery-1.9.1.min.js') }}"></script>
 <script src="{{ asset('js/libs/jquery-ui-1.9.2.custom.min.js') }}"></script>
 <script src="{{ asset('js/libs/bootstrap.min.js') }}"></script>
 
+<script src="{{ asset('js/plugins/icheck/jquery.icheck.js') }}"></script>
+<script src="{{ asset('js/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+<script src="{{ asset('js/plugins/timepicker/bootstrap-timepicker.js') }}"></script>
+<script src="{{ asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.js') }}"></script>
+<script src="{{ asset('js/plugins/select2/select2.js') }}"></script>
+<script src="{{ asset('js/plugins/autosize/jquery.autosize.min.js') }}"></script>
+<script src="{{ asset('js/plugins/textarea-counter/jquery.textarea-counter.js') }}"></script>
+<script src="{{ asset('js/plugins/fileupload/bootstrap-fileupload.js') }}"></script>
+<!--modal popup-->
+<script src="{{ asset('js/plugins/magnific/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('js/plugins/howl/howl.js') }}"></script>
+<script src="{{ asset('js/form/popups.js') }}"></script>
+
 <script src="{{ asset('js/App-tamplate.js') }}"></script>
+
+@yield('bottomscript')
 </body>
 
 </html>

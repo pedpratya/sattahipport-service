@@ -48,7 +48,16 @@
             </div>
           </div>
         </div>
-      </form>					
+        <div class="col-sm-3">
+             <h4>Autoclose</h4>
+             <div id="dp-ex-3" class="input-group date" data-auto-close="true" data-date="12-02-2015" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                 <input class="form-control" type="text">
+                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+             </div>
+             <span class="help-block">dd-mm-yyyy</span>
+         </div>          
+      </form>
+      <a data-toggle="modal" href="#styledModal" class="btn btn-primary">Styled Modal</a>                                      
 					</div> <!-- /.row -->
 
 				</div> <!-- /.portlet-content -->
@@ -107,4 +116,30 @@
       <li><a href="#">7</a></li>
       <li><a href="#">&raquo;</a></li>
     </ul> <!-- End pagin -->
+@stop
+
+@section('modalhtml')
+<div id="styledModal" class="modal modal-styled fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">Styled Modal</h3>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
+@stop
+
+@section('bottomscript')
+  <script src="{{ asset('js/form/test2.js') }}"></script>
 @stop
