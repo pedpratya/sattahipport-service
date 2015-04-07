@@ -1,4 +1,5 @@
 @extends('layout.master-module')
+@section('breadcrumbs', Breadcrumbs::render('nounit-no30'))
 @section('content')
 
     <form class="form-horizontal">
@@ -7,13 +8,13 @@
             <p class="text-center">แบบฟอร์มขออนุญาตนำเจ้าหน้าที่ และวัสดุอุปกรณ์อื่นๆผ่าน เขา-ออก</p>
         </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">บริษัท :&nbsp;</label>
             <div class="col-md-10">
                 <input class="form-control" type="text" >
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">วันที่ :&nbsp;</label>
             <div class="col-md-10">
                 <div class="input-group">
@@ -24,31 +25,31 @@
                  </div>
             </div>            
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">เรื่อง :&nbsp;</label>
             <div class="col-md-6">
                 <label>ขอนำเจ้าหน้าที่/วัสดุอุปกรณ์ และยานพาหนะผ่านเข้า - ออก เขคการท่าเรือสัตหีบ ฐานทัพเรือสัตหีบ</label>
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">เรียน :&nbsp;</label>
             <div class="col-md-4">
                 <label>ผู้อำนวยการ การท่าเรือสัตหีบ ฐานทัพเรือสัตหีบ</label>
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">ด้วย บริษัท :&nbsp;</label>
-            <div class="col-md-10 right-inner-addon ">
+            <div class="col-md-10 right-inner-addon">
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                 <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <div class="col-lg-12 col-md-12">
                 <label>ขอนำเจ้าหน้าที/วัสดุอุปกรณ์/ยานพาหนะ เพื่อ ผ่านเข้า-ออก เขตการท่าเรือสัตหีบ ฐานทัพเรือสัตหีบ ในการปฎิบัติ</label>
             </div>       
         </div>    
-        <div class="row form-group">
+        <div class="form-group">
             <div class="col-md-6">
                 <label class="col-md-4"></label>
                 <div class="col-md-8">
@@ -65,7 +66,7 @@
                 </div>
             </div>
          </div>    
-        <div class="row form-group">
+        <div class="form-group">
             <div class="col-md-6">
                 <label class="col-md-4">เวลา</label>
                 <div class="col-md-8">
@@ -82,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <div class="col-md-6">
                 <label class="col-md-4">เวลา</label>
                 <div class="col-md-8">
@@ -90,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">ดังต่อไปนี้ :&nbsp;</label>
             <div class="col-md-2">
                 <input type="radio" name="" id="" value="" > &nbsp; <label>เจ้าหน้าที่ จำนวน</label>
@@ -102,7 +103,7 @@
              <label>&nbsp;&nbsp;คน (ตามเอกสารที่แนบมา)</label>
             </div>
         </div>  
-        <div class="row form-group">
+        <div class="form-group">
             <div class="col-md-2 col-md-offset-2">
                 <input type="radio" name="" id="" value="" > &nbsp; <label>รถยนต์/รถบรรทุก ขนาด</label>
             </div>
@@ -122,7 +123,7 @@
              <label>&nbsp;&nbsp;(ตามเอกสารที่แนบมา)</label>
             </div>
         </div> 
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2 text-right">1 .&nbsp;</label>
             <div class="col-md-4">
                 <input class="form-control" type="text" >
@@ -132,7 +133,7 @@
                 <input class="form-control" type="text" >
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2 text-right">3 .&nbsp;</label>
             <div class="col-md-4">
                 <input class="form-control" type="text" >
@@ -142,7 +143,7 @@
                 <input class="form-control" type="text" >
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2"></label>
             <div class="col-md-2">
                 <input type="radio" name="" id="" value="" > &nbsp; <label>วัสดุอุปกรณ์อื่นๆ</label>

@@ -1,4 +1,5 @@
 @extends('layout.master-module')
+@section('breadcrumbs', Breadcrumbs::render('nounit-no4-2'))
 @section('content')
 <!-- header -->
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -6,7 +7,7 @@
   </div><!-- End header -->
 <form class="form-horizontal">
     <div class="col-lg-12 col-md-12 hr-topic"></div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">วันที่เรือเข้า : </label></div>
             <div class="col-lg-4 col-md-4">
@@ -20,7 +21,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div> 
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">วันที่ : </label></div>
             <div class="col-lg-4 col-md-4">
@@ -34,7 +35,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ข้าพเจ้า : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -50,7 +51,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">อายุ : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -66,7 +67,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ซอย : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -82,7 +83,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ตำบล : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -98,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">จังหวัด : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -114,7 +115,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">โทรศัพท์ : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -124,7 +125,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="radio col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -137,7 +138,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ในวันที่ : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -157,7 +158,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="radio col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -170,7 +171,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -180,7 +181,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="radio col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -193,7 +194,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -203,7 +204,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="radio col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -216,7 +217,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -226,7 +227,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="radio col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -239,7 +240,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"></div>
             <div class="col-lg-8 col-md-8">
@@ -255,7 +256,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ตำบล : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -271,7 +272,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">จังหวัด : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -281,7 +282,7 @@
         </div>
         <div class="col-lg-6 col-md-6"></div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ในวันที่ : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -301,7 +302,7 @@
             </div>
         </div>
     </div>
-    <div class="row form-group">
+    <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ในวันที่ : </label></div>
             <div class="col-lg-8 col-md-8">
@@ -321,9 +322,6 @@
             </div>
         </div>
     </div>
-    <div class="row form-group"></div>
-    <div class="row form-group"></div>
-    <div class="row form-group"></div>
     <div class="row form-group">
       <div class="col-xs-6 col-md-4"></div>
       <div class="col-xs-6 col-md-4"><label>ข้าพเจ้ายอมรับชำระค่าบริการเรือลากจูง ฐท.สส. เพื่อ</label></div>
@@ -347,9 +345,6 @@
                 บริการเรือสินค้า ตามอัตราค่าภาระท่าเรือแหลมฉบัง พ.ศ. ๒๕๓๕ ในอัตราใช้บริการขั้นต่ำที่สองชั่วโมง
             </div>
         </div>
-        <div class="col-lg-2 col-md-2"></div>
     </div>
-
-
 </form>
 @stop

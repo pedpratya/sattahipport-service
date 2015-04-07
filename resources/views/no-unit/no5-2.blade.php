@@ -1,4 +1,5 @@
 @extends('layout.master-module')
+@section('breadcrumbs', Breadcrumbs::render('nounit-no5-2'))
 @section('content')
 <!-- header -->
     <div class="col-lg-12 col-md-12">
@@ -8,9 +9,9 @@
     </div>    
         <form class="form-horizontal" >
  
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">                 
-                    <div class="col-lg-4 col-md-4"><label>(DD/MM/YY) :&nbsp;</label></div>
+                    <div class="col-lg-3 col-md-3"><label>(DD/MM/YY) :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8 input-group">
                         <input type="text" class="form-control">
                         <div class="input-group-btn">
@@ -19,79 +20,66 @@
                     </div>
                 </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ชื่อเรือ </label><label>Name of Vessel  :&nbsp;</label></div>
+                    <div class="col-lg-3 col-md-3"><label>ชื่อเรือ<br>Name of Vessel  :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
                 </div> 
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3">
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-1 col-md-1">
                             <input type="radio" name="" id="" value="" >
                         </div>
-                        <div class="col-lg-8 col-md-8">
-                            <label>ขาเข้า</label><br><label>Arrival</label>
-                        </div>    
-                    </div>
+                        <label>&nbsp;&nbsp;ขาเข้า<br>&nbsp;&nbsp;Arrival</label>
+                    </div>    
                     <div class="col-lg-3 col-md-3">
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-1 col-md-1">
                             <input type="radio" name="" id="" value="" >
                         </div>
-                        <div class="col-lg-8 col-md-8">
-                            <label>ขาออก</label><br><label>Departure</label>
-                        </div>    
+                        <label>&nbsp;&nbsp;ขาออก<br>&nbsp;&nbsp;Departure</label>
                     </div>
-                </div>
+                </div>       
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">พื้นที่ปฏิบัติงาน </label><label>Working Area  :&nbsp;</label></div>
+                    <div class="col-lg-3 col-md-3"><label>พื้นที่ปฏิบัติงาน<br>Working Area  :&nbsp;</label></div>
                     <div class="col-lg-3 col-md-3">
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-1 col-md-1">
                             <input type="radio" name="" id="" value="" >
-                        </div>
-                        <div class="col-lg-8 col-md-8">
-                            <label>จุกเสม็ด</label><br><label>Chuk Samet</label>
-                        </div>    
-                    </div>
+                        </div>        
+                            <label>&nbsp;&nbsp;จุกเสม็ด<br>&nbsp;&nbsp;Chuk Samet</label>
+                    </div>    
                     <div class="col-lg-3 col-md-3">
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-1 col-md-1">
                             <input type="radio" name="" id="" value="" >
                         </div>
-                        <div class="col-lg-8 col-md-8">
-                            <label>แหลมเทียน</label><br><label>Laem Tien</label>
-                        </div>    
-                    </div>
-                    <div class="col-lg-2 col-md-2">
-                        <div class="col-lg-2 col-md-2">
+                            <label>&nbsp;&nbsp;แหลมเทียน<br>&nbsp;&nbsp;Laem Tien</label>
+                    </div>    
+                    <div class="col-lg-3 col-md-3">
+                        <div class="col-lg-1 col-md-1">
                             <input type="radio" name="" id="" value="" >
                         </div>
-                        <div class="col-lg-8 col-md-8">
-                            <label>แหลมเทียน</label><br><label>Laem Tien</label>
-                        </div>    
+                            <label>&nbsp;&nbsp;แหลมเทียน<br>&nbsp;&nbsp;Laem Tien</label>
                     </div>
-                </div> 
+                </div>                      
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">เวลาออกจากท่า </label><label>Tug DeparturemTime  :&nbsp;</label></div>
+                    <div class="col-lg-4 col-md-4"><label>เวลาออกจากท่า<br>Tug DeparturemTime  :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
                 </div> 
-            </div>
-            <div class="row form-group">
+            </div> 
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">เวลาเข้าเทียบท่า </label><label>Tug Arrival Time  :&nbsp;</label></div>
+                    <div class="col-lg-3 col-md-3"><label>เวลาเข้าเทียบท่า<br>Tug Arrival Time  :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
                 </div> 
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">รวมเวลาการทำงาน </label><label>Total Hours  :&nbsp;</label></div>
+                    <div class="col-lg-4 col-md-4"><label>รวมเวลาการทำงาน<br>Total Hours  :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>

@@ -1,4 +1,5 @@
 @extends('layout.master-module')
+@section('breadcrumbs', Breadcrumbs::render('nounit-no5_2'))
 @section('content')
 <!-- header -->
     <div class="col-lg-12 col-md-12">
@@ -7,7 +8,7 @@
         <form class="form-horizontal" >
             
         <div class="form-group">
-            <div class="col-lg-8 col-md-8"></div>
+            <div class="col-lg-8 col-md-8">
             <div class="col-lg-4 col-md-4">
                 <div class="bfh-datepicker">
                   <label class="col-lg-3 col-md-3">(DD/MM/YY)</label>
@@ -19,9 +20,10 @@
                   </div>
                 </div>
             </div>
+            </div>
         </div>
         
-        <div class="row form-group">
+        <div class="form-group">
             <div class="col-lg-6 col-md-6">
                 <label class="col-lg-3 col-md-3">ชื่อเรือ</label>
                     <div class="col-lg-8 col-md-8 input-group" >          
@@ -37,7 +39,7 @@
             </div>
         </div>
             
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">
                       <label class="col-lg-2 col-md-2">Name of Vessel</label>
                       <div class="col-lg-9 col-md-9">          
@@ -55,7 +57,7 @@
             </div>
             </div>
             
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">
                     <label class="col-lg-9 col-md-9">พื้นที่ปฏิบัติงาน</label>
                     <div class="col-lg-1 col-md-1"><input type="checkbox" ></div>                       
@@ -70,7 +72,7 @@
             </div>
        
             
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">
                     <label class="col-lg-9 col-md-9">Working Area</label>
                     <div class="col-lg-1 col-md-1"></div>                       
@@ -84,8 +86,8 @@
                 </div>          
             </div>
             
-            
-            <div class="row form-group">
+          
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">
                     <label class="col-lg-3 col-md-3">เวลาออกจากท่า</label>
                         <div class="col-lg-5 col-md-5 input-group" >          
@@ -99,13 +101,13 @@
                 </div>
             </div>
             
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-12 col-md-12">
                       <label class="col-lg-5 col-md-5">Tug Departure Time</label>        
                 </div>
             </div>
             
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">
                     <label class="col-lg-3 col-md-3">เวลาเข้าเทียบท่า</label>
                         <div class="col-lg-5 col-md-5 input-group" >          
@@ -119,13 +121,13 @@
                 </div>
             </div>
             
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-12 col-md-12">
                       <label class="col-lg-5 col-md-5">Tug Arrival Time</label>        
                 </div>
             </div>
             
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">
                     <label class="col-lg-3 col-md-3">รวมเวลาการทำงาน</label>
                         <div class="col-lg-5 col-md-5 input-group" >          
@@ -139,7 +141,7 @@
                 </div>
             </div>
             
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-12 col-md-12">
                       <label class="col-lg-5 col-md-5">Total Hours</label>        
                 </div>

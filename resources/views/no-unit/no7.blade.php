@@ -1,4 +1,5 @@
 @extends('layout.master-module')
+@section('breadcrumbs', Breadcrumbs::render('nounit-no7'))
 @section('content')
     <form class="form-horizontal">
         <div class="col-lg-12 col-md-12">
@@ -8,7 +9,7 @@
          </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
         
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-3 col-md-3"><label>NAME :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
@@ -22,7 +23,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-3 col-md-3"><label>REQUIRE :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
@@ -36,7 +37,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-3 col-md-3"><label>ON :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
@@ -50,7 +51,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-3 col-md-3"><label>SIGNED :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
@@ -69,12 +70,12 @@
                     </div>
                 </div> 
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT WILL BE GREATLY APPRECIATED, IF YOU WILL EXAMINE AND TAKE A READING OF THE PORT AUTHORITY
                 WATER METERS, BEFORE AND AFTER THE SUPPLY OF WATER IS MADE,TO AVOID ANY ARGUMENT THAT MAY ENSURE,
                 IN REGARD TO THE ACTUAL QUANTITY SUPPLIED</p> 
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-12 col-md-12">
                     <div class="col-lg-2 col-md-2">
                     </div>
@@ -120,9 +121,9 @@
                     </div>
                 </div>     
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-3 col-md-3"><label>SIGNED (CHIEF OFFICER) :&nbsp;</label></div>
+                    <div class="col-lg-4 col-md-4"><label>SIGNED (CHIEF OFFICER) :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
@@ -134,9 +135,9 @@
                     </div>
                 </div> 
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-3 col-md-3"><label>SIGNED(WATERMAN) :&nbsp;</label></div>
+                    <div class="col-lg-4 col-md-4"><label>SIGNED(WATERMAN) :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
@@ -153,18 +154,18 @@
                     </div>
                 </div> 
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <label class="col-md-12"><u>REMARK</u> DO NOT REQUIRE WATER</label>            
             </div>
             <div class="row form-group">
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-3 col-md-3"><label>SIGNED (DOCK MASTER) :&nbsp;</label></div>
+                    <div class="col-lg-4 col-md-4"><label>SIGNED (DOCK MASTER) :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
                        <input class="form-control" type="text" >
                     </div>
                 </div>  
             </div>
-<!--        <div class="row form-group">
+<!--        <div class="form-group">
             <label class="col-md-2">NAME :&nbsp;</label>
             <div class="col-md-3">
                 <input class="form-control" type="text" >
@@ -174,7 +175,7 @@
                 <input class="form-control" type="text" >
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">REQUIRE :&nbsp;</label>
             <div class="col-md-3">
                 <input class="form-control" type="text" >
@@ -184,7 +185,7 @@
                 <input class="form-control" type="text" >
             </div>
         </div>  
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">ON :&nbsp;</label>
             <div class="col-md-3">
                 <input class="form-control" type="text" >
@@ -194,7 +195,7 @@
                 <input class="form-control" type="text" >
             </div>
         </div> 
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">SIGNED :&nbsp;</label>
             <div class="col-md-3">
                 <input class="form-control" type="text" >
@@ -254,7 +255,7 @@
         </div>
         </div>    
         <div class="col-lg-12 col-md-12">
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">SIGNED (CHIEF OFFICER) :&nbsp;</label>
             <div class="col-md-3">
                 <input class="form-control" type="text" >
@@ -264,7 +265,7 @@
                 <input class="form-control" type="text" >
             </div>
         </div>
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">SIGNED (WATERMAN) :&nbsp;</label>
             <div class="col-md-3">
                 <input class="form-control" type="text" >
@@ -274,7 +275,7 @@
                 <input class="form-control" type="text" >
             </div>
         </div>    
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">WATER METER NO :&nbsp;</label>
             <div class="col-md-3">
                 <input class="form-control" type="text" >
@@ -284,10 +285,10 @@
                 <input class="form-control" type="text" >
             </div>
         </div> 
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-12"><u>REMARK</u> DO NOT REQUIRE WATER</label>            
         </div>  
-        <div class="row form-group">
+        <div class="form-group">
             <label class="col-md-2">SIGNED (DOCK MASTER) :&nbsp;</label>
             <div class="col-md-3">
                 <input class="form-control" type="text" >
