@@ -22,35 +22,42 @@
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bgAdmin">
     <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบผู้ดูแลระบบ Admin</h4>
+
     <div class="form-group">
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-default btn-block">องค์กรณ์</button>
+          <a href = "organization">
+            <button type="button" class="btn btn-primary btn-block">องค์กรณ์</button>
+          </a>
         </div>
       </div>  
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-default btn-block">เมนูระบบงาน</button>
+          <a href = "system-admin">
+            <button type="button" class="btn btn-primary btn-block">เมนูระบบงาน</button>
+          </a>
         </div>
       </div>    
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-default btn-block">เมนูกำหนดค่าคงที่</button>
+          <button type="button" class="btn btn-primary btn-block">เมนูกำหนดค่าคงที่</button>
         </div>
       </div> 
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-default btn-block">Software Management</button>
+          <button type="button" class="btn btn-primary btn-block">Software Management</button>
         </div>
       </div>
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-default btn-block">ผู้ใช้งานในระบบ</button>
+          <a href = "usermanagement">
+            <button type="button" class="btn btn-primary btn-block">ผู้ใช้งานในระบบ</button>
+          </a>
         </div>
       </div>
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-default btn-block">รายงานต่างๆ</button>
+          <button type="button" class="btn btn-primary btn-block">รายงานต่างๆ</button>
         </div>
       </div>
     </div> 
