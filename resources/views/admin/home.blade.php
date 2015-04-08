@@ -1,22 +1,29 @@
-@extends('layout.master')
+﻿@extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('admin-home'))
 @section('content')
 
 <!-- header -->
-  <div class="col-lg-12 col-md-12 page-header">
-    <div class="col-lg-10 col-md-10">
-      <label>คู่มือการใช้งานระบบ Admin</label>
+<div class="row page-header">
+  <div class="col-md-8 col-sm-8">
+    <label>คู่มือการใช้งานระบบ Admin</label>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="col-md-4 col-sm-4"></div>
+    <div class="col-md-6 col-sm-6">
+      <label>พิมพ์ข้อมูลทั้งหมด</label>
     </div>
-    <div class="col-lg-2 col-md-2">
-      <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
+    <div class="col-md-1 col-sm-1">
+      <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-print"></button> 
     </div>
-  </div><!-- End header -->
+  </div>
+</div><!--End header -->
+
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bgAdmin">
     <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบผู้ดูแลระบบ Admin</h4>
     <div class="form-group">
-      <div class="col-lg-12 col-md-12 row">
+      <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
           <button type="button" class="btn btn-default btn-block">องค์กรณ์</button>
         </div>
