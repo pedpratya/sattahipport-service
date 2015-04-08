@@ -1,5 +1,6 @@
 ﻿@extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('admin-home'))
+
 @section('content')
 
 <!-- header -->

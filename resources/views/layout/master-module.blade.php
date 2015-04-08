@@ -51,10 +51,8 @@
 		</div> <!-- #search -->
 	
 		<nav id="sidebar">		
+			@include('inc.menu_left')
 			
-			<ul id="main-nav" class="open-active">			
-                            @include('inc.menu_left')
-			</ul>
 					
 		</nav> <!-- #sidebar -->
 
@@ -108,6 +106,12 @@
 <script src="{{ asset('js/App-tamplate.js') }}"></script>
 
 @yield('bottomscript')
+<script>
+    var url = "/sattahipport-service/public/left-manu/101";
+    $.get(url, function(data){ 
+       $('#main-nav').html(data);
+    });
+</script>
 </body>
 
 </html>
