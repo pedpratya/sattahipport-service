@@ -4,7 +4,7 @@
 
      @foreach($modules['manu'] as $key => $value)
         <div class="box-menu">
-        <a href="{{ URL::to('/admin/home') }}">
+        <a href="{{ $value['url'] }}">
             <img src="{{ asset($value['images']) }}">            
             <span>{!! $value['name'] !!}</span>
         </a>  
