@@ -33,7 +33,6 @@ require __DIR__.'/routes/admin.php';
 require __DIR__.'/routes/regis.php';
 require __DIR__.'/routes/customer.php';
 require __DIR__.'/routes/service.php';
-require __DIR__.'/routes/service.php';
 require __DIR__.'/routes/no-unit.php';
 require __DIR__.'/routes/e-port-management.php';
 require __DIR__.'/routes/crm.php';
