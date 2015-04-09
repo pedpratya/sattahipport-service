@@ -269,5 +269,4 @@
   <script>
       var idMainManu = '101';
   </script>
-  <script src="{{ asset('js/form/test2.js') }}"></script>
 @stop
