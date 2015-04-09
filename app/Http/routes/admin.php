@@ -7,7 +7,13 @@
  */
 
 Route::group(array('prefix' => 'admin'), function() {
-
+    
+    Route::get('home', array(
+        'as' => 'home',
+        function() {
+            return view('admin.home');
+    }));
+    
     Route::get('organization', array(
         'as' => 'organization',
         function() {
@@ -54,11 +60,6 @@ Route::group(array('prefix' => 'admin'), function() {
         function() {
             return View::make('admin.usermanagement-userlog');
     }));
-    
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
-            return View::make('admin.home');
-    }));
+
 });
 

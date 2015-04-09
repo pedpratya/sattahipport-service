@@ -13,15 +13,11 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('master-top', 'MainController@getMasterTop');
-
-Route::get('fullscreen', 'MainController@getFullscreen');
-
 Route::get('module-list', 'MainController@getModuleList');
 
 Route::get('master-module', 'MainController@getMasterModule');
 
-Route::get('topbar-module', 'MainController@getTopbaeModule');
+Route::get('left-manu/{id}', 'MainController@getLeftManu');
 
 Route::post('module-list', array(
     'as' => 'module-lis-post',
