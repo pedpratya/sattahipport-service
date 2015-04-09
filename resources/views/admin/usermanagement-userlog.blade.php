@@ -18,5 +18,7 @@
 @stop
 
 @section('bottomscript')
-  <script src="{{ asset('js/form/test2.js') }}"></script>
+  <script>
+      var idMainManu = '101';
+  </script>
 @stop
