@@ -5,7 +5,7 @@
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบ Admin</label>
+    <label>คู่มือการใช้งานระบบบริหารหน้าท่าและควบคุมจราจรทางน้ำ</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -21,45 +21,65 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bgAdmin">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบผู้ดูแลระบบ Admin</h4>
-
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบบริหารหน้าท่าและควบคุมจราจรทางน้ำ</h4>
     <div class="form-group">
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <a href = "organization">
-            <button type="button" class="btn btn-primary btn-block">องค์กรณ์</button>
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">Berth Request Service</button>
           </a>
-        </div>
-      </div>  
-      <div class="col-lg-12 col-md-12">
-        <div class="col-lg-4 col-md-4">
-          <a href = "system-admin">
-            <button type="button" class="btn btn-primary btn-block">เมนูระบบงาน</button>
-          </a>
-        </div>
-      </div>    
-      <div class="col-lg-12 col-md-12">
-        <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-primary btn-block">เมนูกำหนดค่าคงที่</button>
         </div>
       </div> 
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-primary btn-block">Software Management</button>
-        </div>
-      </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="col-lg-4 col-md-4">
-          <a href = "usermanagement">
-            <button type="button" class="btn btn-primary btn-block">ผู้ใช้งานในระบบ</button>
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">ระบบ PORT & AIS & RADAR</button>
           </a>
         </div>
       </div>
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
-          <button type="button" class="btn btn-primary btn-block">รายงานต่างๆ</button>
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">ข้อมูลเรือ IMO หรือ Callsign</button>
+          </a>
         </div>
       </div>
+      <div class="col-lg-12 col-md-12">
+        <div class="col-lg-4 col-md-4">
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">รายละเอียดข้อมูลภายในใบ Berth </button>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <div class="col-lg-4 col-md-4">
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">รายการ Berth</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <div class="col-lg-4 col-md-4">
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">Berth Schedule</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <div class="col-lg-4 col-md-4">
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">Problem Center</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <div class="col-lg-4 col-md-4">
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">AIS Display</button>
+          </a>
+        </div>
+      </div> 
+      
     </div> 
   </div><!-- End body -->
 
