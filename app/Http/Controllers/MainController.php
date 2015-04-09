@@ -565,43 +565,43 @@ class MainController extends Controller {
                 'id' =>'101', 'name' =>'Admin System', 'images' => 'img/icon-mainmenu/icon-admin.png','url' => './admin/home'
             ],
             [
-                'id' =>'102', 'name' =>'ระบบข้อมูลสารสนเทศ','images' => 'img/icon-mainmenu/icon-information.png', 'url' => '../public/admin/home'
+                'id' =>'102', 'name' =>'ระบบข้อมูลสารสนเทศ','images' => 'img/icon-mainmenu/icon-information.png', 'url' => './information/home'
             ],
             [
-                'id' =>'201', 'name' =>'ระบบบริหารการท่า<br>และระบบอนุมัติ','images' => 'img/icon-mainmenu/icon-manager.png', 'url' => '../public/admin/home'
+                'id' =>'201', 'name' =>'ระบบบริหารการท่า<br>และระบบอนุมัติ','images' => 'img/icon-mainmenu/icon-manager.png', 'url' => './e-port-management/home'
             ],
             [
-                'id' =>'301', 'name' =>'ระบบบริหารจัดการ<br>ลูกค้า CRM','images' => 'img/icon-mainmenu/icon-crm.png', 'url' => '../public/admin/home'
+                'id' =>'301', 'name' =>'ระบบบริหารจัดการ<br>ลูกค้า CRM','images' => 'img/icon-mainmenu/icon-crm.png', 'url' => './crm/home'
             ],
             [
-                'id' =>'302', 'name' =>'ระบบ e-Gate','images' => 'img/icon-mainmenu/icon-egate.png','url' => '../public/admin/home'
+                'id' =>'302', 'name' =>'ระบบ e-Gate','images' => 'img/icon-mainmenu/icon-egate.png','url' => './e-gate/home'
             ],
             [
-                'id' =>'303', 'name' =>'ระบบบริหารพื้นที่<br>ประโยชน์ ทสพ.-ทร.','images' => 'img/icon-mainmenu/icon-areaManame.png', 'url' => '../public/admin/home'
+                'id' =>'303', 'name' =>'ระบบบริหารพื้นที่<br>ประโยชน์ ทสพ.-ทร.','images' => 'img/icon-mainmenu/icon-areaManame.png', 'url' => './area-management/home'
             ],
             [
-                'id' =>'304', 'name' =>'ระบบจัดเก็บผลประโยชน์','images' => 'img/icon-mainmenu/icon-benefits.png','url' => '../public/admin/home'
+                'id' =>'304', 'name' =>'ระบบจัดเก็บผลประโยชน์','images' => 'img/icon-mainmenu/icon-benefits.png','url' => './benefit/home'
             ],
             [
-                'id' =>'305', 'name' =>'ระบบบริหารหน้าท่า<br>และควบคุมจราจรทางน้ำ','images' => 'img/icon-mainmenu/icon-portManage.png', 'url' => '../public/admin/home'
+                'id' =>'305', 'name' =>'ระบบบริหารหน้าท่า<br>และควบคุมจราจรทางน้ำ','images' => 'img/icon-mainmenu/icon-portManage.png', 'url' => './traffic-control/home'
             ],
             [
-                'id' =>'306', 'name' =>'ระบบตรวจนับ<br>และตรวจสอบสินค้า','images' => 'img/icon-mainmenu/icon-counting.png','url' => '../public/admin/home'
+                'id' =>'306', 'name' =>'ระบบตรวจนับ<br>และตรวจสอบสินค้า','images' => 'img/icon-mainmenu/icon-counting.png','url' => './counting/home'
             ],
             [
-                'id' =>'307', 'name' =>'ระบบคลังสินค้า','images' => 'img/icon-mainmenu/icon-warehouse.png','url' => '../public/admin/home'
+                'id' =>'307', 'name' =>'ระบบคลังสินค้า','images' => 'img/icon-mainmenu/icon-warehouse.png','url' => './warehouse/home'
             ],
             [
-                'id' =>'308', 'name' =>'ระบบเครื่องมือบรรทุกขนถ่าย','images' => 'img/icon-mainmenu/icon-tranfer.png','url' => '../public/admin/home'
+                'id' =>'308', 'name' =>'ระบบเครื่องมือบรรทุกขนถ่าย','images' => 'img/icon-mainmenu/icon-tranfer.png','url' => './transfer/home'
             ],
             [
-                'id' =>'309', 'name' =>'ระบบบริการลูกเรือ<br>และผู้โดยสาร','images' => 'img/icon-mainmenu/icon-service.png','url' => '../public/admin/home'
+                'id' =>'309', 'name' =>'ระบบบริการลูกเรือ<br>และผู้โดยสาร','images' => 'img/icon-mainmenu/icon-service.png','url' => './service/home'
             ],
             [
-                'id' =>'310', 'name' =>'ระบบบุคลากรแรงงาน','images' => 'img/icon-mainmenu/icon-personnel.png','url' => '../public/admin/home'
+                'id' =>'310', 'name' =>'ระบบบุคลากรแรงงาน','images' => 'img/icon-mainmenu/icon-personnel.png','url' => './personnel/home'
             ],
             [
-                'id' =>'311', 'name' =>'ระบบรักษาความปลอดภัย','images' => 'img/icon-mainmenu/icon-security.png','url' => '../public/admin/home'
+                'id' =>'311', 'name' =>'ระบบรักษาความปลอดภัย','images' => 'img/icon-mainmenu/icon-security.png','url' => './security/home'
             ]
         ]
     ];
