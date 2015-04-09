@@ -1,11 +1,11 @@
 @extends('layout.master-module')
-
+@section('breadcrumbs', Breadcrumbs::render('e-gate-home'))
 @section('content')
 
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบ e-Gate</label>
+    <label>คู่มือการใช้งาน ระบบ e-Gate</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -21,7 +21,7 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bgAdmin">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ e-Gate</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ ระบบ e-Gate</h4>
 
     <div class="form-group">
       <div class="col-lg-12 col-md-12">
