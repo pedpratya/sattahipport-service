@@ -45,4 +45,5 @@ require __DIR__.'/routes/inspection.php';
 require __DIR__.'/routes/warehouse.php';
 require __DIR__.'/routes/transfer.php';
 require __DIR__.'/routes/personnel.php';
+require __DIR__.'/routes/security.php';
 
