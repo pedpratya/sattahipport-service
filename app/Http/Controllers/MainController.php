@@ -33,43 +33,29 @@ class MainController extends Controller {
         switch ($id) {
             case '101':
                 $manu = "<li class=''>				
-                         <a href='URL::to('./admin/organization')'>
+                         <a href='./organization'>
                                     <i class='fa fa fa-tasks'></i>
                                     องค์กร
                             </a>   				
                         </li>
                         <li class=''>			
-                         <a href='URL::to('./admin/system-admin')'>
+                         <a href='./system-admin'>
                                     <i class='fa fa fa-tasks'></i>
                                     ระบบงาน
                             </a>   				
                         </li>
                         <li class=''>		
-                         <a href='URL::to('./admin/usermanagement')'>
+                         <a href='./usermanagement'>
                                     <i class='fa fa fa-tasks'></i>
                                     USER MANAGEMENT
                             </a>   				
                         </li>
                         <li class=''>		
-                         <a href='URL::to('#')'>
+                         <a href='#'>
                                     <i class='fa fa fa-tasks'></i>
                                     รายงาน
                             </a>   				
                         </li>";
-                /*[
-                    [
-                        "id' =>'10101', 'name' =>'องค์กร'
-                    ],
-                    [
-                        'id' =>'10102', 'name' =>'ระบบงาน'
-                    ],
-                    [
-                        'id' =>'10103', 'name' =>'USER MANAGEMENT'
-                    ],
-                    [
-                        'id' =>'10104', 'name' =>'รายงาน'
-                    ]
-                ];*/
                 break;
             case '102':
                 $manu = [
