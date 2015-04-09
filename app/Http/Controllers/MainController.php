@@ -32,7 +32,7 @@ class MainController extends Controller {
       
         switch ($id) {
             case '101':
-                /*$manu = "<li class=''>				
+                $manu = "<li class=''>				
                          <a href='./organization'>
                                     <i class='fa fa-tasks'></i>
                                     องค์กร
@@ -55,29 +55,31 @@ class MainController extends Controller {
                                     <i class='fa fa-tasks'></i>
                                     รายงาน
                             </a>   				
-                        </li>";*/
-                $manu = "    <li class='dropdown'>
-        <a href='javascript:;'>
-                <i class='fa fa-file-text'></i>
-                Example Pages
-                <span class='caret'></span>
-        </a>				
-
-        <ul class='sub-nav' style='display: none;'>
-                <li>
-                        <a href='./page-profile.html'>
-                                <i class='fa fa-user'></i> 
-                                Profile
-                        </a>
-                </li>
-                <li>
-                        <a href='./page-invoice.html'>
-                                <i class='fa fa-money'></i> 
-                                Invoice
-                        </a>
-                </li>
-        </ul>
-    </li>";
+                        </li>";
+                $manu = "<li class=''>				
+                         <a href='./organization'>
+                                    <i class='fa fa-tasks'></i>
+                                    องค์กร
+                            </a>   				
+                        </li>
+                        <li class=''>			
+                         <a href='./system-admin'>
+                                    <i class='fa fa-tasks'></i>
+                                    ระบบงาน
+                            </a>   				
+                        </li>
+                        <li class=''>		
+                         <a href='./usermanagement'>
+                                    <i class='fa fa-tasks'></i>
+                                    USER MANAGEMENT
+                            </a>   				
+                        </li>
+                        <li class=''>		
+                         <a href='#'>
+                                    <i class='fa fa-tasks'></i>
+                                    รายงาน
+                            </a>   				
+                        </li>";
                 break;
             case '102':
                 $manu = "<li class=''>				
