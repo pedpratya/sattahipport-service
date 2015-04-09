@@ -1,11 +1,11 @@
 @extends('layout.master-module')
-@section('breadcrumbs', Breadcrumbs::render('area-management-home'))
+
 @section('content')
 
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบ บริหารพื้นที่ ประโยชน์ ทสพ.-ทร.</label>
+    <label>คู่มือการใช้งานระบบตรวจนับและตรวจสอบสินค้า</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -21,51 +21,43 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bgAdmin">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ บริหารพื้นที่ ประโยชน์ ทสพ.-ทร.</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบตรวจนับและตรวจสอบสินค้า</h4>
 
     <div class="form-group">
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
-            <button type="button" class="btn btn-primary btn-block">ข้อมูลพื้นที่ ทพส.-ทร.</button>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="col-lg-4 col-md-4">
-          <a href = "#">
-            <button type="button" class="btn btn-primary btn-block">ผู้เช่า-ผู้ใช้ประโยชน์</button>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="col-lg-4 col-md-4">
-          <a href = "#">
-            <button type="button" class="btn btn-primary btn-block">ข้อมูลภาพถ่ายทางอากาศ</button>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="col-lg-4 col-md-4">
-          <a href = "#">
-            <button type="button" class="btn btn-primary btn-block">Drone Management</button>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="col-lg-4 col-md-4">
-          <a href = "#">
-            <button type="button" class="btn btn-primary btn-block">Report</button>
+            <button type="button" class="btn btn-primary btn-block">Berth Request Service </button>
           </a>
         </div>
       </div>  
-     
+      <div class="col-lg-12 col-md-12">
+        <div class="col-lg-4 col-md-4">
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">กำหนดเจ้าหน้าที่รับผิดชอบปฏิบัติงาน</button>
+          </a>
+        </div>
+      </div>  
+      <div class="col-lg-12 col-md-12">
+        <div class="col-lg-4 col-md-4">
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">ตรวจสอบเอกสารอนุมัติการขนถ่าย</button>
+          </a>
+        </div>
+      </div>  
+      <div class="col-lg-12 col-md-12">
+        <div class="col-lg-4 col-md-4">
+          <a href = "#">
+            <button type="button" class="btn btn-primary btn-block">ตรวจสอบสินค้า</button>
+          </a>
+        </div>
+      </div>  
     </div> 
   </div><!-- End body -->
 
 @stop
 @section('bottomscript')
   <script>
-      var idMainManu = '303';
+      var idMainManu = '306';
   </script>
 @stop

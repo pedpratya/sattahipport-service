@@ -41,6 +41,7 @@ require __DIR__.'/routes/e-gate.php';
 require __DIR__.'/routes/area-management.php';
 require __DIR__.'/routes/benefit.php';
 require __DIR__.'/routes/traffic-control.php';
+require __DIR__.'/routes/counting.php';
 require __DIR__.'/routes/inspection.php';
 require __DIR__.'/routes/warehouse.php';
 require __DIR__.'/routes/transfer.php';
