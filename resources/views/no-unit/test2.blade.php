@@ -50,7 +50,7 @@
         </div>
         <div class="col-sm-3">
              <h4>Autoclose</h4>
-             <div id="dp-ex-3" class="input-group date" data-auto-close="true" data-date="12-02-2015" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+             <div class="input-datepicker input-group date" data-auto-close="true" data-date="12-02-2015" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
                  <input class="form-control" type="text">
                  <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
              </div>
@@ -68,7 +68,7 @@
                         <div class="col-sm-4">
                             <h4>Default timepicker</h4>
                             <div class="input-group bootstrap-timepicker">
-                                <input id="tp-ex-1" type="text" class="form-control">
+                                <input type="text" class="form-control input-timepicker">
                                 <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                         <div class="col-sm-4">
                             <h4>Inside a modal</h4>
                             <div class="input-group bootstrap-timepicker">
-                                <input id="tp-ex-2" type="text" class="form-control">
+                                <input type="text" class="form-control input-timepicker-modal">
                                 <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
                             </div>
                         </div>
@@ -165,8 +165,4 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->	
-@stop
-
-@section('bottomscript')
-  <script src="{{ asset('js/form/test2.js') }}"></script>
 @stop
