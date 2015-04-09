@@ -6,11 +6,14 @@
  * and open the template in the editor.
  */
 
-Route::group(array('prefix' => 'service'), function() {
-
+Route::group(array('prefix' => 'area-management'), function() {
+    
     Route::get('home', array(
         'as' => 'home',
         function() {
-            return View::make('service.home');
+            return view('area-management.home');
     }));
+
+
 });
+
