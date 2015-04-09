@@ -32,7 +32,7 @@ class MainController extends Controller {
       
         switch ($id) {
             case '101':
-                $manu = "<li class=''>				
+                /*$manu = "<li class=''>				
                          <a href='./organization'>
                                     <i class='fa fa-tasks'></i>
                                     องค์กร
@@ -55,7 +55,29 @@ class MainController extends Controller {
                                     <i class='fa fa-tasks'></i>
                                     รายงาน
                             </a>   				
-                        </li>";
+                        </li>";*/
+                $manu = "    <li class='dropdown'>
+        <a href='javascript:;'>
+                <i class='fa fa-file-text'></i>
+                Example Pages
+                <span class='caret'></span>
+        </a>				
+
+        <ul class='sub-nav' style='display: none;'>
+                <li>
+                        <a href='./page-profile.html'>
+                                <i class='fa fa-user'></i> 
+                                Profile
+                        </a>
+                </li>
+                <li>
+                        <a href='./page-invoice.html'>
+                                <i class='fa fa-money'></i> 
+                                Invoice
+                        </a>
+                </li>
+        </ul>
+    </li>";
                 break;
             case '102':
                 $manu = "<li class=''>				
