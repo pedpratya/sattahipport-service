@@ -104,6 +104,7 @@
 <script src="{{ asset('js/plugins/howl/howl.js') }}"></script>
 
 <script src="{{ asset('js/App-tamplate.js') }}"></script>
+<script src="{{ asset('js/form/datepicker-class.js') }}"></script>
 
 @yield('bottomscript')
 <script>
