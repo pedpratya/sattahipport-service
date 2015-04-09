@@ -1,11 +1,11 @@
 @extends('layout.master-module')
-
+@section('breadcrumbs', Breadcrumbs::render('traffic-control-home'))
 @section('content')
 
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบบริหารหน้าท่าและควบคุมจราจรทางน้ำ</label>
+    <label>คู่มือการใช้งานระบบ บริหารหน้าท่าและควบคุมจราจรทางน้ำ</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -21,7 +21,7 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bgAdmin">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบบริหารหน้าท่าและควบคุมจราจรทางน้ำ</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ บริหารหน้าท่าและควบคุมจราจรทางน้ำ</h4>
     <div class="form-group">
       <div class="col-lg-12 col-md-12">
         <div class="col-lg-4 col-md-4">
