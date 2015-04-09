@@ -1,5 +1,5 @@
 <h1 id="site-logo">
-	<a href="./index.html">
+	<a href="<?php echo e(URL::to('/module-list')); ?>">
 		<img src="<?php echo e(asset('img/logos/logo.png')); ?>" alt="Site Logo" />
 	</a>
 </h1>	

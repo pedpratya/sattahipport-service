@@ -51,10 +51,8 @@
 		</div> <!-- #search -->
 	
 		<nav id="sidebar">		
+			<?php echo $__env->make('inc.menu_left', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 			
-			<ul id="main-nav" class="open-active">			
-                            <?php echo $__env->make('inc.menu_left', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-			</ul>
 					
 		</nav> <!-- #sidebar -->
 
@@ -106,8 +104,15 @@
 <script src="<?php echo e(asset('js/plugins/howl/howl.js')); ?>"></script>
 
 <script src="<?php echo e(asset('js/App-tamplate.js')); ?>"></script>
+<script src="<?php echo e(asset('js/form/datepicker-class.js')); ?>"></script>
 
 <?php echo $__env->yieldContent('bottomscript'); ?>
+<script>
+    var url = "/sattahipport-service/public/left-manu/"+idMainManu;
+    $.get(url, function(data){ 
+       $('#main-nav').html(data);
+    });
+</script>
 </body>
 
 </html>
