@@ -1,11 +1,11 @@
 @extends('layout.master-module')
-
+@section('breadcrumbs', Breadcrumbs::render('area-management-home'))
 @section('content')
 
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบบริหารพื้นที่ ประโยชน์ ทสพ.-ทร.</label>
+    <label>คู่มือการใช้งานระบบ บริหารพื้นที่ ประโยชน์ ทสพ.-ทร.</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -21,7 +21,7 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bgAdmin">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบบริหารพื้นที่ ประโยชน์ ทสพ.-ทร.</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ บริหารพื้นที่ ประโยชน์ ทสพ.-ทร.</h4>
 
     <div class="form-group">
       <div class="col-lg-12 col-md-12">
