@@ -1,9 +1,7 @@
 <?php
 
-
 Breadcrumbs::register('admin', function($breadcrumbs)
 {
-    $breadcrumbs->parent('home');
     $breadcrumbs->push('Admin', '../admin/home');
 });
 
