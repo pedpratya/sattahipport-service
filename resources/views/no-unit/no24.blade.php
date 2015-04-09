@@ -78,11 +78,9 @@
                 <div class="col-md-4 col-md-4-offset-1"><label>วันที่ :</label></div>
                 <div class="col-md-8 col-md-8-offset-1">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="dd/mm/YY">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                        <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="col-md-6 col-md-6-offset-1"></div>
@@ -116,11 +114,9 @@
                 <div class="col-md-4 col-md-4-offset-1"><label>วันที่ :</label></div>
                 <div class="col-md-8 col-md-8-offset-1">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="dd/mm/YY">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                        <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="col-md-6 col-md-6-offset-1"></div>
@@ -152,11 +148,9 @@
                 <div class="col-md-4 col-md-4-offset-1"><label>ในวันที่ :</label></div>
                 <div class="col-md-8 col-md-8-offset-1">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="dd/mm/YY">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                        <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                     </div>
-                </div>
                 </div>
               </div>
             </div>	

@@ -106,7 +106,7 @@
                 <div class="col-lg-1 col-md-1"></div>
                 <div class="col-lg-3 col-md-3"><label>เที่ยงวันที่ :</label></div>
                 <div class="col-md-8 col-md-8-offset-1 input-group">
-                    <input type="text" class="form-control" placeholder="dd/mm/YY">
+                    <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY">
                     <div class="input-group-btn">
                         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
                     </div>
@@ -124,7 +124,7 @@
                 <!-- <div class="col-md-1 col-md-1-offset-1"></div>     -->
                 <div class="col-md-4 col-md-4-offset-1"><label>ขอเช่าตั้งแต่วันที่ :</label></div>
                 <div class="col-md-8 col-md-8-offset-1 input-group">
-                    <input type="text" class="form-control" placeholder="dd/mm/YY">
+                    <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY">
                     <div class="input-group-btn">
                         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
                     </div>
@@ -142,7 +142,7 @@
                 <div class="col-lg-1 col-md-1"></div>
                 <div class="col-lg-3 col-md-3"><label>ถึงวันที่ :</label></div>
                 <div class="col-md-8 col-md-8-offset-1 input-group">
-                    <input type="text" class="form-control" placeholder="dd/mm/YY">
+                    <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY">
                     <div class="input-group-btn">
                         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
                     </div>
@@ -177,7 +177,7 @@
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-4 col-md-4"><label>ลงวันที่ :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8 input-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="input-datepicker form-control">
                         <div class="input-group-btn">
                           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
                         </div>
@@ -187,7 +187,7 @@
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label>นับตั้งแต่วันที่ :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8 input-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="input-datepicker form-control">
                         <div class="input-group-btn">
                           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
                         </div>
@@ -198,7 +198,7 @@
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-4 col-md-4"><label>สิ้นสุดวันที่ :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8 input-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="input-datepicker form-control">
                         <div class="input-group-btn">
                           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
                         </div>

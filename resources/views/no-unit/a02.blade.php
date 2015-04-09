@@ -41,7 +41,7 @@
             <div class="col-lg-3 col-md-3"><label>วันที่ :&nbsp;</label></div>
             <div class="col-lg-9 col-md-9">
                 <div class='input-group date'>
-                    <input type="text" class="form-control">
+                    <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY">
                     <div class="input-group-btn">
                       <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
                     </div>

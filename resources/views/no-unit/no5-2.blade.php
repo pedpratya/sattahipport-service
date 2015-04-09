@@ -16,8 +16,7 @@
                     <div class="col-lg-4 col-md-4"><label>(DD/MM/YY) :</label></div>
                     <div class="col-lg-8 col-md-8">
                         <div class='input-group date'>
-                          <input type="text"
-                           class="datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                          <input type="text"class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
                           <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                         </div>
                     </div>

@@ -65,10 +65,8 @@
                 <div class="col-lg-4 col-md-4"><label>DATE :&nbsp;</label></div>
                 <div class="col-lg-8 col-md-8">
                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                        </div>
+                        <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                     </div>
                 </div>
             </div> 
@@ -143,10 +141,8 @@
                 <div class="col-lg-4 col-md-4"><label>DATE :&nbsp;</label></div>
                 <div class="col-lg-8 col-md-8">
                     <div class="input-group">
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                        </div>
+                        <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                     </div>
                 </div>
             </div> 

@@ -13,10 +13,9 @@
     <div class="form-group">
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-4 col-md-4"><label  class="col-lg-12">วันที่ : </label></div>
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-7 col-md-7">
                 <div class='input-group date'>
-              <input type="text"
-               class="datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+              <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
               <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
             </div>
             </div>
@@ -135,8 +134,7 @@
             <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ตั้งแต่วันที่ : </label></div>
             <div class="col-lg-7 col-md-7">
                 <div class='input-group date'>
-                  <input type="text"
-                   class="datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                  <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
             </div>
@@ -147,8 +145,7 @@
             <div class="col-lg-4 col-md-4"><label  class="col-lg-12">เวลา : </label></div>
             <div class="col-lg-7 col-md-7">
                 <div class='input-group date'>
-                  <input type="text"
-                   class="datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                  <input type="text" class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
             </div>
@@ -160,7 +157,7 @@
             <div class="col-lg-7 col-md-7">
                 <div class='input-group date'>
                   <input type="text"
-                   class="datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                   class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
             </div>
@@ -172,7 +169,7 @@
             <div class="col-lg-7 col-md-7">
                 <div class='input-group date'>
                   <input type="text"
-                   class="datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                   class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
             </div>
@@ -213,7 +210,7 @@
             <div class="col-lg-7 col-md-7">
                 <div class='input-group date'>
                   <input type="text"
-                   class="datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                   class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
             </div>
@@ -233,7 +230,7 @@
             <div class="col-lg-7 col-md-7">
                 <div class='input-group date'>
                   <input type="text"
-                   class="datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
+                   class="input-datepicker form-control" placeholder="dd/mm/YY" name="date_doc"/>
                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
             </div>
@@ -300,11 +297,11 @@
   </div><!-- /.modal -->
   
 
-<script>	
-	$(function(){
-    
-    $( ".datepicker" ).datepicker({
-        dateFormat: "dd/mm/yy"
-    });
-</script>	
+    // <script>	
+    // 	$(function(){
+        
+    //     $( ".datepicker" ).datepicker({
+    //         dateFormat: "dd/mm/yy"
+    //     });
+    // </script>	
 @stop
