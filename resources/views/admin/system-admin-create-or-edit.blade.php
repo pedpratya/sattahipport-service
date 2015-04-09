@@ -180,15 +180,13 @@
 
 @section('modalhtml')
 <!-- popup Add Menu -->
-<div id="mdAddMenu" class="modal fade">
+<div id="mdAddMenu" class="modal modal-styled fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      <!-- heder -->
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h3 class="modal-title">เพิ่ม/แก้ไข Menu</h3>
       </div>
-
       <!-- body -->
       <div class="modal-body">
         <form class="form-horizontal">
@@ -209,24 +207,22 @@
 
       <!-- footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="btnSave">Save</button>
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
       </div>
-    </div>
-  </div>
-</div><!-- End popup Add Menu -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
 
 
 <!-- popup Add Page -->
-<div id="mdAddPage" class="modal fade">
+<div id="mdAddPage" class="modal modal-styled fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      <!-- heder -->
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h3 class="modal-title">เพิ่ม/แก้ไข Page</h3>
       </div>
-
       <!-- body -->
       <div class="modal-body">
         <form class="form-horizontal">
@@ -257,12 +253,13 @@
 
       <!-- footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="btnSave">Save</button>
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
       </div>
-    </div>
-  </div>
-</div><!-- popup Add Page -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- popup Add Page -->
 @stop
 
 @section('bottomscript')

@@ -168,14 +168,13 @@
 
 
 @section('modalhtml')
-<!-- modal Address -->           
-<div id="mdAddress" class="modal fade">
+<!-- modal Address --> 
+<div id="mdAddress" class="modal modal-styled fade">
   <div class="modal-dialog">
     <div class="modal-content">
-    <!-- modal Address header -->
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
-        <h4 class="modal-title">ตำแหน่งบริหารงาน</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">ที่อยู่</h3>
       </div>
     <!-- modal Address body -->
       <div class="modal-body">
@@ -237,22 +236,21 @@
       </div>
     <!-- modal Address footer -->
     <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      <button type="submit" class="btn btn-primary" id="btnSave">Save</button>
-    </div>
-    </div>
-  </div>
-</div><!-- End modal Address --> 
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
 
             
-<!-- modal Add -->          
-<div id="mdAdd" class="modal fade">
+<!-- modal Add --> 
+<div id="mdAdd" class="modal modal-styled fade">
   <div class="modal-dialog">
     <div class="modal-content">
-    <!-- modal Add header -->
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
-        <h4 class="modal-title">ตำแหน่งบริหารงาน</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">ตำแหน่งบริหารงาน</h3>
       </div>
     <!-- modal Add body -->
       <div class="modal-body">
@@ -277,12 +275,12 @@
       </div>
     <!-- modal Add footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" id="btnSave">Save</button>
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
       </div>
-    </div>
-  </div>
-</div><!-- End modal Add -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
 @stop
 
 @section('bottomscript')
