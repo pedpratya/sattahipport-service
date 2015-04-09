@@ -1,13 +1,13 @@
 <?php
 
-Breadcrumbs::register('inspection', function($breadcrumbs)
+Breadcrumbs::register('warehouse', function($breadcrumbs)
 {
-    $breadcrumbs->push('Inspection', '../inspection/home');
+    $breadcrumbs->push('Warehouse', '../warehouse/home');
 });
 
-Breadcrumbs::register('inspection-home', function($breadcrumbs)
+Breadcrumbs::register('warehouse-home', function($breadcrumbs)
 {
-    $breadcrumbs->parent('inspection');
-    $breadcrumbs->push('Home', '../inspection/home');
+    $breadcrumbs->parent('warehouse');
+    $breadcrumbs->push('Home', '../warehouse/home');
 });
 

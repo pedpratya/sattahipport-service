@@ -5,7 +5,7 @@
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบจัดเก็บผลประโยชน์</label>
+    <label>คู่มือการใช้งานระบบ จัดเก็บผลประโยชน์</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -21,7 +21,7 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bgAdmin">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบจัดเก็บผลประโยชน์</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ จัดเก็บผลประโยชน์</h4>
 
     <div class="form-group">
       <div class="col-lg-12 col-md-12">
