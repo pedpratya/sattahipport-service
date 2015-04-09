@@ -38,7 +38,7 @@
           <div class="form-group">
               <div class="col-md-6 col-md-6-offset-1">
                 <div class="col-md-4"><label>Code :</label></div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <input class="form-control" type="text" >
                 </div>
               </div>
@@ -50,7 +50,7 @@
           <div class="form-group">
               <div class="col-md-6 col-md-6-offset-1">
                 <div class="col-md-4"><label>ชั้น/ยศ :</label></div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <select class="form-control">
                     <option>---Select---</option>
                     <option>ยศ1</option>
@@ -69,7 +69,7 @@
           <div class="form-group">
               <div class="col-md-6 col-md-6-offset-1">
                 <div class="col-md-4"><label>หน่วยงาน :</label></div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <select class="form-control">
                     <option>---Select---</option>
                   </select>
@@ -89,38 +89,34 @@
           <div class="form-group">
               <div class="col-md-6 col-md-6-offset-1">
                 <div class="col-md-4"><label>User Name :</label></div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <input class="form-control" type="text" >
                 </div>
               </div>
               <div class="col-md-6 col-md-6-offset-1"> 
                 <div class="col-md-3"><label>Password :</label></div>                       
                 <div class="col-md-9">
-                  <input class="form-control" type="text" >
+                    <input class="form-control" type="password" >
                 </div>                                   
               </div>
           </div>
           <div class="form-group">
             <div class="col-md-6 col-md-6-offset-1">
               <div class="col-md-4"><label>P.Start :</label></div>
-              <div class="col-md-7">
-                <div class="input-group">
-                  <input type="text" class="form-control">
-                  <div class="input-group-btn">
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                  </div>
-               </div>
+              <div class="col-md-8">
+                <div class="input-datepicker input-group date" data-auto-close="true"  data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                    <input class="form-control" type="text">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                </div>
               </div>
             </div>
             <div class="col-md-6 col-md-6-offset-1"> 
               <div class="col-md-3"><label>P.Expire :</label></div>                       
               <div class="col-md-9">
-                <div class="input-group">
-                  <input type="text" class="form-control">
-                  <div class="input-group-btn">
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                  </div>
-               </div>
+                <div class="input-datepicker input-group date" data-auto-close="true"  data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                    <input class="form-control" type="text">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                </div>
               </div>                                   
             </div>
           </div>
