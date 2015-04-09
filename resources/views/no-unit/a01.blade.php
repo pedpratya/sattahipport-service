@@ -1,6 +1,6 @@
 ﻿@extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('nounit-a01'))
-@section('content')
+@section('content') 
 			<div class="portlet">
 
 				<div class="portlet-header">

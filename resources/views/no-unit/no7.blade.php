@@ -1,7 +1,7 @@
 @extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('nounit-no7'))
 @section('content')
-<div class="portlet">
+<div class="portlet"> 
     <div class="portlet-header">
         <h3>
         <i class="fa fa-tasks"></i>
