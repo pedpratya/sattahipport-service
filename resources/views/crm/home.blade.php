@@ -1,5 +1,5 @@
 @extends('layout.master-module')
-
+@section('breadcrumbs', Breadcrumbs::render('crm-home'))
 @section('content')
 
 <!-- header -->
