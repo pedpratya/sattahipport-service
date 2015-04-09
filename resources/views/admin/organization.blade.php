@@ -108,3 +108,9 @@
     </ul> <!-- End pagin -->
 
 @stop
+
+@section('bottomscript')
+  <script>
+      var idMainManu = '101';
+  </script>
+@stop

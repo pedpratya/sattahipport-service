@@ -107,7 +107,7 @@
 
 @yield('bottomscript')
 <script>
-    var url = "/sattahipport-service/public/left-manu/101";
+    var url = "/sattahipport-service/public/left-manu/"+idMainManu;
     $.get(url, function(data){ 
        $('#main-nav').html(data);
     });

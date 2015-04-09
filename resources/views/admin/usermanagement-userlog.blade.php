@@ -16,3 +16,7 @@
 
 
 @stop
+
+@section('bottomscript')
+  <script src="{{ asset('js/form/test2.js') }}"></script>
+@stop

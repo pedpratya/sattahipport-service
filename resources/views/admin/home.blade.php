@@ -64,6 +64,9 @@
     </div> 
   </div><!-- End body -->
 
-
-
+@stop
+@section('bottomscript')
+  <script>
+      var idMainManu = '101';
+  </script>
 @stop
