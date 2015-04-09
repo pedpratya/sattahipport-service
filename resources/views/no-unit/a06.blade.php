@@ -1,13 +1,17 @@
 ﻿@extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('nounit-a06'))
 @section('content')
-    <form class="form-horizontal">
-        <div class="col-lg-12 col-md-12">
-                <h3 class="text-center">OUTBOUND MANIFEST</h3>
-         </div>
-        <div class="col-lg-12 col-md-12 hr-topic"></div>
-        
-            <div class="row form-group">
+
+<div class="portlet">
+        <div class="portlet-header">
+            <h3>
+                <i class="fa fa-tasks"></i>
+                    OUTBOUND MANIFEST 
+            </h3>
+        </div> <!-- /.portlet-header -->
+    <div class="portlet-content">		
+    <div class="table-responsive">
+       
                 <div class="col-lg-12 col-md-12">
                 <table class="table table-bordered">
                     <tr class="active">
@@ -106,6 +110,9 @@
                     </tr>
                   </table>
                 </div>    
-            </div>
-    </form> 
+
+    </div> <!-- /.table-responsive -->
+    </div> <!-- /.portlet-content -->
+</div> <!-- /.portlet -->				
+      
 @stop

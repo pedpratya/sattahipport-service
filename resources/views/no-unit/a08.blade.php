@@ -1,14 +1,22 @@
 ﻿@extends('layout.master-module')
 @section('breadcrumbs', Breadcrumbs::render('nounit-a08'))
 @section('content')
-    <form class="form-horizontal">
+<div class="row">
+
+
+
+<div class="portlet">
+        <div class="portlet-header">
+            <h3>
+                <i class="fa fa-tasks"></i>
+                    
+            </h3>
+        </div> <!-- /.portlet-header -->
+    <div class="portlet-content">		
+    <div class="table-responsive">
+
+
         <div class="col-lg-12 col-md-12">
-                <h3 class="text-center">รายงานเรือเข้า - ออกท่าเรือจุกเสม็ด</h3>
-                <h3 class="text-center">ประจำเดือน เมษายน ๒๕๕๗</h3>
-         </div>
-        <div class="col-lg-12 col-md-12 hr-topic"></div>
-        
-            <div class="form-group">
                 <table class="table table-bordered table-hover">
                     <tr class="active">
                         <th class="text-center" rowspan="2">ลำดับ</th>
@@ -52,5 +60,10 @@
                     </tr>                    
                  </table>
             </div>
-    </form> 
+
+    </div> <!-- /.table-responsive -->
+    </div> <!-- /.portlet-content -->
+</div> <!-- /.portlet -->				
+
+                                                            
 @stop

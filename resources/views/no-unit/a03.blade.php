@@ -3,38 +3,44 @@
 @section('content')
 
 
-			<div class="portlet">
-
-				<div class="portlet-header">
-
-					<h3>
-						<i class="fa fa-tasks"></i>
-						CARGOES BACKLOAD PLAN
-					</h3>
-
-				</div> <!-- /.portlet-header -->
-
-				<div class="portlet-content">
-
-					<div class="row">   
+<div class="portlet">
+        <div class="portlet-header">
+                <h3>
+                        <i class="fa fa-tasks"></i>
+                        CARGOES BACKLOAD PLAN
+                </h3>
+        </div> <!-- /.portlet-header -->
+        <div class="portlet-content">
+        <div class="row">  
+            
         <form class="form-horizontal">                                    
             <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-4 col-md-4"><label>DATE UPDATE :&nbsp;</label></div>
-                    <div class="col-lg-8 col-md-8 input-group">
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                    <div class="col-lg-8 col-md-8">
+                        <div class="input-datepicker input-group date" data-auto-close="true" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                     </div>
                 </div> 
             </div>
-	</form> 				</div> <!-- /.row -->
+	</form> 				
+                </div> <!-- /.row -->
 
-				</div> <!-- /.portlet-content -->
+        </div> <!-- /.portlet-content -->
 
-			</div> <!-- /.portlet -->                                            
-            <div class="form-group">
+</div> <!-- /.portlet -->                                            
+
+<div class="portlet">
+        <div class="portlet-header">
+            <h3>
+                <i class="fa fa-tasks"></i>
+                 
+            </h3>
+        </div> <!-- /.portlet-header -->
+    <div class="portlet-content">		
+    <div class="table-responsive">                        
                 <table class="table table-bordered">       
                     <tr class="active">
                         <th class="text-center"></th>
@@ -98,7 +104,10 @@
                     </tr> 
                     
                  </table>
-            </div>
+    </div> <!-- /.table-responsive -->
+    </div> <!-- /.portlet-content -->
+</div> <!-- /.portlet -->				
+
 
 
 @stop
