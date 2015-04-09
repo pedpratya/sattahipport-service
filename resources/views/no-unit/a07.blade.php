@@ -38,12 +38,10 @@
                     </label>
                 </div>
                 <div class="col-lg-8 col-md-8">
-                    <div class='input-group date'>
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                        </div>
-                    </div>    
+                    <div class="input-datepicker input-group date" data-auto-close="true" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                        <input class="form-control" type="text">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>     
                 </div>
             </div>
         </div>
@@ -73,11 +71,9 @@
             <div class="col-lg-6 col-md-6">
                 <div class="col-lg-4 col-md-4"><label>เจ้าพนักงาน วันที่ :</label></div>
                 <div class="col-lg-8 col-md-8">
-                    <div class='input-group date'>
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                        </div>
+                    <div class="input-datepicker input-group date" data-auto-close="true" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                        <input class="form-control" type="text">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>    
                 </div>
             </div>
@@ -92,12 +88,10 @@
             <div class="col-lg-6 col-md-6">
                 <div class="col-lg-4 col-md-4"><label>หัวหน้าแผนก วันที่ :</label></div>
                  <div class="col-lg-8 col-md-8">
-                    <div class='input-group date'>
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                        </div>
-                    </div>    
+                    <div class="input-datepicker input-group date" data-auto-close="true"  data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                        <input class="form-control" type="text">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>     
                 </div>
             </div>
         </div>
@@ -111,12 +105,10 @@
         <div class="col-lg-6 col-md-6">
             <div class="col-lg-4 col-md-4"><label>ถึง : </label></div>
             <div class="col-lg-8 col-md-8">
-                <div class='input-group date'>
-                    <input type="text" class="form-control">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                    </div>
-                </div>    
+                <div class="input-datepicker input-group date" data-auto-close="true"  data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                        <input class="form-control" type="text">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                </div>     
             </div>
         </div>
     </div>
@@ -154,7 +146,15 @@
 				</div> <!-- /.portlet-content -->
 
 			</div> <!-- /.portlet -->
-                        
+ 
+<div class="portlet">
+        <div class="portlet-header">
+            <h3>
+                <i class="fa fa-tasks"></i>    
+            </h3>
+        </div> <!-- /.portlet-header -->
+    <div class="portlet-content">		
+    <div class="table-responsive">                        
     <div class="form-group">
 	<table  class="table table-bordered table-hover">
 	    <tr class="active">
@@ -190,6 +190,9 @@
 	    
 	</table>
     </div>
+    </div> <!-- /.table-responsive -->
+    </div> <!-- /.portlet-content -->
+</div> <!-- /.portlet -->				
 
 
 

@@ -2,20 +2,16 @@
 @section('breadcrumbs', Breadcrumbs::render('nounit-a05'))
 @section('content')
 
-			<div class="portlet">
-
-				<div class="portlet-header">
-
-					<h3>
-						<i class="fa fa-tasks"></i>
-						แบบตรวจนับสินค้า
-					</h3>
-
-				</div> <!-- /.portlet-header -->
-
-				<div class="portlet-content">
-
-					<div class="row">
+<div class="portlet">
+        <div class="portlet-header">
+                <h3>
+                        <i class="fa fa-tasks"></i>
+                        แบบตรวจนับสินค้า
+                </h3>
+        </div> <!-- /.portlet-header -->
+        <div class="portlet-content">
+        <div class="row">
+                    
     <form class="form-horizontal">
             <div class="form-group">
                 <div class="col-lg-6 col-md-6"> 
@@ -40,11 +36,9 @@
                 <div class="col-lg-6 col-md-6"> 
                     <div class="col-lg-4 col-md-4"><label>Date :&nbsp;</label></div>
                     <div class="col-lg-8 col-md-8">
-                        <div class='input-group date'>
-                            <input type="text" class="form-control">
-                            <div class="input-group-btn">
-                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                            </div>
+                        <div class="input-datepicker input-group date" data-auto-close="true" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>    
                     </div>
                 </div> 
@@ -61,11 +55,24 @@
                 </div> 
             </div>
             </form> 
-					</div> <!-- /.row -->
+            
+            </div> <!-- /.row -->
 
-				</div> <!-- /.portlet-content -->
+    </div> <!-- /.portlet-content -->
 
-			</div> <!-- /.portlet -->        
+</div> <!-- /.portlet --> 
+                        
+
+<div class="portlet">
+        <div class="portlet-header">
+            <h3>
+                <i class="fa fa-tasks"></i>
+                   
+            </h3>
+
+        </div> <!-- /.portlet-header -->
+    <div class="portlet-content">		
+    <div class="table-responsive">                        
             <div class="form-group">
                 <table class="table table-bordered table-hover">
                     <tr class="active">
@@ -104,5 +111,8 @@
                     </tr>
                  </table>
             </div>
+    </div> <!-- /.table-responsive -->
+    </div> <!-- /.portlet-content -->
+ </div> <!-- /.portlet -->				
 
 @stop
