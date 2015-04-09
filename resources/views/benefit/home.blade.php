@@ -1,5 +1,5 @@
 @extends('layout.master-module')
-
+@section('breadcrumbs', Breadcrumbs::render('benefit-home'))
 @section('content')
 
 <!-- header -->
