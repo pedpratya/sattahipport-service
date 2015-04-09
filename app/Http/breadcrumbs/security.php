@@ -8,6 +8,6 @@ Breadcrumbs::register('security', function($breadcrumbs)
 Breadcrumbs::register('security-home', function($breadcrumbs)
 {
     $breadcrumbs->parent('security');
-    $breadcrumbs->push('Manual', '../security/home');
+    $breadcrumbs->push('Home', '../security/home');
 });
 
