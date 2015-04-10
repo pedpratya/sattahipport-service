@@ -20,10 +20,10 @@ Route::group(array('prefix' => 'benefit'), function() {
             return view('benefit.index');
     }));
     
-    Route::get('staff-name', array(
-        'as' => 'staff-name',
+    Route::get('tariff-add', array(
+        'as' => 'tariff-add',
         function() {
-            return view('benefit.staff-name');
+            return view('benefit.tariff-add');
     }));
 
     Route::get('tariff', array(
