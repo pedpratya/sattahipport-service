@@ -215,8 +215,8 @@
         <div class="col-lg-11 col-md-11">
           <fieldset class="scheduler-border">
           <legend class="scheduler-border">Costomer Inform</legend>
-            <div class="col-md-5"><input type="radio"><label>Approved</label></div>
-            <div class="col-md-6"><input type="radio"><label>No Approved</label></div>
+            <div class="col-md-5"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"><label>Approved</label></div>
+            <div class="col-md-6"><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"><label>No Approved</label></div>
           <div class="form-group">  
             <div class="col-md-5"><button class="btn btn-primary" type="submit">Sent inf</button></div>
             <div class="col-md-6">
