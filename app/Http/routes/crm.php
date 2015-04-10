@@ -13,6 +13,12 @@ Route::group(array('prefix' => 'crm'), function() {
         function() {
             return view('crm.home');
     }));
+    
+    Route::get('registration-system', array(
+        'as' => 'registration-system',
+        function() {
+            return view('crm.registration-system');
+    }));
 
 
 });
