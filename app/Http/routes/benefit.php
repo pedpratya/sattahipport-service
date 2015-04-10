@@ -13,6 +13,18 @@ Route::group(array('prefix' => 'benefit'), function() {
         function() {
             return view('benefit.home');
     }));
+    
+    Route::get('index', array(
+        'as' => 'index',
+        function() {
+            return view('benefit.index');
+    }));
+    
+    Route::get('staff-name', array(
+        'as' => 'staff-name',
+        function() {
+            return view('benefit.staff-name');
+    }));
 
 
 });

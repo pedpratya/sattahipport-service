@@ -15,6 +15,10 @@
             <img src="{{ asset('img/icon-mainmenu/icon-portManage.png') }}">
             <div class="box-menu-text-m">Port Manage</div>
         </div>
+        <div class="box-menu">
+            <img src="{{ asset('img/icon-mainmenu/icon-portManage.png') }}">
+            <div class="box-menu-text-m">Port Manage</div>
+        </div>
         <br>
         <div class="box-menu">
             <img src="{{ asset('img/icon-mainmenu/icon-egate.png') }}">
@@ -28,6 +32,9 @@
             <img src="{{ asset('img/icon-mainmenu/icon-areaManame.png') }}">
             <div class="box-menu-text-m">บริหารพื้นที</div>
         </div>
-
+        <div class="box-menu">
+            <img src="{{ asset('img/icon-mainmenu/icon-areaManame.png') }}">
+            <div class="box-menu-text-m">บริหารพื้นที</div>
+        </div>
     </div>
 @stop
