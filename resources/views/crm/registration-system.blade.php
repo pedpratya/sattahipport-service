@@ -3,7 +3,24 @@
 @section('content')
 
 <!-- form -->
-
+<div class="form group">
+  <div class="col-md-5">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary btn-lg">Document</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary btn-lg">Approval #1</button>
+    </div>
+    <div class="btn-group"> 
+      <button type="button" class="btn btn-primary btn-lg">Approval #2</button>
+    </div>
+  </div>
+  <div class="col-md-offset-9">  
+    <label class="col-md-7">พิมพ์ข้อมูลลูกค้าทั้งหมด</label>
+      <button type="button" class="btn btn-default" aria-label="Left Align">
+      <span class="glyphicon glyphicon-print" aria-hidden="true"></span></button>
+  </div>
+</div>
 <div class="portlet">
   <div class="portlet-content">
 <form class="form-horizontal" >
@@ -39,15 +56,15 @@
         </div>
       </div>
       <div class="form-group">
-        <div class="col-md-6 col-md-6-offset-1">    
+        <div class="col-md-6 col-md-6">    
           <label class="col-md-4">เลขผู้เสียภาษี :</label>
           <div class="col-md-7 col-md-7-offset-1">
             <input type="text" class="form-control">
           </div>
         </div>
-        <div class="col-md-6 col-md-6-offset-1"> 
-          <div class="col-md-5 col-md-5-offset-1"><label>เอกสารสำคัญ :</label></div>
-          <div class="col-md-7 col-md-7-offset-1">
+        <div class="col-md-6 col-md-6"> 
+          <label class="col-md-4">เอกสารสำคัญ :</label>
+          <div class="col-md-7 col-md-7 col-md-offset-1">
             <div class="right-inner-addon ">
               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
               <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search" />
@@ -157,9 +174,75 @@
       </div>
     </div>
   </div>
-</form><!-- End form -->
+</form>
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+  <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Doc.Appv.</a></li>
+  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Appv.No.1</a></li>
+  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Appv.No.2</a></li>
+  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Cust-Inform</a></li>
+</ul>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+    <div class="form-group">
+      <div class="col-md-8 col-lg-8">
+        <div class="col-md-6 col-md-6">    
+          <div class="col-md-4"><label>Request Date:</label></div>
+          <div class="col-md-7 col-md-7-offset-1">
+            <div class="right-inner-addon ">
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6"> 
+          <label class="col-md-4">Approve Date:</label>
+          <div class="col-md-7 col-md-7 col-md-offset-1">
+            <div class="right-inner-addon ">
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+              <input type="text" class="form-control">
+            </div>    
+          </div>                                  
+        </div>   
+      <div class="form-group">
+        <div class="col-md-12 col-lg-12">    
+            <label class="col-md-2">Comment :</label>
+            <div class="col-md-10"><textarea class="form-control" rows="4"></textarea></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-11 col-md-11">
+          <fieldset class="scheduler-border">
+          <legend class="scheduler-border">Costomer Inform</legend>
+            <div class="col-md-5"><input type="radio"><label>Approved</label></div>
+            <div class="col-md-6"><input type="radio"><label>No Approved</label></div>
+          <div class="form-group">  
+            <div class="col-md-5"><button class="btn btn-primary" type="submit">Sent inf</button></div>
+            <div class="col-md-6">
+              <div class="right-inner-addon ">
+                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                <input type="text" class="form-control">
+              </div> 
+            </div>
+          </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="profile"></div>
+  <div role="tabpanel" class="tab-pane fade" id="messages"></div>
+  <div role="tabpanel" class="tab-pane fade" id="settings"></div>
 </div>
 </div>
+</div>
+
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+</script>
 @stop
 
 
@@ -522,6 +605,11 @@
 @stop
 
 @section('bottomscript')
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+</script>
   <script>
       var idMainManu = '301';
   </script>
