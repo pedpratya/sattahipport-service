@@ -2,13 +2,13 @@
 
 Breadcrumbs::register('admin', function($breadcrumbs)
 {
-    $breadcrumbs->push('Admin', '../admin/home');
+    $breadcrumbs->push('ระบบ Admin', '../admin/home');
 });
 
 Breadcrumbs::register('admin-home', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin');
-    $breadcrumbs->push('Manual', '../admin/home');
+    $breadcrumbs->push('หน้าแรก', '../admin/home');
 });
 
 Breadcrumbs::register('organization', function($breadcrumbs)

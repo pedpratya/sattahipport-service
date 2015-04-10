@@ -2,12 +2,12 @@
 
 Breadcrumbs::register('transfer', function($breadcrumbs)
 {
-    $breadcrumbs->push('Transfer', '../transfer/home');
+    $breadcrumbs->push('ระบบเครื่องมือบรรทุกขนถ่าย', '../transfer/home');
 });
 
 Breadcrumbs::register('transfer-home', function($breadcrumbs)
 {
     $breadcrumbs->parent('transfer');
-    $breadcrumbs->push('Home', '../transfer/home');
+    $breadcrumbs->push('หน้าแรก', '../transfer/home');
 });
 

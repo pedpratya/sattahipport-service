@@ -2,12 +2,12 @@
 
 Breadcrumbs::register('warehouse', function($breadcrumbs)
 {
-    $breadcrumbs->push('Warehouse', '../warehouse/home');
+    $breadcrumbs->push('ระบบคลังสินค้า', '../warehouse/home');
 });
 
 Breadcrumbs::register('warehouse-home', function($breadcrumbs)
 {
     $breadcrumbs->parent('warehouse');
-    $breadcrumbs->push('Home', '../warehouse/home');
+    $breadcrumbs->push('หน้าแรก', '../warehouse/home');
 });
 

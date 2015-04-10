@@ -2,12 +2,12 @@
 
 Breadcrumbs::register('e-gate', function($breadcrumbs)
 {
-    $breadcrumbs->push('E-Gate', '../e-gate/home');
+    $breadcrumbs->push('ระบบ E-Gate', '../e-gate/home');
 });
 
 Breadcrumbs::register('e-gate-home', function($breadcrumbs)
 {
     $breadcrumbs->parent('e-gate');
-    $breadcrumbs->push('Home', '../e-gate/home');
+    $breadcrumbs->push('หน้าแรก', '../e-gate/home');
 });
 

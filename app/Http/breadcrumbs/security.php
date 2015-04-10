@@ -2,12 +2,12 @@
 
 Breadcrumbs::register('security', function($breadcrumbs)
 {
-    $breadcrumbs->push('Security', '../security/home');
+    $breadcrumbs->push('ระบบรักษาความปลอดภัย', '../security/home');
 });
 
 Breadcrumbs::register('security-home', function($breadcrumbs)
 {
     $breadcrumbs->parent('security');
-    $breadcrumbs->push('Home', '../security/home');
+    $breadcrumbs->push('หน้าแรก', '../security/home');
 });
 

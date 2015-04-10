@@ -2,12 +2,12 @@
 
 Breadcrumbs::register('benefit', function($breadcrumbs)
 {
-    $breadcrumbs->push('Benefit', '../benefit/home');
+    $breadcrumbs->push('ระบบจัดเก็บผลประโยชน์', '../benefit/home');
 });
 
 Breadcrumbs::register('benefit-home', function($breadcrumbs)
 {
     $breadcrumbs->parent('benefit');
-    $breadcrumbs->push('Home', '../benefit/home');
+    $breadcrumbs->push('หน้าแรก', '../benefit/home');
 });
 
