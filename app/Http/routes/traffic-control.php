@@ -13,6 +13,12 @@ Route::group(array('prefix' => 'traffic-control'), function() {
         function() {
             return view('traffic-control.home');
     }));
+    
+    Route::get('index', array(
+        'as' => 'index',
+        function() {
+            return view('traffic-control.index');
+    }));
 
 
 });
