@@ -26,6 +26,17 @@ Route::group(array('prefix' => 'benefit'), function() {
             return view('benefit.staff-name');
     }));
 
+    Route::get('tariff', array(
+        'as' => 'tariff',
+        function() {
+            return view('benefit.tariff');
+    }));
+
+    Route::get('tariff-edit', array(
+        'as' => 'tariff-edit',
+        function() {
+            return view('benefit.tariff-edit');
+    }));
 
 });
 
