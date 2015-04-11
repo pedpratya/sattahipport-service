@@ -91,12 +91,36 @@
 		<nav id="sidebar">		
 			<ul id="main-nav" class="open-active" data-id="{{ asset($manu['mainManu']) }}">
                             @foreach($manu['leftManu'] as $key => $value)
-                               <li class="" id="{{ asset($value['url']) }}">				
+                            
+                            <?php  if (!isset($value['child'])) { ?>
+                               <li class="" onclick="changePage('{!! asset($value["url"]) !!}');">				
                                      <a>
-                                        <i class='fa fa-tasks'></i>
+                                        <i class='fa fa-indent'></i>
                                         {{ $value['name'] }}
                                      </a>   				
                                </li>
+                                
+                            <?php } else { ?>
+                                <li class="dropdown">
+                                            <a href="javascript:;">
+                                                    <i class="fa fa-caret-square-o-down"></i>
+                                                     {{ $value['name'] }}
+                                                    <span class="caret"></span>
+                                            </a>				
+
+                                            <ul class="sub-nav">
+                                                @foreach($value['child'] as $val)
+                                                
+                                                    <li onclick="changePage('{!! asset($val["url"]) !!}');">
+                                                            <a >
+                                                                    <i class="fa fa-angle-double-right"></i> 
+                                                                    {{ $val['name'] }}
+                                                            </a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                </li>
+                            <?php } ?>
                            @endforeach
                         </ul>				
 		</nav> <!-- #sidebar -->
@@ -154,12 +178,9 @@
         changePage($('#main-nav').attr('data-id'));
     });
 
-    $("#main-nav li").click(function() { 
-        changePage($(this).attr('id'));
-    });
-       
     function changePage (urlLoad) {
         console.log('urlLoad',urlLoad);
+        if(urlLoad){
         $("#content-modal").html(textLoading).load(urlLoad, function(responseTxt, statusTxt, xhr){
 
             if ( statusTxt == "error" ) {
@@ -167,6 +188,7 @@
                 $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
             }
          });
+        }
     }
     //*--Loadpage--*//
 </script>

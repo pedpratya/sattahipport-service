@@ -7,10 +7,8 @@
  */
 
 Route::group(array('prefix' => 'personnel'), function() {
-
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
-            return View::make('personnel.home');
-    }));
+    
+    Route::get('/',  function() {
+            return view('personnel.home');
+    }); 
 });

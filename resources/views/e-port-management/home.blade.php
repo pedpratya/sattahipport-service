@@ -1,6 +1,5 @@
 @extends('layout.content')
-
-
+@section('breadcrumbs', Breadcrumbs::render('e-port-management-home'))
 @section('content')
     <div class="container-fluid text-center">    
         <div class="box-menu">

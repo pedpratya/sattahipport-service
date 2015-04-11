@@ -8,11 +8,9 @@
 
 Route::group(array('prefix' => 'area-management'), function() {
     
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
+    Route::get('/',  function() {
             return view('area-management.home');
-    }));
+    }); 
 
 
 });

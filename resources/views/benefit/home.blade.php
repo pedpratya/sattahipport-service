@@ -23,78 +23,78 @@
   <div class="col-lg-12 col-md-12 bgAdmin">
     <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ จัดเก็บผลประโยชน์</h4>
 
-    <div class="form-group">
-      <div class="col-lg-12 col-md-12">
+
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">ระบบบริหารจัดการอัตราภาระ TARIFF</button>
           </a>
         </div>
       </div>  
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">ทะเบียนคุมลูกหนี้</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">ทะเบียนคุมเงินหลักประกัน</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">ทะเบียนคุมเงินมัดจำ</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">คำนวณอัตราเบี้ยปรับ</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">ทะเบียนคุมไฟฟ้า ประปา</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">ลูกหนี้ไฟฟ้า ประปา</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">ระบบพิมพ์ใบแจ้งหนี้</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">ระบบคำนวณค่าภาระเรือ</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">รายงานต่างๆ</button>
           </a>
         </div>
       </div>      
-    </div> 
+
   </div><!-- End body -->
 
 @stop

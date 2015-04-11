@@ -24,44 +24,31 @@
     <div class="col-lg-12 col-md-12 bgAdmin">
       <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบผู้ดูแลระบบ Admin</h4>
 
-      <div class="form-group">
-        <div class="col-lg-12 col-md-12">
+        <div class="row">
           <div class="col-lg-4 col-md-4">
-            <a href = "organization">
-              <button type="button" class="btn btn-primary btn-block">องค์กรณ์</button>
-            </a>
+              <button type="button" class="btn btn-primary btn-block" onclick="changePage('../admin/organization')">องค์กร</button>
           </div>
         </div>  
-        <div class="col-lg-12 col-md-12">
+      
+        <div class="row">
           <div class="col-lg-4 col-md-4">
-            <a href = "system-admin">
-              <button type="button" class="btn btn-primary btn-block">เมนูระบบงาน</button>
-            </a>
+              <button type="button" class="btn btn-primary btn-block" onclick="changePage('../admin/system-admin')">เมนูระบบงาน</button>
           </div>
         </div>    
-        <div class="col-lg-12 col-md-12">
+
+        <div class="row">
           <div class="col-lg-4 col-md-4">
-            <button type="button" class="btn btn-primary btn-block">เมนูกำหนดค่าคงที่</button>
-          </div>
-        </div> 
-        <div class="col-lg-12 col-md-12">
-          <div class="col-lg-4 col-md-4">
-            <button type="button" class="btn btn-primary btn-block">Software Management</button>
+              <button type="button" class="btn btn-primary btn-block" onclick="changePage('../admin/usermanagement')">ผู้ใช้งานในระบบ</button>
           </div>
         </div>
-        <div class="col-lg-12 col-md-12">
+      
+        <div class="row">
           <div class="col-lg-4 col-md-4">
-            <a href = "usermanagement">
-              <button type="button" class="btn btn-primary btn-block">ผู้ใช้งานในระบบ</button>
-            </a>
+            <button type="button" class="btn btn-primary btn-block" onclick="changePage('#')">รายงานต่างๆ</button>
           </div>
         </div>
-        <div class="col-lg-12 col-md-12">
-          <div class="col-lg-4 col-md-4">
-            <button type="button" class="btn btn-primary btn-block">รายงานต่างๆ</button>
-          </div>
-        </div>
-      </div> 
+      
+ 
     </div><!-- End body -->    
 @stop
 

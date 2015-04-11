@@ -14,37 +14,37 @@ Breadcrumbs::register('admin-home', function($breadcrumbs)
 Breadcrumbs::register('organization', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin');
-    $breadcrumbs->push('Organization', route('organization'));
+    $breadcrumbs->push('องค์กร', route('organization'));
 });
 
 Breadcrumbs::register('organization-create-or-edit', function($breadcrumbs)
 {
     $breadcrumbs->parent('organization');
-    $breadcrumbs->push('Create or Edit', route('organization-create-or-edit'));
+    $breadcrumbs->push('เพิ่ม-แก้ไข', route('organization-create-or-edit'));
 });
 
 Breadcrumbs::register('system-admin', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin');
-    $breadcrumbs->push('System Admin', route('system-admin'));
+    $breadcrumbs->push('ระบบงาน', route('system-admin'));
 });
 
 Breadcrumbs::register('system-admin-create-or-edit', function($breadcrumbs)
 {
     $breadcrumbs->parent('system-admin');
-    $breadcrumbs->push('Create or Edit', route('system-admin-create-or-edit'));
+    $breadcrumbs->push('เพิ่ม-แก้ไข', route('system-admin-create-or-edit'));
 });
 
 Breadcrumbs::register('usermanagement', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin');
-    $breadcrumbs->push('Usermanagement', route('usermanagement'));
+    $breadcrumbs->push('ผู้ใช้งานในระบบ', route('usermanagement'));
 });
 
 Breadcrumbs::register('usermanagement-create-or-edit', function($breadcrumbs)
 {
     $breadcrumbs->parent('usermanagement');
-    $breadcrumbs->push('Create or Edit', route('usermanagement-create-or-edit'));
+    $breadcrumbs->push('เพิ่ม-แก้ไข', route('usermanagement-create-or-edit'));
 });
 
 Breadcrumbs::register('usermanagement-userlog', function($breadcrumbs)

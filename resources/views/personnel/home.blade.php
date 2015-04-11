@@ -23,31 +23,31 @@
   <div class="col-lg-12 col-md-12 bgAdmin">
     <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบบุคลากรแรงงาน</h4>
 
-    <div class="form-group">
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-5 col-md-5">
           <a href = "">
             <button type="button" class="btn btn-primary btn-block">ส่วนเจ้าหน้าที่แต่ละระบบ</button>
           </a>
         </div>
       </div>  
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-5 col-md-5">
           <a href = "">
             <button type="button" class="btn btn-primary btn-block">รายงานแรงงาน</button>
           </a>
         </div>
       </div>    
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-5 col-md-5">
           <button type="button" class="btn btn-primary btn-block">รายงานเจ้าหน้าและแรงงานที่ปฏิบัติงานในแต่ละ Berth</button>
         </div>
       </div> 
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-5 col-md-5">
           <button type="button" class="btn btn-primary btn-block">รายงานเวลาการเข้า-ออก พื้นที่</button>
         </div>
       </div> 
+    
   </div><!-- End body -->
 
 @stop

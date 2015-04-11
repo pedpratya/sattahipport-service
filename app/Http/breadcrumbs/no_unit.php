@@ -2,7 +2,13 @@
 
 Breadcrumbs::register('nounit', function($breadcrumbs)
 {
-    $breadcrumbs->push('No Unit', '../no-unit/home');
+    $breadcrumbs->push('No Unit', 'no-unit/');
+});
+
+Breadcrumbs::register('nounit-home', function($breadcrumbs)
+{
+    $breadcrumbs->parent('nounit');
+    $breadcrumbs->push('หน้าแรก');
 });
 
 Breadcrumbs::register('nounit-test2', function($breadcrumbs)

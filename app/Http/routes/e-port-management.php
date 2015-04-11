@@ -8,11 +8,9 @@
 
 Route::group(array('prefix' => 'e-port-management'), function() {
 
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
-            return View::make('e-port-management.home');
-    }));
+    Route::get('/',  function() {
+            return view('e-port-management.home');
+    });
     
     Route::get('port-information', array(
         'as' => 'port-information',

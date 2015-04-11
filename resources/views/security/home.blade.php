@@ -24,21 +24,21 @@
   <div class="col-lg-12 col-md-12 bgAdmin">
     <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบรักษาความปลอดภัย</h4>
 
-    <div class="form-group">
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">เจ้าหน้าที่เพื่อบริหารจัดการระบบ CCTV</button>
           </a>
         </div>
       </div>  
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">รายงานผลระบบรักษาความปลอดภัยทั้งสองระบบ </button>
           </a>
         </div>
-      </div>     
+      </div>   
+    
   </div><!-- End body -->
 
 @stop

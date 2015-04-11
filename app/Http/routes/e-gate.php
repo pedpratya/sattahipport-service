@@ -8,12 +8,9 @@
 
 Route::group(array('prefix' => 'e-gate'), function() {
     
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
+    Route::get('/',  function() {
             return view('e-gate.home');
-    }));
-
+    }); 
 
 });
 

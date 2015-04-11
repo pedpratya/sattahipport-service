@@ -8,6 +8,35 @@
 
 Route::group(array('prefix' => 'no-unit'), function() {
     
+    Route::get('/',  function() {
+        
+                        $manu = [ 'name' =>'ยังไม่ทราบกลุ่มเมนู',
+                            'mainManu' =>'no-unit',
+                            'leftManu' =>[
+                                            [ 'name' =>'no3','url' => 'no3' ],
+                                            [ 'name' =>'no5-1','url' => 'no5-1' ],
+                                            [ 'name' =>'no5-1','url' => 'no5-1' ],
+                                            [ 'name' =>'no5-2','url' => 'no5-2' ],
+                                            [ 'name' =>'no7','url' => 'no7' ],
+                                            [ 'name' =>'no24','url' => 'no24' ],
+                                            [ 'name' =>'no26','url' => 'no26' ],
+                                            [ 'name' =>'no4-1','url' => 'no4-1' ],
+                                            [ 'name' =>'no4-2','url' => 'no4-2' ],
+                                            [ 'name' =>'no30','url' => 'no30' ],
+                                            [ 'name' =>'a01','url' => 'a01' ],
+                                            [ 'name' =>'a02','url' => 'a02' ],
+                                            [ 'name' =>'a03','url' => 'a03' ],
+                                            [ 'name' =>'a04','url' => 'a04' ],
+                                            [ 'name' =>'a05','url' => 'a05' ],
+                                            [ 'name' =>'a06','url' => 'a06' ],
+                                            [ 'name' =>'a07','url' => 'a07' ],
+                                            [ 'name' =>'a08','url' => 'a08' ],
+                                            [ 'name' =>'test2','url' => 'test2' ]      
+                                        ]
+                        ];
+            return view('no-unit.home', compact('manu'));
+    });
+    
     Route::get('no3', array(
         'as' => 'no3',
         function() {

@@ -7,11 +7,9 @@
  */
 
 Route::group(array('prefix' => 'security'), function() {
-
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
-            return View::make('security.home');
-    }));  
+    
+    Route::get('/',  function() {
+            return view('security.home');
+    }); 
 
 });

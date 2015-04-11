@@ -8,11 +8,9 @@
 
 Route::group(array('prefix' => 'traffic-control'), function() {
     
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
+    Route::get('/',  function() {
             return view('traffic-control.home');
-    }));
+    }); 
     
     Route::get('index', array(
         'as' => 'index',

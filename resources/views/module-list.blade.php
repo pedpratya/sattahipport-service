@@ -4,7 +4,7 @@
 
      @foreach($modules['manu'] as $key => $value)
         <div class="box-menu">
-        <a href="{{ $value['url'] }}">
+        <a href="{{ $value['url'].$value['id'] }}">
             <img src="{{ asset($value['images']) }}">            
             <span>{!! $value['name'] !!}</span>
         </a>  

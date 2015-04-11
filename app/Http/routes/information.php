@@ -6,15 +6,12 @@
  * and open the template in the editor.
  */
 
-Route::group(array('prefix' => 'inspection'), function() {
-    
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
-            return view('inspection.home');
-    }));
+Route::group(array('prefix' => 'information'), function() {
 
+    Route::get('/',  function() {
+            return view('information.home');
+    });
+    
 
 });
 
-	

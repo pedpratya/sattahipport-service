@@ -23,29 +23,29 @@
   <div class="col-lg-12 col-md-12 bgAdmin">
     <h4 class="text-center">ยินดีต้อนรับเข้าสู่ ระบบ e-Gate</h4>
 
-    <div class="form-group">
-      <div class="col-lg-12 col-md-12">
+
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">Vehcle Access</button>
           </a>
         </div>
       </div>  
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">Enter Form</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">Car Tracking System</button>
           </a>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12">
+      <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
             <button type="button" class="btn btn-primary btn-block">Report</button>
@@ -53,7 +53,6 @@
         </div>
       </div>    
       
-    </div> 
   </div><!-- End body -->
 
 @stop

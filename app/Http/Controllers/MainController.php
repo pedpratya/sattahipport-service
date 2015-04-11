@@ -47,502 +47,350 @@ class MainController extends Controller {
                                                 'id' =>'10102', 'name' =>'ระบบงาน' ,'url' => 'admin/system-admin'
                                             ],
                                             [
-                                                'id' =>'10103', 'name' =>'USER MANAGEMENT' ,'url' => 'admin/usermanagement'
+                                                'id' =>'10103', 'name' =>'ผู้ใช้งานในระบบ' ,'url' => 'admin/usermanagement'
                                             ],
                                             [
                                                 'id' =>'10104', 'name' =>'รายงาน','url' => '#'
                                             ]
                                           ]
                         ];
-                /*$manu = "<li class=''>				
-                         <a href='./organization'>
-                                    <i class='fa fa-tasks'></i>
-                                    องค์กร
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='./system-admin'>
-                                    <i class='fa fa-tasks'></i>
-                                    ระบบงาน
-                            </a>   				
-                        </li>
-                        <li class=''>		
-                         <a href='./usermanagement'>
-                                    <i class='fa fa-tasks'></i>
-                                    USER MANAGEMENT
-                            </a>   				
-                        </li>
-                        <li class=''>		
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงาน
-                            </a>   				
-                        </li>";*/
                 break;
             case '102':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ตารางอัตราค่าบริการ
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ตารางประเมินค่าใช้จ่าย
-                            </a>   				
-                        </li>
-                        <li class=''>		
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ตารางรายการประเมินค่าใช้จ่าย
-                            </a>   				
-                        </li>
-                        <li class=''>		
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายการขอใช้บริการ
-                            </a>   				
-                        </li>
-                        <li class=''>		
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายการ Customer
-                            </a>   				
-                        </li>";                
+                $manu = [
+                            'mainManu' =>'information',
+                            'leftManu' =>[
+                                [
+                                    'id' =>'10201',  'name' =>'ตารางอัตราค่าบริการ','url' => '#'
+                                ],
+                                [
+                                    'id' =>'10202', 'name' =>'ตารางประเมินค่าใช้จ่าย','url' => '#'
+                                ],
+                                [
+                                    'id' =>'10203', 'name' =>'ตารางรายการประเมินค่าใช้จ่าย','url' => '#'
+                                ],
+                                [
+                                    'id' =>'10204', 'name' =>'รายการขอใช้บริการ','url' => '#'
+                                ],
+                                [
+                                    'id' =>'10205', 'name' =>'รายการ Customer','url' => '#'
+                                ]
+                            ]
+                        ];                
                 break;
             case '201':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Port Infomation
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Port Schedule
-                            </a>   				
-                        </li>
-                        <li class=''>		
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Port Display
-                            </a>   				
-                        </li>";                 
+                $manu = [
+                            'mainManu' =>'e-port-management',
+                            'leftManu'=>[
+                                            [
+                                                'id' =>'20101', 'name' =>'Port Infomation','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'20102', 'name' =>'Port Schedule','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'20103', 'name' =>'Port Display','url' => '#'
+                                            ]
+                                        ]
+                        ];                    
                 break;
             case '301':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Registration System
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Service DashBoard
-                            </a>   				
-                        </li>           
-                        <li class='dropdown'>
-                            <a href='javascript:;'>
-                                    <i class='fa fa-tasks'></i>
-                                    Customer Management
-                                    <span class='caret'></span>
-                            </a>				
-
-                            <ul class='sub-nav'>
-                                    <li>
-                                            <a href='./page-profile.html'>
-                                                    <i class='fa fa-user'></i> 
-                                                    Customer Infomation
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-invoice.html'>
-                                                    <i class='fa fa-money'></i> 
-                                                    Service Log
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-pricing.html'>
-                                                    <i class='fa fa-dollar'></i> 
-                                                    Rental Space
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-support.html'>
-                                                    <i class='fa fa-question'></i> 
-                                                    Port Services
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-gallery.html'>
-                                                    <i class='fa fa-picture-o'></i> 
-                                                    Ware House
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-settings.html'>
-                                                    <i class='fa fa-cogs'></i> 
-                                                    Work In Process
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-calendar.html'>
-                                                    <i class='fa fa-calendar'></i> 
-                                                    Vehicle Access
-                                            </a>
-                                    </li>
-                             </ul>						
-                        </li>";
+                $manu = [
+                            'mainManu' =>'crm',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30101', 'name' =>'Registration System','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30102', 'name' =>'Service DashBoard','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30103', 'name' =>'Customer Management','url' => '#',
+                                                'child' =>[
+                                                                [
+                                                                    'id' =>'3010301', 'name' =>'Customer Infomation','url' => '#'
+                                                                ],
+                                                                [
+                                                                    'id' =>'3010302',  'name' =>'Service Log','url' => '#'
+                                                                ],
+                                                                [
+                                                                    'id' =>'3010303', 'name' =>'Rental Space','url' => '#'
+                                                                ],
+                                                                [
+                                                                    'id' =>'3010304', 'name' =>'Port Services','url' => '#'
+                                                                ],
+                                                                [
+                                                                    'id' =>'3010305', 'name' =>'Ware House','url' => '#'
+                                                                ],
+                                                                [
+                                                                    'id' =>'3010306', 'name' =>'Work In Process','url' => '#'
+                                                                ],
+                                                                [
+                                                                    'id' =>'3010307', 'name' =>'Vehicle Access','url' => '#'
+                                                                ]
+                                                            ]
+                                                ]
+                                            ]
+                                   ];   
                 break;
             case '302':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Vehcle Access
-                            </a>   				
-                        </li>          
-                        <li class='dropdown'>
-                            <a href='javascript:;'>
-                                    <i class='fa fa-tasks'></i>
-                                    Enter Form
-                                    <span class='caret'></span>
-                            </a>				
-
-                            <ul class='sub-nav'>
-                                    <li>
-                                            <a href='./page-profile.html'>
-                                                    <i class='fa fa-user'></i> 
-                                                    Tracking Module
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-invoice.html'>
-                                                    <i class='fa fa-money'></i> 
-                                                    Vehicle - Module
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-pricing.html'>
-                                                    <i class='fa fa-dollar'></i> 
-                                                    Tracking - Display
-                                            </a>
-                                    </li>
-                             </ul>						
-                        </li>                        
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Car Tracking System
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงาน
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'e-gate',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30201', 'name' =>'Vehcle Access','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30202', 'name' =>'Enter Form','url' => '#',
+                                                'child' =>[
+                                                    [
+                                                        'id' =>'3020301', 'name' =>'Tracking Module','url' => '#'
+                                                    ],
+                                                    [
+                                                        'id' =>'3020302', 'name' =>'Vehicle - Module','url' => '#'
+                                                    ],
+                                                    [
+                                                        'id' =>'3020303', 'name' =>'Tracking - Display','url' => '#'
+                                                    ]
+                                                ]
+                                            ],
+                                            [
+                                                'id' =>'30203', 'name' =>'Car Tracking System','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30204', 'name' =>'Report','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
             case '303':
-                $manu = "<li class='dropdown'>
-                            <a href='javascript:;'>
-                                    <i class='fa fa-tasks'></i>
-                                    ข้อมูลพื้นที่ ทพส.-ทร.
-                                    <span class='caret'></span>
-                            </a>				
-
-                            <ul class='sub-nav'>
-                                    <li>
-                                            <a href='./page-profile.html'>
-                                                    <i class='fa fa-user'></i> 
-                                                    วงรอบ-ผังบริเวณโดยรอบ
-                                            </a>
-                                    </li>
-                                    <li>
-                                            <a href='./page-invoice.html'>
-                                                    <i class='fa fa-money'></i> 
-                                                    กำหนดอัตราเช่า
-                                            </a>
-                                    </li>
-                             </ul>						
-                        </li>                        
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ผู้เช่า-ผู้ใช้ประโยชน์
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ข้อมูลภาพถ่ายทางอากาศ
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Drone Management
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงาน
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'area-management',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30301', 'name' =>'ข้อมูลพื้นที่ ทพส.-ทร.','url' => '#',
+                                                'child' =>[
+                                                    [
+                                                        'id' =>'3030101', 'name' =>'วงรอบ-ผังบริเวณโดยรอบ','url' => '#'
+                                                    ],
+                                                    [
+                                                        'id' =>'3030102', 'name' =>'กำหนดอัตราเช่า','url' => '#'
+                                                    ]
+                                                ]
+                                            ],
+                                            [
+                                                'id' =>'30302', 'name' =>'ผู้เช่า-ผู้ใช้ประโยชน์','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30303', 'name' =>'ข้อมูลภาพถ่ายทางอากาศ','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30304', 'name' =>'Drone Management','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30305', 'name' =>'Report','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
             case '304':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ระบบบริหารจัดการอัตราภาระ TARIFF
-                            </a>   				
-                        </li>          
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ทะเบียนคุมลูกหนี้
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ทะเบียนคุมเงินหลักประกัน
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ทะเบียนคุมเงินมัดจำ
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    คำนวณอัตราเบี้ยปรับ
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ทะเบียนคุมไฟฟ้า ประปา
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ลูกหนี้ไฟฟ้า ประปา
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ระบบพิมพ์ใบแจ้งหนี้
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ระบบคำนวณค่าภาระเรือ
-                            </a>   				
-                        </li>                        
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงาน
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'benefit',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30401', 'name' =>'ระบบบริหารจัดการอัตราภาระ TARIFF','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30402', 'name' =>'ทะเบียนคุมลูกหนี้','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30403', 'name' =>'ทะเบียนคุมเงินหลักประกัน','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30404', 'name' =>'ทะเบียนคุมเงินมัดจำ','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30405', 'name' =>'คำนวณอัตราเบี้ยปรับ','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30406', 'name' =>'ทะเบียนคุมไฟฟ้า ประปา','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30407', 'name' =>'ลูกหนี้ไฟฟ้า ประปา','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30408', 'name' =>'ระบบพิมพ์ใบแจ้งหนี้','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30409', 'name' =>'ระบบคำนวณค่าภาระเรือ','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30410', 'name' =>'รายงานต่างๆ','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
             case '305':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Berth Request Service
-                            </a>   				
-                        </li>          
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ระบบ PORT & AIS & RADAR
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ข้อมูลเรือ IMO หรือ Callsign
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายละเอียดข้อมูลภายในใบ Berth
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายการ Berth
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Berth Schedule
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Problem Center
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    AIS Display
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'traffic-control',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30501', 'name' =>'Berth Request Service','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30502', 'name' =>'ระบบ PORT & AIS & RADAR','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30503', 'name' =>'ข้อมูลเรือ IMO หรือ Callsign','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30504', 'name' =>'รายละเอียดข้อมูลภายในใบ Berth','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30505', 'name' =>'รายการ Berth','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30506', 'name' =>'Berth Schedule','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30507', 'name' =>'Problem Center','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30508', 'name' =>'AIS Display','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
             case '306':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    Berth Request Service
-                            </a>   				
-                        </li>          
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    กำหนดเจ้าหน้าที่รับผิดชอบปฏิบัติงาน
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ตรวจสอบเอกสารอนุมัติการขนถ่าย
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ตรวจสอบสินค้า
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'counting',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30601', 'name' =>'Berth Request Service','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30602', 'name' =>'กำหนดเจ้าหน้าที่รับผิดชอบปฏิบัติงาน','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30603', 'name' =>'ตรวจสอบเอกสารอนุมัติการขนถ่าย','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30604', 'name' =>'ตรวจสอบสินค้า','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
             case '307':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    กำหนดค่าคงที่ของการบริหารพื้นที่คลังพัก และ ลานพักสินค้า
-                            </a>   				
-                        </li>          
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    กำหนดค่าเริ่มต้นให้กับเจ้าหน้าที่ปฏิบัติงาน และช่วงเวลาปฏิบัติงาน
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายการ เพื่อกำหนดพื้นที่วางสินค้า และกำหนดเจ้าหน้าที่รับผิดชอบดำเนินการ
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายการสินค้า ของแต่ละ Berth ที่ได้ดำเนินการเสร็จเรียบร้อย
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'warehouse',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30701', 'name' =>'กำหนดค่าคงที่ของการบริหารพื้นที่คลังพัก และ ลานพักสินค้า','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30702', 'name' =>'กำหนดค่าเริ่มต้นให้กับเจ้าหน้าที่ปฏิบัติงาน และช่วงเวลาปฏิบัติงาน','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30703', 'name' =>'รายการ เพื่อกำหนดพื้นที่วางสินค้า และกำหนดเจ้าหน้าที่รับผิดชอบดำเนินการ','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30704', 'name' =>'รายการสินค้า ของแต่ละ Berth ที่ได้ดำเนินการเสร็จเรียบร้อย','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
             case '308':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    กำหนดค่าคงที่ของเครื่องมือบรรทุกขนถ่าย
-                            </a>   				
-                        </li>          
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    กำหนดค่าเริ่มต้นให้กับเจ้าหน้าที่ปฏิบัติงาน
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายการ เพื่อกำหนดชนิดเครื่องมือในการทำงาน และกำหนดเจ้าหน้าที่รับผิดชอบดำเนินการ
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายการสินค้า ของแต่ละ Berth ที่ได้ดำเนินการเสร็จเรียบร้อย
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'transfer',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30801', 'name' =>'กำหนดค่าคงที่ของเครื่องมือบรรทุกขนถ่าย','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30802', 'name' =>'กำหนดค่าเริ่มต้นให้กับเจ้าหน้าที่ปฏิบัติงาน','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30803', 'name' =>'รายการ เพื่อกำหนดชนิดเครื่องมือในการทำงาน และกำหนดเจ้าหน้าที่รับผิดชอบดำเนินการ','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30804', 'name' =>'รายการสินค้า ของแต่ละ Berth ที่ได้ดำเนินการเสร็จเรียบร้อย','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
             case '309':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    กำหนดค่าเริ่มต้นให้กับเจ้าหน้าที่ปฏิบัติงาน และช่วงเวลาปฏิบัติงาน
-                            </a>   				
-                        </li>          
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายการ เพื่อตรวจสอบลูกเรือและผู้โดยสาร
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    แสดงรายการลูกเรือและผู้โดยสาร ของแต่ละ Berth ที่ได้ดำเนินการเสร็จเรียบร้อย
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'service',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'30901', 'name' =>'กำหนดค่าเริ่มต้นให้กับเจ้าหน้าที่ปฏิบัติงาน และช่วงเวลาปฏิบัติงาน','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30902', 'name' =>'รายการ เพื่อตรวจสอบลูกเรือและผู้โดยสาร','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'30903', 'name' =>'แสดงรายการลูกเรือและผู้โดยสาร ของแต่ละ Berth ที่ได้ดำเนินการเสร็จเรียบร้อย','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
              case '310':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    ส่วนเจ้าหน้าที่แต่ละระบบ
-                            </a>   				
-                        </li>          
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงานแรงงาน
-                            </a>   				
-                        </li>                     
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงานเจ้าหน้าและแรงงานที่ปฏิบัติงานในแต่ละ Berth
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงานเวลาการเข้า-ออก พื้นที่
-                            </a>   				
-                        </li>";
+                $manu = [
+                            'mainManu' =>'personnel',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'31001', 'name' =>'ส่วนเจ้าหน้าที่แต่ละระบบ','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'31002', 'name' =>'รายงานแรงงาน','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'31003', 'name' =>'รายงานเจ้าหน้าและแรงงานที่ปฏิบัติงานในแต่ละ Berth','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'31004', 'name' =>'รายงานเวลาการเข้า-ออก พื้นที่','url' => '#'
+                                            ]
+                                        ]
+                        ];    
                 break;
             case '311':
-                $manu = "<li class=''>				
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    เจ้าหน้าที่เพื่อบริหารจัดการระบบ CCTV
-                            </a>   				
-                        </li>          
-                        <li class=''>			
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงานผลระบบรักษาความปลอดภัยทั้งสองระบบ
-                            </a>   				
-                        </li>";
-                break;             
+                $manu = [
+                            'mainManu' =>'security',
+                            'leftManu' =>[
+                                            [
+                                                'id' =>'31101', 'name' =>'เจ้าหน้าที่เพื่อบริหารจัดการระบบ CCTV','url' => '#'
+                                            ],
+                                            [
+                                                'id' =>'31102', 'name' =>'รายงานผลระบบรักษาความปลอดภัยทั้งสองระบบ','url' => '#'
+                                            ]
+                                        ]
+                        ];    
+                break;
+             case '444':
+                $manu = [
+                            'mainManu' =>'no-unit',
+                            'leftManu' =>[
+                                            [ 'name' =>'no3','url' => 'no3' ],
+                                            [ 'name' =>'no5-1','url' => 'no5-1' ],
+                                            [ 'name' =>'no5-1','url' => 'no5-1' ],
+                                            [ 'name' =>'no5-2','url' => 'no5-2' ],
+                                            [ 'name' =>'no7','url' => 'no7' ],
+                                            [ 'name' =>'no24','url' => 'no24' ],
+                                            [ 'name' =>'no26','url' => 'no26' ],
+                                            [ 'name' =>'no4-1','url' => 'no4-1' ],
+                                            [ 'name' =>'no4-2','url' => 'no4-2' ],
+                                            [ 'name' =>'no30','url' => 'no30' ],
+                                            [ 'name' =>'a01','url' => 'a01' ],
+                                            [ 'name' =>'a02','url' => 'a02' ],
+                                            [ 'name' =>'a03','url' => 'a03' ],
+                                            [ 'name' =>'a04','url' => 'a04' ],
+                                            [ 'name' =>'a05','url' => 'a05' ],
+                                            [ 'name' =>'a06','url' => 'a06' ],
+                                            [ 'name' =>'a07','url' => 'a07' ],
+                                            [ 'name' =>'a08','url' => 'a08' ],
+                                            [ 'name' =>'test2','url' => 'test2' ]      
+                                        ]
+                        ];    
+                break; 
         }                
             return $manu;
     }
@@ -584,46 +432,49 @@ class MainController extends Controller {
         'username' =>'sirane',
         'manu' =>[
             [
-                'id' =>'101', 'name' =>'Admin System', 'images' => 'img/icon-mainmenu/icon-admin.png','url' => './page/101'
+                'id' =>'101', 'name' =>'Admin System', 'images' => 'img/icon-mainmenu/icon-admin.png','url' => './page/'
             ],
             [
-                'id' =>'102', 'name' =>'ระบบข้อมูลสารสนเทศ','images' => 'img/icon-mainmenu/icon-information.png', 'url' => './information/home'
+                'id' =>'102', 'name' =>'ระบบข้อมูลสารสนเทศ','images' => 'img/icon-mainmenu/icon-information.png', 'url' => './page/'
             ],
             [
-                'id' =>'201', 'name' =>'ระบบบริหารการท่า<br>และระบบอนุมัติ','images' => 'img/icon-mainmenu/icon-manager.png', 'url' => './e-port-management/home'
+                'id' =>'201', 'name' =>'ระบบบริหารการท่า<br>และระบบอนุมัติ','images' => 'img/icon-mainmenu/icon-manager.png', 'url' => './page/'
             ],
             [
-                'id' =>'301', 'name' =>'ระบบบริหารจัดการ<br>ลูกค้า CRM','images' => 'img/icon-mainmenu/icon-crm.png', 'url' => './crm/home'
+                'id' =>'301', 'name' =>'ระบบบริหารจัดการ<br>ลูกค้า CRM','images' => 'img/icon-mainmenu/icon-crm.png', 'url' => './page/'
             ],
             [
-                'id' =>'302', 'name' =>'ระบบ e-Gate','images' => 'img/icon-mainmenu/icon-egate.png','url' => './e-gate/home'
+                'id' =>'302', 'name' =>'ระบบ e-Gate','images' => 'img/icon-mainmenu/icon-egate.png','url' => './page/'
             ],
             [
-                'id' =>'303', 'name' =>'ระบบบริหารพื้นที่<br>ประโยชน์ ทสพ.-ทร.','images' => 'img/icon-mainmenu/icon-areaManame.png', 'url' => './area-management/home'
+                'id' =>'303', 'name' =>'ระบบบริหารพื้นที่<br>ประโยชน์ ทสพ.-ทร.','images' => 'img/icon-mainmenu/icon-areaManame.png', 'url' => './page/'
             ],
             [
-                'id' =>'304', 'name' =>'ระบบจัดเก็บผลประโยชน์','images' => 'img/icon-mainmenu/icon-benefits.png','url' => './benefit/home'
+                'id' =>'304', 'name' =>'ระบบจัดเก็บผลประโยชน์','images' => 'img/icon-mainmenu/icon-benefits.png','url' => './page/'
             ],
             [
-                'id' =>'305', 'name' =>'ระบบบริหารหน้าท่า<br>และควบคุมจราจรทางน้ำ','images' => 'img/icon-mainmenu/icon-portManage.png', 'url' => './traffic-control/home'
+                'id' =>'305', 'name' =>'ระบบบริหารหน้าท่า<br>และควบคุมจราจรทางน้ำ','images' => 'img/icon-mainmenu/icon-portManage.png', 'url' => './page/'
             ],
             [
-                'id' =>'306', 'name' =>'ระบบตรวจนับ<br>และตรวจสอบสินค้า','images' => 'img/icon-mainmenu/icon-counting.png','url' => './counting/home'
+                'id' =>'306', 'name' =>'ระบบตรวจนับ<br>และตรวจสอบสินค้า','images' => 'img/icon-mainmenu/icon-counting.png', 'url' => './page/'
             ],
             [
-                'id' =>'307', 'name' =>'ระบบคลังสินค้า','images' => 'img/icon-mainmenu/icon-warehouse.png','url' => './warehouse/home'
+                'id' =>'307', 'name' =>'ระบบคลังสินค้า','images' => 'img/icon-mainmenu/icon-warehouse.png', 'url' => './page/'
             ],
             [
-                'id' =>'308', 'name' =>'ระบบเครื่องมือบรรทุกขนถ่าย','images' => 'img/icon-mainmenu/icon-tranfer.png','url' => './transfer/home'
+                'id' =>'308', 'name' =>'ระบบเครื่องมือบรรทุกขนถ่าย','images' => 'img/icon-mainmenu/icon-tranfer.png', 'url' => './page/'
             ],
             [
-                'id' =>'309', 'name' =>'ระบบบริการลูกเรือ<br>และผู้โดยสาร','images' => 'img/icon-mainmenu/icon-service.png','url' => './service/home'
+                'id' =>'309', 'name' =>'ระบบบริการลูกเรือ<br>และผู้โดยสาร','images' => 'img/icon-mainmenu/icon-service.png', 'url' => './page/'
             ],
             [
-                'id' =>'310', 'name' =>'ระบบบุคลากรแรงงาน','images' => 'img/icon-mainmenu/icon-personnel.png','url' => './personnel/home'
+                'id' =>'310', 'name' =>'ระบบบุคลากรแรงงาน','images' => 'img/icon-mainmenu/icon-personnel.png', 'url' => './page/'
             ],
             [
-                'id' =>'311', 'name' =>'ระบบรักษาความปลอดภัย','images' => 'img/icon-mainmenu/icon-security.png','url' => './security/home'
+                'id' =>'311', 'name' =>'ระบบรักษาความปลอดภัย','images' => 'img/icon-mainmenu/icon-security.png', 'url' => './page/'
+            ],
+            [
+                'id' =>'444', 'name' =>'No unit','images' => '', 'url' => './page/'
             ]
         ]
     ];

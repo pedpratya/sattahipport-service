@@ -8,11 +8,9 @@
 
 Route::group(array('prefix' => 'benefit'), function() {
     
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
+    Route::get('/',  function() {
             return view('benefit.home');
-    }));
+    }); 
     
     Route::get('index', array(
         'as' => 'index',
