@@ -131,7 +131,16 @@
 	
 	<div id="content-modal">		
 		
-			
+            <div id="content">		
+
+                    <div id="content-header">
+                    </div> <!-- #content-header -->	
+
+
+                    <div id="content-container">	
+                    </div> <!-- /#content-container -->			
+
+            </div> <!-- #content -->		
 		
 	</div> <!-- #content -->
 	
@@ -179,9 +188,9 @@
     });
 
     function changePage (urlLoad) {
-        console.log('urlLoad',urlLoad);
+
         if(urlLoad){
-        $("#content-modal").html(textLoading).load(urlLoad, function(responseTxt, statusTxt, xhr){
+        $("#content-modal").load(urlLoad, function(responseTxt, statusTxt, xhr){
 
             if ( statusTxt == "error" ) {
                 var msg = "Sorry but there was an error: ";
