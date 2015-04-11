@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('area-management-home'))
 @section('content')
 
@@ -64,8 +64,11 @@
   </div><!-- End body -->
 
 @stop
-@section('bottomscript')
-  <script>
-      var idMainManu = '303';
-  </script>
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

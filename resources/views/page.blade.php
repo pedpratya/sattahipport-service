@@ -28,40 +28,86 @@
 	<link rel="stylesheet" href="{!! asset('css/custom.css') !!}" type="text/css" />
 </head>
 <body>
+    
 <div id="wrapper">
 	
 	<header id="header">
-		 @include('inc.header')
+            <h1 id="site-logo">
+                    <a href="{{ URL::to('/module-list') }}">
+                            <img src="{{ asset('img/logos/logo.png') }}" alt="Site Logo" />
+                    </a>
+            </h1>	
+
+            <a href="javascript:;" data-toggle="collapse" data-target=".top-bar-collapse" id="top-bar-toggle" class="navbar-toggle collapsed">
+                    <i class="fa fa-cog"></i>
+            </a>
+
+            <a href="javascript:;" data-toggle="collapse" data-target=".sidebar-collapse" id="sidebar-toggle" class="navbar-toggle collapsed">
+                    <i class="fa fa-reorder"></i>
+            </a>
 	</header> <!-- header -->
 
 
 	<nav id="top-bar" class="collapse top-bar-collapse">
-             @include('inc.menu_header')
+            <ul class="nav navbar-nav pull-left">
+                    <li class="">
+                            <a href="{{ URL::to('/module-list') }}">
+                                    <i class="fa fa-home"></i> 
+                                    Home
+                            </a>
+                    </li>
+            </ul>
+
+            <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                                    <i class="fa fa-user"></i>
+                            Rod Howard 
+                            <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu" role="menu">
+                            <li>
+                                    <a href="./page-profile.html">
+                                            <i class="fa fa-user"></i> 
+                                            &nbsp;&nbsp;My Profile
+                                    </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                    <a href="./page-login.html">
+                                            <i class="fa fa-sign-out"></i> 
+                                            &nbsp;&nbsp;Logout
+                                    </a>
+                            </li>
+                    </ul>
+                </li>
+            </ul>
 	</nav> <!-- /#top-bar -->
 
 
 	<div id="sidebar-wrapper" class="collapse sidebar-collapse">
 	
 		<nav id="sidebar">		
-			@include('inc.menu_left')
-			
-					
+			<ul id="main-nav" class="open-active" data-id="{{ asset($manu['mainManu']) }}">
+                            @foreach($manu['leftManu'] as $key => $value)
+                               <li class="" id="{{ asset($value['url']) }}">				
+                                     <a>
+                                        <i class='fa fa-tasks'></i>
+                                        {{ $value['name'] }}
+                                     </a>   				
+                               </li>
+                           @endforeach
+                        </ul>				
 		</nav> <!-- #sidebar -->
 
 	</div> <!-- /#sidebar-wrapper -->
 
 
 	
-	<div id="content">		
+	<div id="content-modal">		
 		
-		<div id="content-header">
-			<h1>@yield('breadcrumbs')</h1>
-		</div> <!-- #content-header -->	
-
-
-		<div id="content-container">
-			@yield('content')		
-		</div> <!-- /#content-container -->			
+			
 		
 	</div> <!-- #content -->
 	
@@ -77,7 +123,8 @@
 </footer>
 
 <!-- #modal html -->
-@yield('modalhtml')
+
+<!--div id="id-modal-script"></div-->
 
 <script src="{{ asset('js/libs/jquery-1.9.1.min.js') }}"></script>
 <script src="{{ asset('js/libs/jquery-ui-1.9.2.custom.min.js') }}"></script>
@@ -98,12 +145,30 @@
 <script src="{{ asset('js/App-tamplate.js') }}"></script>
 <script src="{{ asset('js/form/datepicker-class.js') }}"></script>
 
-@yield('bottomscript')
 <script>
-    var url = "/sattahipport-service/public/left-manu/"+idMainManu;
-    $.get(url, function(data){ 
-       $('#main-nav').html(data);
+    
+    //*--Loadpage--*//
+    var textLoading = "<center><img src='{{ asset('img/loaders/ajax-loader.gif') }}'/></center>";
+    
+    $(document).ready(function() {
+        changePage($('#main-nav').attr('data-id'));
     });
+
+    $("#main-nav li").click(function() { 
+        changePage($(this).attr('id'));
+    });
+       
+    function changePage (urlLoad) {
+        console.log('urlLoad',urlLoad);
+        $("#content-modal").html(textLoading).load(urlLoad, function(responseTxt, statusTxt, xhr){
+
+            if ( statusTxt == "error" ) {
+                var msg = "Sorry but there was an error: ";
+                $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
+            }
+         });
+    }
+    //*--Loadpage--*//
 </script>
 </body>
 

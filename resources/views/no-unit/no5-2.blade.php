@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('nounit-no5-2'))
 @section('content')
 <!-- header --> 
@@ -101,4 +101,13 @@
 </div>     
         
    
+@stop
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

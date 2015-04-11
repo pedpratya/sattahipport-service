@@ -8,11 +8,9 @@
 
 Route::group(array('prefix' => 'admin'), function() {
     
-    Route::get('home', array(
-        'as' => 'home',
-        function() {
+    Route::get('/',  function() {
             return view('admin.home');
-    }));
+    });
     
     Route::get('organization', array(
         'as' => 'organization',

@@ -1,4 +1,4 @@
-@extends('layout.master-top')
+@extends('layout.content')
 @section('content')
 
 <!-- form -->
@@ -346,7 +346,10 @@
   </div>
 </div><!-- End mdOfficer -->
 
+@stop
 
+
+@section('modal-content')
 <!-- mdDocument -->
 <div class="modal fade" id="mdDocument" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog  modal-lg">
@@ -515,4 +518,8 @@
     </div>
   </div>
 </div>  
+@stop
+
+@section('javascript')
+
 @stop

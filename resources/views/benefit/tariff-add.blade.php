@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('benefit-home'))
 @section('content')
 
@@ -95,8 +95,10 @@
 
 @stop
 
-@section('bottomscript')
-  <script>
-      var idMainManu = '304';
-  </script>
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

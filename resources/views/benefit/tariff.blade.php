@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 
 @section('content')
 <div class="portlet">
@@ -130,3 +130,10 @@
 
 @stop
 
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
+@stop

@@ -1,4 +1,4 @@
-@extends('layout.master-top')
+@extends('layout.content')
 
 
 @section('content')
@@ -45,4 +45,11 @@
     </div>
 </div>    
 @stop
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

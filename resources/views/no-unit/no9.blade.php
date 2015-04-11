@@ -268,3 +268,11 @@
         </form>
     </div><!-- End header -->
 @stop   
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
+@stop

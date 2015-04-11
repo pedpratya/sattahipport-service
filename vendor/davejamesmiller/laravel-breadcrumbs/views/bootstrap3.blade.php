@@ -6,7 +6,9 @@
                         {{{ $breadcrumb->title }}}
 
                 @elseif ($breadcrumb->url)
-                        <a href="{{{ $breadcrumb->url }}}">{{{ $breadcrumb->title }}}</a>
+                        <span onclick="javascript:changePage('{{{ asset($breadcrumb->url) }}}')" style="color: #337ab7;cursor: pointer;">
+                            {{{ $breadcrumb->title }}}
+                        </span>
                         <span class="divider">/</span>
                 @else
                         {{-- Using .active to give it the right colour (grey by default) --}}

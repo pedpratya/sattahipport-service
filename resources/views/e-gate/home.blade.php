@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('e-gate-home'))
 @section('content')
 
@@ -57,8 +57,12 @@
   </div><!-- End body -->
 
 @stop
-@section('bottomscript')
-  <script>
-      var idMainManu = '302';
-  </script>
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

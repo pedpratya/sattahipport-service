@@ -22,18 +22,6 @@
                                 &nbsp;&nbsp;My Profile
                         </a>
                 </li>
-                <li>
-                        <a href="./page-calendar.html">
-                                <i class="fa fa-calendar"></i> 
-                                &nbsp;&nbsp;My Calendar
-                        </a>
-                </li>
-                <li>
-                        <a href="./page-settings.html">
-                                <i class="fa fa-cogs"></i> 
-                                &nbsp;&nbsp;Settings
-                        </a>
-                </li>
                 <li class="divider"></li>
                 <li>
                         <a href="./page-login.html">

@@ -2,13 +2,13 @@
 
 Breadcrumbs::register('admin', function($breadcrumbs)
 {
-    $breadcrumbs->push('ระบบ Admin', '../admin/home');
+    $breadcrumbs->push('ระบบ Admin', 'admin/');
 });
 
 Breadcrumbs::register('admin-home', function($breadcrumbs)
 {
     $breadcrumbs->parent('admin');
-    $breadcrumbs->push('หน้าแรก', '../admin/home');
+    $breadcrumbs->push('หน้าแรก', 'admin/');
 });
 
 Breadcrumbs::register('organization', function($breadcrumbs)
@@ -25,7 +25,7 @@ Breadcrumbs::register('organization-create-or-edit', function($breadcrumbs)
 
 Breadcrumbs::register('system-admin', function($breadcrumbs)
 {
-    $breadcrumbs->parent('home');
+    $breadcrumbs->parent('admin');
     $breadcrumbs->push('System Admin', route('system-admin'));
 });
 
@@ -37,7 +37,7 @@ Breadcrumbs::register('system-admin-create-or-edit', function($breadcrumbs)
 
 Breadcrumbs::register('usermanagement', function($breadcrumbs)
 {
-    $breadcrumbs->parent('home');
+    $breadcrumbs->parent('admin');
     $breadcrumbs->push('Usermanagement', route('usermanagement'));
 });
 
@@ -49,6 +49,6 @@ Breadcrumbs::register('usermanagement-create-or-edit', function($breadcrumbs)
 
 Breadcrumbs::register('usermanagement-userlog', function($breadcrumbs)
 {
-    $breadcrumbs->parent('home');
+    $breadcrumbs->parent('admin');
     $breadcrumbs->push('Userlog', route('usermanagement-userlog'));
 });

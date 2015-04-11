@@ -1,4 +1,4 @@
-@extends('layout.master-top')
+@extends('layout.content')
 @section('content')
 <!-- header -->
     <div class="col-lg-12 col-md-12">
@@ -149,4 +149,13 @@
     </div>  
     </div>
     </form> 
+@stop
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

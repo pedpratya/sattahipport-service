@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('organization'))
 @section('content')
 
@@ -75,5 +75,14 @@
     <li><a href="#">&raquo;</a></li>
   </ul>
                 
+
+@stop
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
 
 @stop

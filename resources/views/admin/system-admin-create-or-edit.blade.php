@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('system-admin-create-or-edit'))
 @section('content')
 
@@ -178,7 +178,7 @@
 @stop
 
 
-@section('modalhtml')
+@section('modal-content')
 <!-- popup Add Menu -->
 <div id="mdAddMenu" class="modal modal-styled fade">
   <div class="modal-dialog">
@@ -262,8 +262,8 @@
 <!-- popup Add Page -->
 @stop
 
-@section('bottomscript')
-  <script>
-      var idMainManu = '101';
-  </script>
+@stop
+
+@section('javascript')
+
 @stop

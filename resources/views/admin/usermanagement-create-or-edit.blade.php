@@ -1,14 +1,12 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('usermanagement-create-or-edit'))
 @section('content')
 
 <!-- header -->
 <div class="row">
   <div class="col-md-8 col-sm-8">
-    <button type="button" class="btn btn-primary">Update</button>
-    <a href = "usermanagement-userlog">
-    <button type="button" class="btn btn-default glyphicon glyphicon-calendar"> UserLog</button>
-    </a>
+    <button type="button" class="btn btn-primary" onclick="changePage('../admin/usermanagement-create-or-edit')">Update</button>
+    <button type="button" class="btn btn-default glyphicon glyphicon-calendar" onclick="changePage('../admin/usermanagement-userlog')"> UserLog</button>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -228,13 +226,13 @@
     </div>
   </div>  
 </div><!--End Customer Registration -->
+@stop
 
 
+@section('modal-content')
 
 @stop
 
-@section('bottomscript')
-  <script>
-      var idMainManu = '101';
-  </script>
+@section('javascript')
+
 @stop

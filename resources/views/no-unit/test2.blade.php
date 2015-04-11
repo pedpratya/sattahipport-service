@@ -1,4 +1,4 @@
-﻿@extends('layout.master-module')
+﻿@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('nounit-test2'))
 @section('content')	
 <!-- header -->

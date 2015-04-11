@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('nounit-no3'))
 @section('content')
 <div class="portlet">	 
@@ -295,13 +295,14 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
-  
+  	
+@stop
 
-    // <script>	
-    // 	$(function(){
-        
-    //     $( ".datepicker" ).datepicker({
-    //         dateFormat: "dd/mm/yy"
-    //     });
-    // </script>	
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

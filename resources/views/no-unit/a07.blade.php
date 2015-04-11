@@ -1,4 +1,4 @@
-﻿@extends('layout.master-module')
+﻿@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('nounit-a07'))
 @section('content')
 
@@ -197,3 +197,11 @@
 
 
   @stop   
+  
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
+@stop

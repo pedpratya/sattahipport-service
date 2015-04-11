@@ -34,7 +34,6 @@
 	
 	<div id="content-not-manu">		
 
-
 		<div id="content-container-not-manu">
 			@yield('content')		
 		</div> <!-- /#content-container -->			

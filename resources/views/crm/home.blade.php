@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('crm-home'))
 @section('content')
 
@@ -49,8 +49,12 @@
   </div><!-- End body -->
 
 @stop
-@section('bottomscript')
-  <script>
-      var idMainManu = '301';
-  </script>
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

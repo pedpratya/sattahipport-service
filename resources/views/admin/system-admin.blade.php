@@ -1,13 +1,11 @@
-  @extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('system-admin'))
 @section('content')
 
 <!-- header -->
 <div class="row">
   <div class="col-md-8 col-sm-8">
-    <a href = "system-admin-create-or-edit">
-    <button type="button" class="btn btn-primary">เพิ่มระบบงาน</button>
-    </a>
+    <button type="button" class="btn btn-primary" onclick="changePage('../admin/system-admin-create-or-edit')">เพิ่มระบบงาน</button>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -178,8 +176,11 @@
 
 @stop
 
-@section('bottomscript')
-  <script>
-      var idMainManu = '101';
-  </script>
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

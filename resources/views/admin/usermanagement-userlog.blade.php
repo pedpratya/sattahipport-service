@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('usermanagement-userlog'))
 @section('content')
 
@@ -13,12 +13,12 @@
     <td>2.</td>
   </tr>
 </table> 
+@stop
 
+@section('modal-content')
 
 @stop
 
-@section('bottomscript')
-  <script>
-      var idMainManu = '101';
-  </script>
+@section('javascript')
+
 @stop

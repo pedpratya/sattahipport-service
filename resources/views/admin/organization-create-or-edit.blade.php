@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('organization-create-or-edit'))
 @section('content')
 <!-- header -->
@@ -167,7 +167,7 @@
 @stop
 
 
-@section('modalhtml')
+@section('modal-content')
 <!-- modal Address --> 
 <div id="mdAddress" class="modal modal-styled fade">
   <div class="modal-dialog">
@@ -283,8 +283,6 @@
 </div><!-- /.modal -->	
 @stop
 
-@section('bottomscript')
-  <script>
-      var idMainManu = '101';
-  </script>
+@section('javascript')
+
 @stop

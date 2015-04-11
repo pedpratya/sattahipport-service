@@ -1,12 +1,10 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('usermanagement'))
 @section('content')  
 
 <div class="row">
   <div class="col-md-8 col-sm-8">
-    <a href = "usermanagement-create-or-edit">
-    <button type="button" class="btn btn-primary">Add User</button>
-    </a>
+    <button type="button" class="btn btn-primary" onclick="changePage('../admin/usermanagement-create-or-edit')">Add User</button>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -130,8 +128,11 @@
   </ul>
 
 @stop
-@section('bottomscript')
-  <script>
-      var idMainManu = '101';
-  </script>
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

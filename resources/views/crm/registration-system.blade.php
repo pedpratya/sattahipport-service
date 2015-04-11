@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('crm-registration-system'))
 @section('content')
 
@@ -604,13 +604,14 @@
 </div>  
 @stop
 
-@section('bottomscript')
+@section('modal-content')
+
+@stop
+
+@section('javascript')
 <script>
   $(function () {
     $('#myTab a:last').tab('show')
   })
 </script>
-  <script>
-      var idMainManu = '301';
-  </script>
 @stop

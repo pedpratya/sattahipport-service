@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('system-admin'))
 @section('content')
 
@@ -118,4 +118,13 @@
     </div>       
   </form>
 </div><!-- End body -->
+@stop
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

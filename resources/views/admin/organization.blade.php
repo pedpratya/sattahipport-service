@@ -1,13 +1,12 @@
-﻿@extends('layout.master-module')
+﻿@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('organization'))
+
 @section('content')
 
 <!-- header -->
 <div class="row">
   <div class="col-md-8 col-sm-8">
-    <a href = "organization-create-or-edit">
-    <button type="button" class="btn btn-primary">เพิ่มหน่วยงาน</button>
-    </a>
+    <button type="button" class="btn btn-primary" onclick="changePage('../admin/organization-create-or-edit')">เพิ่มหน่วยงาน</button>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -109,8 +108,10 @@
 
 @stop
 
-@section('bottomscript')
-  <script>
-      var idMainManu = '101';
-  </script>
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

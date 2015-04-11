@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('content')
 
 
@@ -520,4 +520,13 @@
         </div>
     </div>
 </div>  
+@stop
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

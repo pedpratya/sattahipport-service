@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('service-home'))
 @section('content')
 
@@ -47,8 +47,12 @@
   </div><!-- End body -->
 
 @stop
-@section('bottomscript')
-  <script>
-      var idMainManu = '309';
-  </script>
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

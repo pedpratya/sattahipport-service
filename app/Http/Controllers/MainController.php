@@ -22,6 +22,12 @@ class MainController extends Controller {
             return view('module-list', compact('modules'));
     }
 
+    public function getPage($id)
+    {
+            $manu = self::getLeftManu($id);
+            return view('page', compact('manu'));
+    }
+    
     public function getMasterModule()
     {
             return view('master-module');
@@ -32,7 +38,23 @@ class MainController extends Controller {
       
         switch ($id) {
             case '101':
-                $manu = "<li class=''>				
+                $manu = [ 'mainManu' => 'admin',
+                          'leftManu' => [
+                                            [
+                                                'id' =>'10101', 'name' =>'องค์กร' ,'url' => 'admin/organization'
+                                            ],
+                                            [
+                                                'id' =>'10102', 'name' =>'ระบบงาน' ,'url' => 'admin/system-admin'
+                                            ],
+                                            [
+                                                'id' =>'10103', 'name' =>'USER MANAGEMENT' ,'url' => 'admin/usermanagement'
+                                            ],
+                                            [
+                                                'id' =>'10104', 'name' =>'รายงาน','url' => '#'
+                                            ]
+                                          ]
+                        ];
+                /*$manu = "<li class=''>				
                          <a href='./organization'>
                                     <i class='fa fa-tasks'></i>
                                     องค์กร
@@ -55,31 +77,7 @@ class MainController extends Controller {
                                     <i class='fa fa-tasks'></i>
                                     รายงาน
                             </a>   				
-                        </li>";
-                $manu = "<li class=''>				
-                         <a href='./organization'>
-                                    <i class='fa fa-tasks'></i>
-                                    องค์กร
-                            </a>   				
-                        </li>
-                        <li class=''>			
-                         <a href='./system-admin'>
-                                    <i class='fa fa-tasks'></i>
-                                    ระบบงาน
-                            </a>   				
-                        </li>
-                        <li class=''>		
-                         <a href='./usermanagement'>
-                                    <i class='fa fa-tasks'></i>
-                                    USER MANAGEMENT
-                            </a>   				
-                        </li>
-                        <li class=''>		
-                         <a href='#'>
-                                    <i class='fa fa-tasks'></i>
-                                    รายงาน
-                            </a>   				
-                        </li>";
+                        </li>";*/
                 break;
             case '102':
                 $manu = "<li class=''>				
@@ -586,7 +584,7 @@ class MainController extends Controller {
         'username' =>'sirane',
         'manu' =>[
             [
-                'id' =>'101', 'name' =>'Admin System', 'images' => 'img/icon-mainmenu/icon-admin.png','url' => './admin/home'
+                'id' =>'101', 'name' =>'Admin System', 'images' => 'img/icon-mainmenu/icon-admin.png','url' => './page/101'
             ],
             [
                 'id' =>'102', 'name' =>'ระบบข้อมูลสารสนเทศ','images' => 'img/icon-mainmenu/icon-information.png', 'url' => './information/home'

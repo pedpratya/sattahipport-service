@@ -1,4 +1,4 @@
-@extends('layout.master-top')
+@extends('layout.content')
 @section('content')
 <style>
     .atab{
@@ -73,5 +73,15 @@
     </div>
     </form> 
         
+
+@stop
+
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
 
 @stop

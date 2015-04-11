@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('nounit-no24'))
 @section('content') 
 
@@ -163,5 +163,14 @@
         </form>
     </div>
 </div><!-- panel portlet -->
+
+@stop
+
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
 
 @stop

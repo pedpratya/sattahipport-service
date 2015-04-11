@@ -15,6 +15,8 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('module-list', 'MainController@getModuleList');
 
+Route::get('page/{id}', 'MainController@getPage');
+    
 Route::get('master-module', 'MainController@getMasterModule');
 
 Route::get('left-manu/{id}', 'MainController@getLeftManu');
