@@ -3,12 +3,20 @@
 @section('content')
 
      @foreach($modules['manu'] as $key => $value)
-        <div class="box-menu">
+
         <a href="{{ $value['url'].$value['id'] }}">
-            <img src="{{ asset($value['images']) }}">            
-            <span>{!! $value['name'] !!}</span>
+            <div class="box-menu">
+                <img src="{{ asset($value['images']) }}">            
+                <span>{!! $value['name'] !!}</span>
+            </div>
         </a>  
-        </div>
+
     @endforeach
- 
+        <a href="{{ asset('page/444') }}">   
+            <div class="box-menu">
+
+                <span>ยังไม่ทราบเมนู</span>
+
+            </div>        
+        </a>
 @stop

@@ -472,9 +472,6 @@ class MainController extends Controller {
             ],
             [
                 'id' =>'311', 'name' =>'ระบบรักษาความปลอดภัย','images' => 'img/icon-mainmenu/icon-security.png', 'url' => './page/'
-            ],
-            [
-                'id' =>'444', 'name' =>'No unit','images' => '', 'url' => './page/'
             ]
         ]
     ];
