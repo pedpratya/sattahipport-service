@@ -181,7 +181,7 @@
 <script>
     
     //*--Loadpage--*//
-    var textLoading = "<center><img src='{{ asset('img/loaders/ajax-loader.gif') }}'/></center>";
+    var textLoading = "<div id='content'><div id='content-header'></div><div id='content-container'><center><img src='{{ asset('img/loaders/ajax-loader.gif') }}'/></center></div></div>";
     
     $(document).ready(function() {
         changePage($('#main-nav').attr('data-id'));
@@ -190,7 +190,7 @@
     function changePage (urlLoad) {
 
         if(urlLoad!="#"){
-        $("#content-modal").load(urlLoad, function(responseTxt, statusTxt, xhr){
+        $("#content-modal").html(textLoading).load(urlLoad, function(responseTxt, statusTxt, xhr){
 
             if ( statusTxt == "error" ) {
                 var msg = "Sorry but there was an error: ";
