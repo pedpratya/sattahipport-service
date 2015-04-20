@@ -4,11 +4,11 @@
 <!-- header -->
 <div class="row">
   <div class="col-md-8 col-sm-8">
-    <a href = "organization-create-or-edit">
-    <button type="button" class="btn btn-primary">ปรับปรุงข้อมูล</button>
+    <a href = "#">
+    <button type="button" class="btn btn-primary">Save Chang</button>
     </a>
   </div>
-  <div class="col-md-4 col-sm-4">
+  <!-- <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
     <div class="col-md-6 col-sm-6">
       <label>พิมพ์ข้อมูลทั้งหมด</label>
@@ -16,7 +16,7 @@
     <div class="col-md-1 col-sm-1">
       <button type="button" class="btn btn-default btn-sm glyphicon glyphicon-print"></button> 
     </div>
-  </div>
+  </div> -->
 </div><!--End header -->
     
 <!-- form    -->
@@ -30,88 +30,70 @@
   <div class="portlet-content">
     <div class="row">
       <form class="form-horizontal">
-          <div class="col-md-10 col-md-10-offset-1">                
-            <div class="form-group">
-              <div class="col-md-6 col-md-6-offset-1">    
-                <div class="col-md-4 col-md-4-offset-1"><label>Code :</label></div>
-                <div class="col-md-7 col-md-7-offset-1"><input class="form-control" type="text" ></div>
-              </div>
-              <div class="col-md-6 col-md-6-offset-1"> 
-                <div class="col-md-3 col-md-3-offset-1"><label>Active :</label></div>                       
-                <div class="col-md-9 col-md-9-offset-1"><input type="checkbox"></div>                                   
+        <div class="col-md-8 col-md-8-offset-1">
+          <div class="form-group"> 
+            <div class="col-md-6 col-md-6-offset-1">
+              <div class="col-md-5 col-md-5-offset-1"><label>Org Code :</label></div>
+              <div class="col-md-7 col-md-7-offset-1"><input class="form-control" type="text" ></div>
+            </div>
+            <div class="col-md-6 col-md-6-offset-1">
+              <div class="col-md-3 col-md-3-offset-1"><label>Active :</label></div>                       
+              <div class="col-md-7 col-md-7-offset-1"><input type="checkbox" checked="checked"></div>                                   
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6 col-md-6-offset-1">    
+              <div class="col-md-5 col-md-5-offset-1"><label>Org Name :</label></div>
+              <div class="col-md-7 col-md-7-offset-1">
+                <input type="text" class="form-control">
               </div>
             </div>
-            <div class="form-group">
-              <div class="col-md-12 col-md-12-offset-1">    
-                <div class="col-md-2 col-md-2-offset-1"><label>ชื่อ :</label></div>
-                <div class="col-md-9 col-md-9-offset-1">
-                    <input type="text" class="form-control">
-                </div>
-              </div>
-            </div> 
-            <div class="form-group">
-              <div class="col-md-12 col-md-12-offset-1">    
-                <div class="col-md-2 col-md-2-offset-1"><label>ชื่อย่อ :</label></div>
-                <div class="col-md-9 col-md-9-offset-1">
-                    <input type="text" class="form-control">
-                </div>
-              </div>
+            <div class="col-md-6 col-md-6-offset-1">
+              <div class="col-md-3 col-md-3-offset-1"><label>ชื่อย่อ :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
             </div>
-            <div class="form-group">
-              <div class="col-md-12 col-md-12-offset-1">    
-                <div class="col-md-2 col-md-2-offset-1"><label>Description :</label></div>
-                <div class="col-md-9 col-md-9-offset-1">
-                    <input type="text" class="form-control">
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-12 col-md-12-offset-1">    
-                <div class="col-md-2 col-md-2-offset-1"><label>Address :</label></div>
-                <div class="col-md-9 col-md-9-offset-1">
-                  <div class="right-inner-addon ">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                    <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search" />
-                  </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6 col-md-6-offset-1">    
+              <div class="col-md-5 col-md-5-offset-1"><label>Address :</label></div>
+              <div class="col-md-7 col-md-7-offset-1">
+                <div class="right-inner-addon ">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search" />
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <div class="col-md-6 col-md-6-offset-1">    
-                <div class="col-md-4 col-md-4-offset-1"><label>โทรศัพท์ :</label></div>
-                <div class="col-md-7 col-md-7-offset-1">
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="col-md-6 col-md-6-offset-1"> 
-                <div class="col-md-3 col-md-3-offset-1"><label>e-mail :</label></div>
-                <div class="col-md-7 col-md-7-offset-1">
-                  <input type="text" class="form-control">    
-                </div>                                  
-              </div>
-            </div>
-            <div class="row form-group">
-              <div class="col-md-12 col-md-12-offset-1">    
-                <div class="col-md-2 col-md-2-offset-1"><label>หน่วยงานต้นสังกัด:</label></div>
-                <div class="col-md-9 col-md-9-offset-1">
-                  <select class="form-control">
-                    <option>---Select---</option>
-                    <option>หน่วยงาน1</option>
-                    <option>หน่วยงาน2</option>
-                    <option>หน่วยงาน3</option>
-                  </select>  
+            <div class="col-md-6 col-md-6-offset-1">
+              <div class="col-md-3 col-md-3-offset-1"><label>location:</label></div>
+              <div class="col-md-8 col-md-8-offset-1">
+                <div class="right-inner-addon ">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  <input type="search" class="form-control" data-toggle="modal" data-target="#mdLocation" placeholder="Search" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-2 col-md-2-offset-1">
-            <div class="form-group">
-              <button type="button" class="btn btn-primary col-lg-8" style="width: 140px;">Update Logo</button>
+          <div class="form-group">
+            <div class="col-md-6 col-md-6-offset-1">    
+              <div class="col-md-5 col-md-5-offset-1"><label>หน่วยงานต้นสังกัด :</label></div>
+              <div class="col-md-7 col-md-7-offset-1">
+                <select class="form-control">
+                  <option>---Select---</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group">
-              <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9IjcwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTQweDE0MDwvdGV4dD48L2c+PC9zdmc+" alt="..." class="img-rounded">
-            </div>
-          </div>    
+          </div>
+        </div>
+        <div class="col-md-4 col-md-4-offset-1">
+          <div class="form-group"> 
+            <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Replace Picture</legend>
+              <div class="col-lg-12 col-md-12 text-center">
+                <img src="{!! asset('img/logo.png') !!}"  width="100" >
+              </div>
+            </fieldset>
+          </div>
+        </div>   
       </form>
     </div>
   </div>
@@ -119,58 +101,66 @@
     
 
 <!-- table -->
+<a id="add_row" class="glyphicon glyphicon-plus btn btn-primary pull-right"> Add Row</a>
 <div class="portlet">
   <div class="portlet-header">
     <h3>
       <i class="fa fa-tasks"></i>
-      ตำแหน่ง/บริหาร
+      ตำแหน่งในองค์กร
     </h3>
   </div><!-- /.portlet-header -->
 
  <!--content -->
-  <div class="portlet-content">
-    <!-- <div class="col-lg-1 col-md-1"> -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd" style="width: 100px; margin: 0 0 10px; ">Add</button>
-    <!-- </div> -->
-    <table class="table table-bordered table-hover">
-      <tr class="active">
-        <th>No</th>
-        <th>ตำแหน่ง</th>
-        <th>คำย่อ</th>
-        <th>Code</th>
-        <th>Action</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>ผู้อำนวยการท่าเรือสัตหีบ</td>
-        <td>ผอ.</td>
-        <td>T000-001</td>
-        <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>รองผู้อำนวยการท่าเรือสัตหีบ - 1</td>
-        <td>รอง.1</td>
-        <td>T000-002</td>
-        <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>รองผู้อำนวยการท่าเรือสัตหีบ - 2</td>
-        <td>รอง.1</td>
-        <td>T000-003</td>
-        <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
-      </tr>
-    </table> 
-  </div> 
-</div><!--End panel table -->
-@stop
+    
+    <div class="row clearfix">
+    <div class="col-md-12 column">
+      <table class="table table-bordered table-hover" id="tab_logic">
+        <thead>
+          <tr >
+            <th class="text-center">No</th>
+            <th class="text-center">ตำแหน่ง</th>
+            <th class="text-center">คำย่อ</th>
+            <th class="text-center">Code</th>
+            <th class="text-center">Action</th>
+            <th class="text-center">Update Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id='addr0'>
+            <td>
+            1
+            </td>
+            <td>
+            <input type="text" name='name0'  placeholder='ตำแหน่ง' class="form-control"/>
+            </td>
+            <td>
+            <input type="text" name='mail0' placeholder='คำย่อ' class="form-control"/>
+            </td>
+            <td>
+            <input type="text" name='mobile0' placeholder='code' class="form-control"/>
+            </td>
+            <td>
+              <input type="checkbox" name='mobile0' checked="checked">
+            </td>
+            <td>
+              <button type="button" class="btn btn-default glyphicon glyphicon-plus"></button>
+              <button type="button" class="btn btn-default glyphicon glyphicon-remove"></button>
+            </td>
+          </tr>
+          <tr id='addr1'></tr>
+        </tbody>
+      </table>
+  </div>
+  </div>
+  <!-- <a id="add_row" class="btn btn-default pull-right">Add Row</a> -->
+  <a id='delete_row' class="glyphicon glyphicon-trash pull-right btn btn-default"> Delete Row</a>
 
+@stop
 
 @section('modal-content')
 <!-- modal Address --> 
 <div id="mdAddress" class="modal modal-styled fade">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -179,109 +169,116 @@
     <!-- modal Address body -->
       <div class="modal-body">
         <form class="form-horizontal">
-            <div class="form-group">
-              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>เลขที่ :</label></div>
-              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+           <div class="form-group">
+            <div class="col-lg-12">
+              <div class="col-xs-2 col-sm-2"><label>ชื่อ :</label></div>
+              <div class="col-xs-10 col-sm-10"><input class="form-control " type="text" ></div>
             </div>
-            <div class="form-group">
-              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>อาคาร :</label></div>
-              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>เลขที่ :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
             </div>
-            <div class="form-group">
-              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>หมู่/ซอย :</label></div>
-              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>หมู่ :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
             </div>
-            <div class="form-group">
-              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>ถนน :</label></div>
-              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-12">
+              <div class="col-xs-2 col-sm-2"><label>หมู่บ้าน :</label></div>
+              <div class="col-xs-10 col-sm-10"><input class="form-control " type="text" ></div>
             </div>
-            <div class="form-group">
-              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>จังหวัด :</label></div>
-              <div class="col-md-8 col-md-8-offset-1">
-                <select class="form-control">
-                  <option value="1">กรุงเทพ</option>
-                  <option value="2">พะเยา</option>
-                  <option value="3">กรุงเทพ</option>
-                  <option value="4">เชียงราย</option>
-                </select>
-              </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>ถนน :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
             </div>
-            <div class="form-group">
-              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>อำเภอ :</label></div>
-              <div class="col-md-8 col-md-8-offset-1">
-                <select class="form-control">
-                  <option value="1">แม่สาย</option>
-                  <option value="1">เมือง</option>
-                  <option value="1">ห้วยขว้าง</option>
-                  <option value="1">ฝาง</option>
-                </select>
-              </div>
-              </div>
-            <div class="form-group">
-              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>ตำบล :</label></div>
-              <div class="col-md-8 col-md-8-offset-1">
-                <select class="form-control">
-                  <option value="1">เวียงพางคำ</option>
-                  <option value="1">แม่ต๋ำ</option>
-                  <option value="1">ปากเกร็ด</option>
-                  <option value="1">แม่สาย</option>
-                </select>
-              </div>
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>แขวง/ตำบล :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
             </div>
-            <div class="form-group">
-              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>รหัสไปรษณีย์ :</label></div>
-              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>เขต/อำเภอ :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
             </div>
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>จังหวัด :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>ประเทศ :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>ZIP :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-6">
+              <div class="col-xs-4 col-sm-4"><label>Bill Active :</label></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+            </div>
+            
+          </div>
         </form>           
       </div>
     <!-- modal Address footer -->
     <div class="modal-footer">
-        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-primary">Cancel</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->	
+</div><!-- /.modal -->  
 
-            
-<!-- modal Add --> 
-<div id="mdAdd" class="modal modal-styled fade">
-  <div class="modal-dialog">
+<!-- mdLocation -->
+<div class="modal fade" id="mdLocation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
     <div class="modal-content">
+    <!-- header -->
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-title">ตำแหน่งบริหารงาน</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
+        <h3 class="modal-title">Map Location</h3>
       </div>
-    <!-- modal Add body -->
+    <!-- body -->
       <div class="modal-body">
-        <form class="form-horizontal">
-          <div class="form-group">
-            <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Code :</label></div>
-            <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>ตำแหน่ง :</label></div>
-            <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>คำย่อ :</label></div>
-            <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>Password expire :</label></div>
-            <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
-          </div>
-        </form>           
+          <img src="{!! asset('img/map.png') !!}"  width="500" >
       </div>
-    <!-- modal Add footer -->
+      <!-- footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="submit" class="btn btn-default" data-dismiss="modal" id="btnSave">Cancel</button>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->	
-@stop
+    </div>
+  </div>
+</div><!-- End mdLocation -->
+
+<script>
+       $(document).ready(function(){
+      var i=1;
+     $("#add_row").click(function(){
+      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text' placeholder='ตำแหน่ง' class='form-control input-md'  /> </td><td><input  name='mail"+i+"' type='text' placeholder='คำย่อ'  class='form-control input-md'></td><td><input  name='mobile"+i+"' type='text' placeholder='code'  class='form-control input-md'></td><td><input  name='mobile"+i+"'  type='checkbox'  class='input-sm'></td> <td><input  name='mail"+i+"' type='button' class='btn btn-default glyphicon glyphicon-plus'><input  name='mail"+i+"' type='button' class='btn btn-default glyphicon glyphicon-remove'></td>");
+
+      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+      i++; 
+  });
+     $("#delete_row").click(function(){
+       if(i>1){
+     $("#addr"+(i-1)).html('');
+     i--;
+     }
+   });
+
+});
+</script>
 
 @section('javascript')
 
