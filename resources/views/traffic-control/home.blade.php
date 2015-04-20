@@ -1,7 +1,16 @@
 @extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('traffic-control-home'))
 @section('content')
-
+<style>
+    
+      .bg-traffic-control{
+        background: url('../img/bg-home/bg-traffic-control.png') no-repeat right;
+        width:100%;
+        height:500px; /*same height as jumbotron */
+        top:0;
+        left:0;
+      }
+</style>
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
@@ -20,7 +29,7 @@
 
 
 <!-- bedy -->
-  <div class="col-lg-12 col-md-12 bgAdmin">
+  <div class="col-lg-12 col-md-12 bg-traffic-control">
     <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ บริหารหน้าท่าและควบคุมจราจรทางน้ำ</h4>
 
       <div class="row">
