@@ -1,7 +1,16 @@
 @extends('layout.content')
 @section('breadcrumbs', Breadcrumbs::render('service-home'))
 @section('content')
-
+<style>
+    
+      .bg-service{
+        background: url('../img/bg-home/bg-service.png') no-repeat right;
+        width:100%;
+        height:500px; /*same height as jumbotron */
+        top:0;
+        left:0;
+      }
+</style>
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
@@ -20,7 +29,7 @@
 
 
 <!-- bedy -->
-  <div class="col-lg-12 col-md-12 bgAdmin">
+  <div class="col-lg-12 col-md-12 bg-service">
     <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ บริการลูกเรือและผู้โดยสาร</h4>
 
       <div class="row">
