@@ -32,97 +32,19 @@
 <div id="wrapper">
 	
 	<header id="header">
-            <h1 id="site-logo">
-                    <a href="{{ URL::to('/module-list') }}">
-                            <img src="{{ asset('img/logos/logo.png') }}" alt="Site Logo" />
-                    </a>
-            </h1>	
-
-            <a href="javascript:;" data-toggle="collapse" data-target=".top-bar-collapse" id="top-bar-toggle" class="navbar-toggle collapsed">
-                    <i class="fa fa-cog"></i>
-            </a>
-
-            <a href="javascript:;" data-toggle="collapse" data-target=".sidebar-collapse" id="sidebar-toggle" class="navbar-toggle collapsed">
-                    <i class="fa fa-reorder"></i>
-            </a>
+             @include('inc.header')
 	</header> <!-- header -->
 
 
 	<nav id="top-bar" class="collapse top-bar-collapse">
-            <ul class="nav navbar-nav pull-left">
-                    <li class="">
-                            <a href="{{ URL::to('/module-list') }}">
-                                    <i class="fa fa-home"></i> 
-                                    Home
-                            </a>
-                    </li>
-            </ul>
-
-            <ul class="nav navbar-nav pull-right">
-                    <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
-                                    <i class="fa fa-user"></i>
-                            Rod Howard 
-                            <span class="caret"></span>
-                    </a>
-
-                    <ul class="dropdown-menu" role="menu">
-                            <li>
-                                    <a href="./page-profile.html">
-                                            <i class="fa fa-user"></i> 
-                                            &nbsp;&nbsp;My Profile
-                                    </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                    <a href="./page-login.html">
-                                            <i class="fa fa-sign-out"></i> 
-                                            &nbsp;&nbsp;Logout
-                                    </a>
-                            </li>
-                    </ul>
-                </li>
-            </ul>
+             @include('inc.menu_header')
 	</nav> <!-- /#top-bar -->
 
 
 	<div id="sidebar-wrapper" class="collapse sidebar-collapse">
 	
 		<nav id="sidebar">		
-			<ul id="main-nav" class="open-active" data-id="{{ asset($manu['mainManu']) }}">
-                            @foreach($manu['leftManu'] as $key => $value)
-                            
-                            <?php  if (!isset($value['child'])) { ?>
-                               <li class="" onclick="changePage('{!! asset($value["url"]) !!}');">				
-                                     <a>
-                                        <i class='fa fa-indent'></i>
-                                        {{ $value['name'] }}
-                                     </a>   				
-                               </li>
-                                
-                            <?php } else { ?>
-                                <li class="dropdown">
-                                            <a href="javascript:;">
-                                                    <i class="fa fa-caret-square-o-down"></i>
-                                                     {{ $value['name'] }}
-                                                    <span class="caret"></span>
-                                            </a>				
-
-                                            <ul class="sub-nav">
-                                                @foreach($value['child'] as $val)
-                                                
-                                                    <li onclick="changePage('{!! asset($val["url"]) !!}');">
-                                                            <a >
-                                                                    <i class="fa fa-angle-double-right"></i> 
-                                                                    {{ $val['name'] }}
-                                                            </a>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                </li>
-                            <?php } ?>
-                           @endforeach
-                        </ul>				
+                    @include('inc.menu_left')
 		</nav> <!-- #sidebar -->
 
 	</div> <!-- /#sidebar-wrapper -->
