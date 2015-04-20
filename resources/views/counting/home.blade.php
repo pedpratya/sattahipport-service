@@ -14,7 +14,7 @@
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบตรวจนับและตรวจสอบสินค้า</label>
+    <label>คู่มือการใช้งาน ระบบตรวจนับและตรวจสอบสินค้า</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -30,7 +30,7 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bg-counting">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบตรวจนับและตรวจสอบสินค้า</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ ระบบตรวจนับและตรวจสอบสินค้า</h4>
 
 
       <div class="row">

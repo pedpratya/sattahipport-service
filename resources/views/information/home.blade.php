@@ -14,7 +14,7 @@
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบ ระบบข้อมูลสารสนเทศ</label>
+    <label>คู่มือการใช้งาน ระบบข้อมูลสารสนเทศ</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -30,7 +30,7 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bg-information">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ ระบบข้อมูลสารสนเทศ</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ ระบบข้อมูลสารสนเทศ</h4>
 
       <div class="row">
         <div class="col-lg-4 col-md-4">

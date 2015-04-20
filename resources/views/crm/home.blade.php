@@ -14,7 +14,7 @@
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบบริหารจัดการ ลูกค้า CRM</label>
+    <label>คู่มือการใช้งาน ระบบบริหารจัดการลูกค้า CRM</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -30,7 +30,7 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bg-crm">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบบริหารจัดการ ลูกค้า CRM</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ ระบบบริหารจัดการลูกค้า CRM</h4>
 
       <div class="row">
         <div class="col-lg-4 col-md-4">
@@ -42,7 +42,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-4">
           <a href = "#">
-            <button type="button" class="btn btn-primary btn-block">Service DashBoard</button>
+            <button type="button" class="btn btn-primary btn-block" >Service DashBoard</button>
           </a>
         </div>
       </div>    

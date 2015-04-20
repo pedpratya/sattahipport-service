@@ -6,7 +6,7 @@
     <!-- header -->
     <div class="row page-header">
       <div class="col-md-8 col-sm-8">
-        <label>คู่มือการใช้งานระบบ Admin</label>
+        <label>คู่มือการใช้งาน ระบบ Admin</label>
       </div>
       <div class="col-md-4 col-sm-4">
         <div class="col-md-4 col-sm-4"></div>
@@ -22,7 +22,7 @@
 
     <!-- body -->
     <div class="col-lg-12 col-md-12 bgAdmin">
-      <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบผู้ดูแลระบบ Admin</h4>
+      <h4 class="text-center">ยินดีต้อนรับเข้าสู่ ระบบ Admin</h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-4">
@@ -32,7 +32,7 @@
       
         <div class="row">
           <div class="col-lg-4 col-md-4">
-              <button type="button" class="btn btn-primary btn-block" onclick="changePage('../admin/system-admin')">เมนูระบบงาน</button>
+              <button type="button" class="btn btn-primary btn-block" onclick="changePage('../admin/system-admin')">ระบบงาน</button>
           </div>
         </div>    
 

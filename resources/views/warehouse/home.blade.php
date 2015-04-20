@@ -14,7 +14,7 @@
 <!-- header -->
 <div class="row page-header">
   <div class="col-md-8 col-sm-8">
-    <label>คู่มือการใช้งานระบบ คลังสินค้า</label>
+    <label>คู่มือการใช้งาน ระบบคลังสินค้า</label>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -30,7 +30,7 @@
 
 <!-- bedy -->
   <div class="col-lg-12 col-md-12 bg-warehouse">
-    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ระบบ คลังสินค้า</h4>
+    <h4 class="text-center">ยินดีต้อนรับเข้าสู่ ระบบคลังสินค้า</h4>
 
       <div class="row">
         <div class="col-lg-6 col-md-6">
