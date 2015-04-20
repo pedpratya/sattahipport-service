@@ -189,7 +189,7 @@
 
     function changePage (urlLoad) {
 
-        if(urlLoad){
+        if(urlLoad!="#"){
         $("#content-modal").load(urlLoad, function(responseTxt, statusTxt, xhr){
 
             if ( statusTxt == "error" ) {
