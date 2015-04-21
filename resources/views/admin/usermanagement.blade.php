@@ -32,7 +32,7 @@
           <div class="form-group">
               <div class="col-md-6 col-md-6-offset-1">
                 <div class="col-md-4"><label>Code :</label></div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <input class="form-control" type="text" >
                 </div>
               </div>
@@ -44,7 +44,7 @@
           <div class="form-group">
               <div class="col-md-6 col-md-6-offset-1">
                 <div class="col-md-4"><label>ชั้น/ยศ :</label></div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <select class="form-control">
                       <option>---Select---</option>
                       <option>ยศ1</option>
@@ -53,17 +53,20 @@
                   </select>
                 </div>
               </div>
-              <div class="col-md-6 col-md-6-offset-1"> 
-                <div class="col-md-3"><label>ชื่อ-สกุล :</label></div>                       
-                <div class="col-md-9">
-                  <input class="form-control" type="text">
-                </div>                                   
+              <div class="col-md-6"> 
+                <div class="col-md-3"><label>ชื่อ-สกุล :</label></div>
+                  <div class="col-md-4">
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="col-md-4">
+                    <input class="form-control" type="text">
+                  </div>
               </div>
           </div>
           <div class="form-group">
               <div class="col-md-6 col-md-6-offset-1">
                 <div class="col-md-4"><label>หน่วยงาน :</label></div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <select class="form-control">
                       <option>---Select---</option>
                   </select>
@@ -71,7 +74,7 @@
               </div>
               <div class="col-md-6 col-md-6-offset-1"> 
                 <div class="col-md-3"><label>ตำแหน่ง :</label></div>                       
-                <div class="col-md-9">
+                <div class="col-md-8">
                   <select class="form-control">
                       <option>ยศ1</option>
                       <option>ยศ2</option>
@@ -103,11 +106,11 @@
     <th></th>
   </tr>
   <tr>
-    <td>1</td>
-    <td>ยศ ชื่อ นามสกุล</td>
-    <td>xxxx</td>
-    <td>xxxx</td>
-    <td>24-07-16</td>
+    <td onclick="changePage('../admin/usermanagement-create-or-edit')">1</td>
+    <td onclick="changePage('../admin/usermanagement-create-or-edit')">ยศ ชื่อ นามสกุล</td>
+    <td onclick="changePage('../admin/usermanagement-create-or-edit')">xxxx</td>
+    <td onclick="changePage('../admin/usermanagement-create-or-edit')">xxxx</td>
+    <td onclick="changePage('../admin/usermanagement-create-or-edit')">24-07-16</td>
     <td><input type="checkbox"></td>
     <td><button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button></td>
   </tr>
