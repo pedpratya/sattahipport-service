@@ -79,8 +79,16 @@
   </div><!-- End form head -->
 </div><!-- End portlet -->
 
-
-        <div class="col-lg-3 col-md-3">            
+        <div class="row page-header">
+            <div class="col-md-12 col-sm-12">
+              <label>System Menu</label>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3">  
+            <div class="form-group">
+                <input class="form-control" type="text">
+                <div class="text-right"><button type="button" class="btn btn-success btn-sm  glyphicon glyphicon-plus"></button></div> 
+            </div>
             <ul class="nav nav-pills nav-stacked">
                 <li class="dropdown" id="menu1">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" role="presentation">

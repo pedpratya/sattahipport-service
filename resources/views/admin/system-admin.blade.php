@@ -87,14 +87,14 @@
       <th></th>
     </tr>
   </thead>
-  <tr   onclick="changePage('../admin/system-admin-create-or-edit')">
+  <tr>
     <td>1</td>
     <td>100</td>
     <td>1-Customer-Web Application</td>
     <td>แผนการท่า</td>
     <td class="text-center"><input type="checkbox" value=""></td>
     <td class="text-center">
-        <button type="button" class="btn btn-default glyphicon glyphicon-pencil"></button>
+        <button type="button" class="btn btn-default glyphicon glyphicon-pencil" onclick="changePage('../admin/system-admin-create-or-edit')"></button>
         <button type="button" class="btn btn-default glyphicon glyphicon-remove"></button>
     </td>
   </tr>
