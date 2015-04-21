@@ -15,7 +15,7 @@
       <label></label>
     </div>
     <div class="col-md-1 col-sm-1">
-      <button type="button" class="btn btn-default  glyphicon glyphicon-menu-left"></button> 
+      <button type="button" class="btn btn-default  glyphicon glyphicon-menu-left" onclick="changePage('../admin/system-admin')"></button> 
     </div>
   </div>
 </div><!--End header -->
@@ -39,7 +39,7 @@
               </div>
               <div class="col-md-6 "> 
                 <div class="col-md-4"><label>Active :</label></div>                       
-                <div class="col-md-8"><input type="checkbox"></div>                                   
+                <div class="col-md-8"><input type="checkbox" checked="checked"></div>                                   
               </div>
             </div>
             <div class="form-group">
@@ -82,33 +82,33 @@
 
         <div class="col-lg-3 col-md-3">            
             <ul class="nav nav-pills nav-stacked">
-                <li class="dropdown" >
+                <li class="dropdown" id="menu1">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" role="presentation">
                         Customer Registration <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a onClick="Menuli1();">Customer Regis Form</a></li>
-                        <li><a onClick="Menuli2();">Customer Approve</a></li>
-                        <li><a onClick="Menuli3();">dadfad</a></li>
+                        <li><a id="Menuli1">Customer Regis Form</a></li>
+                        <li><a id="Menuli2">Customer Approve</a></li>
+                        <li><a id="Menuli3">dadfad</a></li>
                     </ul>
 
                 </li>
-                <li role="presentation" class="dropdown" role="presentation">
+                <li role="presentation" class="dropdown" id="menu2">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
                         Download แบบฟอร์ม<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a onClick="Menuli4();">Berth Form</a></li>
+                        <li><a id="Menuli4">Berth Form</a></li>
                     </ul>
                 </li>
-                <li role="presentation"><a>อัตราค่าบริการ</a></li>
+                <li role="presentation" id="menu3"><a>อัตราค่าบริการ</a></li>
             </ul>
         </div>
       <div class="col-lg-9 col-md-9">
           <div class="portlet">
             <div class="portlet-header">
               <h3>
-                  <p id="demo"></p>
+                 <label  id="headMenu" class="text-center">เลือกเมนู</label >
               </h3>
             </div> <!-- /.portlet-header -->
             <div class="portlet-content">
@@ -132,7 +132,7 @@
                     <div class="form-group">
                           <div class="col-md-3 col-lg-3"><label>SUB Menu Name :</label></div>
                           <div class="col-md-4 col-lg-4"><input class="form-control" type="text" value="" id="subMenu"></div>
-                          <div class="col-md-2 col-lg-2"><input type="checkbox">&nbsp;&nbsp;<label>Show</label></div>
+                          <div class="col-md-2 col-lg-2"><input type="checkbox" checked="checked">&nbsp;&nbsp;<label>Show</label></div>
                           <div class="col-md-3 col-lg-3">
                               <button type="button" class="btn btn-primary">Update</button>
                               <button type="button" class="btn btn-primary">Delete</button>
@@ -175,7 +175,7 @@
                               </select>
                           </td>
                           <td width="5%"><input class="form-control" type="text" value=""></td>
-                          <td class="text-center"><input type="checkbox"></td>
+                          <td class="text-center"><input type="checkbox" checked="checked"></td>
                           <td>
                               <button type="button" class="btn btn-default btn-xs  glyphicon glyphicon-pencil"></button>
                               <button type="button" class="btn btn-default btn-xs  glyphicon glyphicon-trash"></button>
@@ -283,22 +283,33 @@
 @section('javascript')
 <script>
 
-function Menuli1()
-{    
-   document.getElementById("subMenu").value = "Customer Regis Form";
-}
-function Menuli2()
-{    
-   document.getElementById("subMenu").value = "Customer Approve";
-}
-function Menuli3()
-{    
-   document.getElementById("subMenu").value = "dadfad";
-}
-function Menuli4()
-{    
-   document.getElementById("subMenu").value = "Berth Form";
-}
+$("#Menuli1").click(function(){
+    $('#subMenu').val("Customer Regis Form");
+});
+
+$("#Menuli2").click(function(){
+    $('#subMenu').val("Customer Approve");
+});
+
+$("#Menuli3").click(function(){
+    $('#subMenu').val("dadfad");
+});
+
+$("#Menuli4").click(function(){
+    $('#subMenu').val("Berth Form");
+});
+
+$("#menu1").click(function(){
+    $('#headMenu').html("Customer Registration");
+});
+
+$("#menu2").click(function(){
+    $('#headMenu').html("Download แบบฟอร์ม");
+});
+
+$("#menu3").click(function(){
+    $('#headMenu').html("อัตราค่าบริการ");
+});
 
 
 </script>

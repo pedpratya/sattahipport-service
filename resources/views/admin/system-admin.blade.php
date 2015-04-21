@@ -5,7 +5,7 @@
 <!-- header -->
 <div class="row">
   <div class="col-md-8 col-sm-8">
-    <button type="button" class="btn btn-primary" onclick="changePage('../admin/system-admin-create-or-edit')">เพิ่มระบบงาน</button>
+    <button type="button" class="btn btn-primary">เพิ่มระบบงาน</button>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="col-md-4 col-sm-4"></div>
@@ -87,7 +87,7 @@
       <th></th>
     </tr>
   </thead>
-  <tr>
+  <tr   onclick="changePage('../admin/system-admin-create-or-edit')">
     <td>1</td>
     <td>100</td>
     <td>1-Customer-Web Application</td>
