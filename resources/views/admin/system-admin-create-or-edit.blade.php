@@ -2,6 +2,29 @@
 @section('breadcrumbs', Breadcrumbs::render('system-admin-create-or-edit'))
 @section('content')
 
+<!--<div class="container-fluid">
+<div class="col-lg-3">
+        <div id="MainMenu">
+            <div class="list-group panel">
+                <a href="#demo1" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu" id="menu1">Customer Registration</a>
+                <div class="collapse" id="demo1">
+                  <a href="#" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Customer Regis Form</a>    
+                  <a href="#" class="list-group-item">Customer Approve</a>
+                  <a href="#" class="list-group-item">dadfad</a>
+                </div>
+                <a href="#demo2" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu">Download แบบฟอร์ม</a>
+                <div class="collapse" id="demo2">
+                  <a href="#" class="list-group-item">Berth Form</a>
+                </div>
+                <a href="#demo3" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu">อัตราค่าบริการ</a>
+                <div class="collapse" id="demo3">
+
+                </div>
+            </div>
+        </div>
+</div>
+</div>-->
+
 <div class="container-fluid">
 <div style="height:100%;">
 <!-- header -->
@@ -89,28 +112,26 @@
                 <input class="form-control" type="text">
                 <div class="text-right"><button type="button" class="btn btn-success btn-sm  glyphicon glyphicon-plus"></button></div> 
             </div>
-            <ul class="nav nav-pills nav-stacked">
-                <li class="dropdown" id="menu1">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" role="presentation">
-                        Customer Registration <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a id="Menuli1">Customer Regis Form</a></li>
-                        <li><a id="Menuli2">Customer Approve</a></li>
-                        <li><a id="Menuli3">dadfad</a></li>
-                    </ul>
+            <div class="form-group">
+            <div id="MainMenu">
+                <div class="list-group panel">
+                    <a href="#demo1" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu" id="menu1">Customer Registration</a>
+                    <div class="collapse" id="demo1">
+                      <a href="#" class="list-group-item" id="Menuli1" data-toggle="collapse" data-parent="#">Customer Regis Form</a>    
+                      <a href="#" class="list-group-item" id="Menuli2" data-toggle="collapse" data-parent="#">Customer Approve</a>
+                      <a href="#" class="list-group-item" id="Menuli3" data-toggle="collapse" data-parent="#">dadfad</a>
+                    </div>
+                    <a href="#demo2" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu" id="menu2">Download แบบฟอร์ม</a>
+                    <div class="collapse" id="demo2">
+                      <a href="#" class="list-group-item" id="Menuli4" data-toggle="collapse" data-parent="#">Berth Form</a>
+                    </div>
+                    <a href="#demo3" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu" id="menu3">อัตราค่าบริการ</a>
+                    <div class="collapse" id="demo3">
 
-                </li>
-                <li role="presentation" class="dropdown" id="menu2">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                        Download แบบฟอร์ม<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a id="Menuli4">Berth Form</a></li>
-                    </ul>
-                </li>
-                <li role="presentation" id="menu3"><a>อัตราค่าบริการ</a></li>
-            </ul>
+                    </div>
+                </div>
+            </div>
+            </div>    
         </div>
       <div class="col-lg-9 col-md-9">
           <div class="portlet">
