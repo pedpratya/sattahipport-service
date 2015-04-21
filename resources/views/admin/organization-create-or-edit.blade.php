@@ -168,63 +168,63 @@
       </div>
     <!-- modal Address body -->
       <div class="modal-body">
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="form" name="form" method="post">
            <div class="form-group">
             <div class="col-lg-12">
               <div class="col-xs-2 col-sm-2"><label>ชื่อ :</label></div>
-              <div class="col-xs-10 col-sm-10"><input class="form-control " type="text" ></div>
+              <div class="col-xs-10 col-sm-10"><input class="form-control " type="text" name="names" id="names"></div>
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>เลขที่ :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="address" id="address"></div>
             </div>
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>หมู่ :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="address2" id="address2"></div>
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-12">
               <div class="col-xs-2 col-sm-2"><label>หมู่บ้าน :</label></div>
-              <div class="col-xs-10 col-sm-10"><input class="form-control " type="text" ></div>
+              <div class="col-xs-10 col-sm-10"><input class="form-control " type="text"name="address3" id="address3"></div>
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>ถนน :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="address4" id="address4"></div>
             </div>
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>แขวง/ตำบล :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="tambol" id="tambol"></div>
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>เขต/อำเภอ :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="amphoe" id="amphoe"></div>
             </div>
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>จังหวัด :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="province" id="province"></div>
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>ประเทศ :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="country" id="country"></div>
             </div>
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>ZIP :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="zip" id="zip"></div>
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-6">
               <div class="col-xs-4 col-sm-4"><label>Bill Active :</label></div>
-              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" ></div>
+              <div class="col-xs-8 col-sm-8"><input class="form-control " type="text" name="bill" id="bill"></div>
             </div>
             
           </div>
@@ -232,7 +232,7 @@
       </div>
     <!-- modal Address footer -->
     <div class="modal-footer">
-        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Submit</button>
+        <button type="submit" value="Submit" class="btn btn-tertiary" data-dismiss="modal" onclick="getforms()">Submit</button>
         <button type="button" class="btn btn-primary">Cancel</button>
       </div>
     </div><!-- /.modal-content -->
@@ -263,22 +263,64 @@
 
 <script>
        $(document).ready(function(){
-      var i=1;
-     $("#add_row").click(function(){
-      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text' placeholder='ตำแหน่ง' class='form-control input-md'  /> </td><td><input  name='mail"+i+"' type='text' placeholder='คำย่อ'  class='form-control input-md'></td><td><input  name='mobile"+i+"' type='text' placeholder='code'  class='form-control input-md'></td><td><input  name='mobile"+i+"'  type='checkbox'  class='input-sm'></td> <td><input  name='mail"+i+"' type='button' class='btn btn-default glyphicon glyphicon-plus'><input  name='mail"+i+"' type='button' class='btn btn-default glyphicon glyphicon-remove'></td>");
+            var i=1;
+           $("#add_row").click(function(){
+            $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text' placeholder='ตำแหน่ง' class='form-control input-md'  /></td> <td><input  name='mail"+i+"'type='text' placeholder='คำย่อ' class='form-control input-md'></td> <td><input name='mobile"+i+"'type='text' placeholder='code' class='form-control input-md'></td> <td><input name='checkbox"+i+"'  type='checkbox' class='input-sm'></td> <td><input name='btn"+i+"' type='button' class='btn btn-primary'><input  name='mail"+i+"' type='button' class='btn btn-default glyphicon glyphicon-remove'></td>");
 
-      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
-      i++; 
-  });
-     $("#delete_row").click(function(){
-       if(i>1){
-     $("#addr"+(i-1)).html('');
-     i--;
-     }
-   });
+            $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+            i++; 
+           });
 
-});
+         $("#delete_row").click(function(){
+             if(i>1){
+           $("#addr"+(i-1)).html('');
+           i--;
+           }
+         });
+      });
+
+         function getforms() {
+            
+          var username = $('#names').val();
+            console.log("ชื่อ :",username);
+
+          var addr = $('#address').val();
+            console.log("เลขที่ :",addr);
+
+          var addr2 = $('#address2').val();
+            console.log("หมู่ :",addr2);
+
+          var addr3 = $('#address3').val();
+            console.log("หมู่บ้าน :",addr3);
+
+          var addr4 = $('#address4').val();
+            console.log("ถนน :",addr4);
+
+          var tambol = $('#tambol').val();
+            console.log("แขวง/ตำบล :",tambol);
+
+          var amphoe = $('#amphoe').val();
+            console.log("เขต/อำเภอ :",amphoe);
+
+          var province = $('#province').val();
+            console.log("จังหวัด :",province);
+
+          var country = $('#country').val();
+            console.log("ประเทศ :",country);
+
+          var zip = $('#zip').val();
+            console.log("zip :",zip);
+
+          var bill = $('#bill').val();
+            console.log("bill :",bill);
+
+
+          }
+
+
+
 </script>
+
 
 @section('javascript')
 
