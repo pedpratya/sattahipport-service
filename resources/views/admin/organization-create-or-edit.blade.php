@@ -106,7 +106,7 @@
   <div class="portlet-header">
     <h3>
       <i class="fa fa-tasks"></i>
-      ตำแหน่งในองค์กร
+      ตำแหน่งในองค์กร 
     </h3>
   </div><!-- /.portlet-header -->
 
