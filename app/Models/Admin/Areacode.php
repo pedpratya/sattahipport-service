@@ -1,8 +1,8 @@
-<?php namespace App\Models;
+<?php namespace App\Models\Admin;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Systemuser extends Model {
+class Areacode extends Model {
 
 
 	/**
@@ -10,6 +10,6 @@ class Systemuser extends Model {
 	 *
 	 * @var string
 	 */
-	protected $table = 'systemuser';
+	protected $table = 'admin_areacode';
 
 }
