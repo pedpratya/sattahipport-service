@@ -160,7 +160,7 @@
                     <br>
                     <div class="form-group">
                           <div class="col-md-3 col-lg-3"><label>SUB Menu Name :</label></div>
-                          <div class="col-md-4 col-lg-4"><input class="form-control" type="text" value="" id="subMenu"></div>
+                          <div class="col-md-4 col-lg-4"><input class="form-control" type="text" value="" id="subMenu" readonly></div>
                           <div class="col-md-2 col-lg-2"><input type="checkbox" checked="checked">&nbsp;&nbsp;<label>Show</label></div>
                           <div class="col-md-3 col-lg-3">
                               <button type="button" class="btn btn-primary">Update</button>
@@ -330,14 +330,17 @@ $("#Menuli4").click(function(){
 
 $("#menu1").click(function(){
     $('#headMenu').html("Customer Registration");
+    $('#subMenu').val("");
 });
 
 $("#menu2").click(function(){
     $('#headMenu').html("Download แบบฟอร์ม");
+    $('#subMenu').val("");
 });
 
 $("#menu3").click(function(){
     $('#headMenu').html("อัตราค่าบริการ");
+    $('#subMenu').val("");
 });
 
 

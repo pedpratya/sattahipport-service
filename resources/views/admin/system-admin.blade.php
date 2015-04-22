@@ -41,7 +41,7 @@
           </div>
           <div class="col-md-6 "> 
             <div class="col-md-4"><label>Active :</label></div>                       
-            <div class="col-md-8"><input type="checkbox"></div>                                   
+            <div class="col-md-8"><input type="checkbox" checked="checked"></div>                                   
           </div>
         </div>
         <div class="form-group">
@@ -92,7 +92,7 @@
     <td>100</td>
     <td>1-Customer-Web Application</td>
     <td>แผนการท่า</td>
-    <td class="text-center"><input type="checkbox" value=""></td>
+    <td class="text-center"><input type="checkbox" checked="checked"></td>
     <td class="text-center">
         <button type="button" class="btn btn-default glyphicon glyphicon-pencil" onclick="changePage('../admin/system-admin-create-or-edit')"></button>
         <button type="button" class="btn btn-default glyphicon glyphicon-remove"></button>
