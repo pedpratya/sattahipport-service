@@ -1,8 +1,10 @@
-<?php namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers\Admin;
 
-class OrganizationController extends Controller {
+use App\Http\Controllers\Controller;
+use App\Models\Department;
 
-
+class OrganizationController extends Controller 
+{
 	/**
 	 * Create the Organization.
 	 *
@@ -12,5 +14,11 @@ class OrganizationController extends Controller {
 	{
 		return view('admin.organization');
 	}
-
+        
+        public function getOrganization()
+        {
+ 
+             $data = Department::find(1);
+            return view('admin.organization', compact('data'));
+        }
 }

@@ -12,11 +12,7 @@ Route::group(array('prefix' => 'admin'), function() {
             return view('admin.home');
     });
     
-    Route::get('organization', array(
-        'as' => 'organization',
-        function() {
-            return View::make('admin.organization');
-    }));
+    Route::get('organization', 'Admin\OrganizationController@getOrganization');
     
     Route::get('organization-create-or-edit', array(
         'as' => 'organization-create-or-edit',
