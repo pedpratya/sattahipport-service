@@ -1,0 +1,19 @@
+<?php if($breadcrumbs): ?>
+
+        <?php foreach($breadcrumbs as $breadcrumb): ?>
+                <?php if($breadcrumb->last): ?>
+
+                        <?php echo e($breadcrumb->title); ?>
+
+
+                <?php elseif($breadcrumb->url): ?>
+                        <a href="<?php echo e($breadcrumb->url); ?>"><?php echo e($breadcrumb->title); ?></a>
+                        <span class="divider">/</span>
+                <?php else: ?>
+                        <?php /* Using .active to give it the right colour (grey by default) */ ?>
+                        <?php echo e($breadcrumb->title); ?>
+
+                        <span class="divider">/</span>
+                <?php endif; ?>
+        <?php endforeach; ?>
+<?php endif; ?>

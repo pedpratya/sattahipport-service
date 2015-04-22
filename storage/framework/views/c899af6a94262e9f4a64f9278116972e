@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    <title>SATTAHIP E-PORT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+	<meta name="author" content="" />
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,800italic,400,600,800" type="text/css">
+	<link rel="stylesheet" href="<?php echo asset('css/font-awesome.min.css'); ?>" type="text/css" />		
+	<link rel="stylesheet" href="<?php echo asset('css/bootstrap.min.css'); ?>" type="text/css" />	
+	<link rel="stylesheet" href="<?php echo asset('js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.css'); ?>" type="text/css" />		
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/magnific/magnific-popup.css'); ?>" type="text/css" />
+        
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/icheck/skins/minimal/blue.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/datepicker/datepicker.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/select2/select2.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/timepicker/bootstrap-timepicker.css'); ?>" type="text/css" />
+	<link rel="stylesheet" href="<?php echo asset('js/plugins/fileupload/bootstrap-fileupload.css'); ?>" type="text/css" />        
+        
+	<link rel="stylesheet" href="<?php echo asset('css/App.css'); ?>" type="text/css" />
+
+	<link rel="stylesheet" href="<?php echo asset('css/custom.css'); ?>" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+	
+	<header id="header">
+		 <?php echo $__env->make('inc.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	</header> <!-- header -->
+
+
+	<nav id="top-bar" class="collapse top-bar-collapse">
+             <?php echo $__env->make('inc.menu_header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	</nav> <!-- /#top-bar -->
+
+
+	<div id="sidebar-wrapper" class="collapse sidebar-collapse">
+	
+		<div id="search">
+			<form>
+				<input class="form-control input-sm" type="text" name="search" placeholder="Search..." />
+
+				<button type="submit" id="search-btn" class="btn"><i class="fa fa-search"></i></button>
+			</form>		
+		</div> <!-- #search -->
+	
+		<nav id="sidebar">		
+			<?php echo $__env->make('inc.menu_left', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+			
+					
+		</nav> <!-- #sidebar -->
+
+	</div> <!-- /#sidebar-wrapper -->
+
+
+	
+	<div id="content">		
+		
+		<div id="content-header">
+			<h1><?php echo $__env->yieldContent('breadcrumbs'); ?></h1>
+		</div> <!-- #content-header -->	
+
+
+		<div id="content-container">
+			<?php echo $__env->yieldContent('content'); ?>		
+		</div> <!-- /#content-container -->			
+		
+	</div> <!-- #content -->
+	
+	
+</div> <!-- #wrapper -->
+
+<footer id="footer">
+	<ul class="nav pull-right">
+		<li>
+			Copyright &copy; 2015, Sattahip E-Port.
+		</li>
+	</ul>
+</footer>
+
+<!-- #modal html -->
+<?php echo $__env->yieldContent('modalhtml'); ?>
+
+<script src="<?php echo e(asset('js/libs/jquery-1.9.1.min.js')); ?>"></script>
+<script src="<?php echo e(asset('js/libs/jquery-ui-1.9.2.custom.min.js')); ?>"></script>
+<script src="<?php echo e(asset('js/libs/bootstrap.min.js')); ?>"></script>
+
+<script src="<?php echo e(asset('js/plugins/icheck/jquery.icheck.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/datepicker/bootstrap-datepicker.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/timepicker/bootstrap-timepicker.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/select2/select2.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/autosize/jquery.autosize.min.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/textarea-counter/jquery.textarea-counter.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/fileupload/bootstrap-fileupload.js')); ?>"></script>
+<!--modal popup-->
+<script src="<?php echo e(asset('js/plugins/magnific/jquery.magnific-popup.min.js')); ?>"></script>
+<script src="<?php echo e(asset('js/plugins/howl/howl.js')); ?>"></script>
+
+<script src="<?php echo e(asset('js/App-tamplate.js')); ?>"></script>
+<script src="<?php echo e(asset('js/form/datepicker-class.js')); ?>"></script>
+
+<?php echo $__env->yieldContent('bottomscript'); ?>
+<script>
+    var url = "/sattahipport-service/public/left-manu/"+idMainManu;
+    $.get(url, function(data){ 
+       $('#main-nav').html(data);
+    });
+</script>
+</body>
+
+</html>
