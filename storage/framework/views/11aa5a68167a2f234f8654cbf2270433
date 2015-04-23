@@ -1,0 +1,21 @@
+<?php $__env->startSection('content'); ?>
+
+     <?php foreach($modules['manu'] as $key => $value): ?>
+
+        <a href="<?php echo e($value['url'].$value['id']); ?>">
+            <div class="box-menu">
+                <img src="<?php echo e(asset($value['images'])); ?>">            
+                <span><?php echo $value['name']; ?></span>
+            </div>
+        </a>  
+
+    <?php endforeach; ?>
+        <a href="<?php echo e(asset('page/444')); ?>">   
+            <div class="box-menu">
+
+                <span>ยังไม่ทราบเมนู</span>
+
+            </div>        
+        </a>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master-mainmanu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

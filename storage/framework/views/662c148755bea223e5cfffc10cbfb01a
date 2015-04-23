@@ -1,6 +1,5 @@
-@extends('layout.content')
-@section('breadcrumbs', Breadcrumbs::render('system-admin'))
-@section('content')
+<?php $__env->startSection('breadcrumbs', Breadcrumbs::render('system-admin')); ?>
+<?php $__env->startSection('content'); ?>
 
 <!-- header -->
 <div class="row">
@@ -115,14 +114,14 @@
     <li><a href="#">&raquo;</a></li>
   </ul>
 
-@stop
+<?php $__env->stopSection(); ?>
 
 
-@section('modal-content')
+<?php $__env->startSection('modal-content'); ?>
 
-@stop
+<?php $__env->stopSection(); ?>
 
-@section('javascript')
+<?php $__env->startSection('javascript'); ?>
 <script>
     
 function getforms() {
@@ -135,4 +134,5 @@ function getforms() {
 
 </script>
 
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.content', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

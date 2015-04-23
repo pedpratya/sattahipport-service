@@ -1,56 +1,37 @@
-<ul id="main-nav" class="open-active">			
+<ul id="main-nav" class="open-active" data-id="<?php echo e(asset($manu['mainManu'])); ?>">
+    <?php foreach($manu['leftManu'] as $key => $value): ?>
 
-</ul>
-<!--li class="dropdown">
-        <a href="javascript:;">
-                <i class="fa fa-file-text"></i>
-                Example Pages
-                <span class="caret"></span>
-        </a>				
+    <?php  if (!isset($value['child'])) { ?>
+       <li class="" onclick="changePage('<?php echo asset($value["url"]); ?>');">				
+             <a>
+                <i class='fa fa-indent'></i>
+                <?php echo e($value['name']); ?>
 
-        <ul class="sub-nav">
-                <li>
-                        <a href="./page-profile.html">
-                                <i class="fa fa-user"></i> 
-                                Profile
-                        </a>
-                </li>
-                <li>
-                        <a href="./page-invoice.html">
-                                <i class="fa fa-money"></i> 
-                                Invoice
-                        </a>
-                </li>
-                <li>
-                        <a href="./page-pricing.html">
-                                <i class="fa fa-dollar"></i> 
-                                Pricing Plans
-                        </a>
-                </li>
-                <li>
-                        <a href="./page-support.html">
-                                <i class="fa fa-question"></i> 
-                                Support Page
-                        </a>
-                </li>
-                <li>
-                        <a href="./page-gallery.html">
-                                <i class="fa fa-picture-o"></i> 
-                                Gallery
-                        </a>
-                </li>
-                <li>
-                        <a href="./page-settings.html">
-                                <i class="fa fa-cogs"></i> 
-                                Settings
-                        </a>
-                </li>
-                <li>
-                        <a href="./page-calendar.html">
-                                <i class="fa fa-calendar"></i> 
-                                Calendar
-                        </a>
-                </li>
-        </ul>						
+             </a>   				
+       </li>
 
-</li-->	
+    <?php } else { ?>
+        <li class="dropdown">
+                    <a href="javascript:;">
+                            <i class="fa fa-caret-square-o-down"></i>
+                             <?php echo e($value['name']); ?>
+
+                            <span class="caret"></span>
+                    </a>				
+
+                    <ul class="sub-nav">
+                        <?php foreach($value['child'] as $val): ?>
+
+                            <li onclick="changePage('<?php echo asset($val["url"]); ?>');">
+                                    <a >
+                                            <i class="fa fa-angle-double-right"></i> 
+                                            <?php echo e($val['name']); ?>
+
+                                    </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+        </li>
+    <?php } ?>
+   <?php endforeach; ?>
+</ul>	
