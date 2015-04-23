@@ -2,29 +2,6 @@
 @section('breadcrumbs', Breadcrumbs::render('system-admin-create-or-edit'))
 @section('content')
 
-<!--<div class="container-fluid">
-<div class="col-lg-3">
-        <div id="MainMenu">
-            <div class="list-group panel">
-                <a href="#demo1" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu" id="menu1">Customer Registration</a>
-                <div class="collapse" id="demo1">
-                  <a href="#" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Customer Regis Form</a>    
-                  <a href="#" class="list-group-item">Customer Approve</a>
-                  <a href="#" class="list-group-item">dadfad</a>
-                </div>
-                <a href="#demo2" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu">Download แบบฟอร์ม</a>
-                <div class="collapse" id="demo2">
-                  <a href="#" class="list-group-item">Berth Form</a>
-                </div>
-                <a href="#demo3" class="list-group-item list-group-item-info" data-toggle="collapse" data-parent="#MainMenu">อัตราค่าบริการ</a>
-                <div class="collapse" id="demo3">
-
-                </div>
-            </div>
-        </div>
-</div>
-</div>-->
-
 <div class="container-fluid">
 <div style="height:100%;">
 <!-- header -->
